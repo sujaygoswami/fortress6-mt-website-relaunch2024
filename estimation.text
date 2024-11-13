@@ -79,7 +79,7 @@ query: previously here used a white image(handwerkskammer kassel) but in the new
 5) ANSPRECHPARTNER
 
 query:
-a) new content came with the stand alone image, need to insert image
+a) new content came with the stand alone image, need to insert text
 
 b) the stand alone image info was in rte in the previously, but in the new one we need to separate this as per design, so here client needs to insert content again
 
@@ -96,7 +96,7 @@ Query for design
 
 2) MAGAZIN, PODCAST & CO page, design page 17, how will be the podcast detail page
 
-3) MAGAZIN, PODCAST & CO, design page 15, what does it mean with the image icon in the caption, does it mean that there is a image gallery with the main image.
+3) design page 15, what does it mean with the image icon in the caption, does it mean that there is a image gallery with the main image.
 
 
 
@@ -104,3 +104,36 @@ Discussion with integrator
 ===================
 I have discussed with the integrator, he told me that he can inherit old content with the new design and html structure, so client do not need to enter the sam content again. We will compare during html and implementation that if found any possible content like this.
 
+
+
+
+
+
+---------------------
+MTM (mt-melsungen)
+---------------------
+Compared (ref: https://xd.adobe.com/view/90892751-86ac-4e04-8e40-fbe5bb99c1a5-c5da/ with https://mt-melsungen.de/)
+
+01 -> Sitemap (INFORMATION ARCHITECTURE)
+02 -> Home page https://mt-melsungen.de/ 
+03 -> Menu
+04 -> ?
+05 -> ? https://mt-melsungen.de/tickets/einzeltickets
+06 -> https://mt-melsungen.de/news
+07 -> https://mt-melsungen.de/matchcenter/spielplaene
+08 -> ? https://mt-melsungen.de/matchcenter/tabellen
+09 -> https://mt-melsungen.de/matchcenter/statistiken
+10 -> ? https://mt-melsungen.de/teams/bundesliga
+11 -> ? https://mt-melsungen.de/teams/bundesliga
+12 -> ? 
+13 -> ? https://mt-melsungen.de/teams/bundesliga
+14 -> ?
+15 -> https://mt-melsungen.de/fans/einlaufkids
+16 -> https://mt-melsungen.de/fans/fanclubs
+17 -> https://mt-melsungen.de/fans/podcast
+18 -> https://mt-melsungen.de/fans/magazin
+19 -> https://mt-melsungen.de/fans/mediacenter
+20 -> https://mt-melsungen.de/die-mt/sponsoren
+21 -> https://mt-melsungen.de/die-mt/ansprechpartner 
+22 -> https://mt-melsungen.de/impressum
+---------------------

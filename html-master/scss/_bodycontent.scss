@@ -1,0 +1,44 @@
+.mt-relaunch {
+    padding: 150px 0 20px 0;
+    // basic
+    .my-row{
+
+        &.default-row{
+            row-gap: $grid-gutter-width / 2;
+
+            &.has-margin-bottom{
+                & > .my-col{
+                    margin-bottom: $grid-gutter-width / 2;
+                }
+            }
+        }
+        
+    }
+
+    .global-border-radius-all{
+        @include border-radius(10px);
+    }
+    // basic
+
+    // content organiser module type 1
+    .content-organiser-module-type-1{
+        .base-height{
+            height: 920px;
+        }
+
+        .lg-box{
+            width: 530px;
+        }
+
+        .xl-box{
+
+        }
+
+        .sm-box{
+            
+        }
+    }
+    // content organiser module type 1
+
+
+}
