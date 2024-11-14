@@ -13,6 +13,7 @@ html, body{
 		margin: 0px;
 		padding: 0px;
 		color: var(--site-text-color);
+		font-weight: var(--site-primary-font-normal);
 	
 
 		
@@ -46,7 +47,7 @@ html, body{
 
 
 	strong{
-		font-weight: normal;
+		font-weight: var(--site-primary-font-bold);
 		
 	}
 					

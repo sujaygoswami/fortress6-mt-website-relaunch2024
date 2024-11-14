@@ -1,6 +1,10 @@
 // fonts
-
-
+:root{
+    --site-primary-font: 'Avenir Next Cyr';
+    --site-primary-font-normal: normal;
+    --site-primary-font-medium: 500;
+    --site-primary-font-bold: bold;
+}
 
 
 
@@ -17,6 +21,7 @@
     --site-grey-type-primary: #EDECEA;
     --site-grey-type-primary-dark: #D3CEC1;
     --site-text-color: #000000;
+    --start-page-content-organiser-base-height: 920px;
 }
  
 
