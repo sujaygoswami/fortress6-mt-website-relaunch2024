@@ -234,13 +234,31 @@ Fancybox.bind('[data-fancybox]', {
 });   
 
 // page anchoring
-$(document).on('click', 'a[href^="#"]', function (event) {
+$(document).on('click', '.anchor-link', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top - (HEADERHEIGHT + 40)
   }, 100);
 });
+
+// filter navigation slider
+jQuery('.filter-navigation-slider .the-slider').each(function(){
+
+  jQuery(this).slick({
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    draggable: false,
+    initialSlide: 0
+  });
+
+  jQuery(this).find('.slick-arrow').wrapAll('<div class="global-carousel-slider-navigate-wrap"><div class="slider-arrow-holder"></div></div>');
+
+});
+
 
 
 

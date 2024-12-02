@@ -1446,6 +1446,67 @@
     }
     // advertise-module
 
+    // filter-module
+    .filter-module{
+        .filter-navigation-slider{
+            & > .main-wrap{
+                height: 50px;
+                border: 1px solid;
+                @include border-radius(15px);
+                overflow: hidden;
+
+                .the-slider{
+                    .slider-arrow-holder{
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        width: 115px;
+                        height: 48px;
+                        z-index: 1;
+                        background: transparent linear-gradient(90deg, #FFFFFF00 0%, #ffffff 32%, #ffffff 100%) 0% 0% no-repeat padding-box;
+                        border: none;
+                        border-radius: 0px;
+                        justify-content: right;
+
+                        button:first-child{
+                            border-top-left-radius: 15px;
+                            border-bottom-left-radius: 15px;
+                        }
+                    }
+                }
+
+                .item{
+                    height: 50px;
+                    line-height: 50px;
+                    background-color: transparent;
+                    font-size: 18px;
+                    font-weight: var(--site-primary-font-bold);
+                    min-width: 148px;
+                    text-align: center;
+                    @include border-radius(15px);
+
+                    &.current-item{
+                        background-color: black;
+                        color: white;
+                        
+
+                        &.slick-current{
+                            border-top-left-radius: 0px;
+                            border-bottom-left-radius: 0px;
+                        }
+                    }
+
+
+                    a{
+                        display: block;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+    // filter-module
+
 
 
 }
