@@ -1,0 +1,153 @@
+Design link:
+https://app.asana.com/0/1198978231362997/1208550244785454
+
+https://xd.adobe.com/view/90892751-86ac-4e04-8e40-fbe5bb99c1a5-c5da/
+
+https://xd.adobe.com/view/7da72a79-6732-4d69-9564-6299dd595d0b-28f4/
+
+
+Mobile
+https://xd.adobe.com/view/98162773-82cd-4afa-8b45-792adba87b5b-cd45/
+
+
+1) Design page 2: 24hrs
+
+2) Design page 3: 0hrs (with design page 2)
+
+3) Design page 4,5: 12hrs
+
+4) Design page 6: 8hrs
+
+5) Design page 7: 4hrs
+
+6) Design page 8: 4hrs
+
+7) Design page 9: 2hrs
+
+8) Design page 10: 1hr
+
+9) Design page 11: 5hrs
+
+10) Design page 12: 1hr
+
+11) Design page 13: 4hrs
+
+12) Design page 15: 8hrs
+
+13) Design page 16: 2hrs
+
+14) Design page 17: 2hrs
+
+15) Design page 18: 3hrs
+
+16) Design page 19: 2hrs
+
+17) Design page 20: 4hrs
+
+18) Design page 21: 2hrs
+
+19) Design page 22: 2hrs
+
+Desktop: 90hrs + 10hrs [multi graident and bg image option for teaser element, add new menu label in desktop, ]
+Mobile: 50hrs + 16hrs[mobile menu, ticketpage slider]
+
+
+
+Query for same content
+=================
+https://xd.adobe.com/view/7da72a79-6732-4d69-9564-6299dd595d0b-28f4/screen/b32f7ec2-872e-40dc-adc3-951019e819e8/specs/
+
+1) NACHHER
+
+query: previously here used a white image(handwerkskammer kassel) but in the new design there is color that's mean different image, so here need to update the content.
+
+
+
+2) TEXT MIT BILD
+
+## No issue, it will be done with the same content
+
+
+
+3) AKKORDEON
+
+## No issue, it will be done with the same content
+
+
+4) KADERLISTE
+
+## No issue, it will be done with the same content
+
+
+
+5) ANSPRECHPARTNER
+
+query:
+a) new content came with the stand alone image, need to insert text
+
+b) the stand alone image info was in rte in the previously, but in the new one we need to separate this as per design, so here client needs to insert content again
+
+
+
+6) DOWNLOADS
+query: where from the 01,02 numbering is coming, which was previously not in that content.
+
+
+Query for design
+=================
+
+1) the images with gradient and watermark should be readymade with gradient and watermark.
+
+2) MAGAZIN, PODCAST & CO page, design page 17, how will be the podcast detail page
+
+3) design page 15, what does it mean with the image icon in the caption, does it mean that there is a image gallery with the main image.
+
+
+
+Discussion with integrator
+===================
+I have discussed with the integrator, he told me that he can inherit old content with the new design and html structure, so client do not need to enter the sam content again. We will compare during html and implementation that if found any possible content like this.
+
+
+
+
+
+
+---------------------
+MTM (mt-melsungen)
+---------------------
+Compared (ref: https://xd.adobe.com/view/90892751-86ac-4e04-8e40-fbe5bb99c1a5-c5da/ with https://mt-melsungen.de/)
+
+01 -> Sitemap (INFORMATION ARCHITECTURE)
+02 -> Home page https://mt-melsungen.de/ 
+03 -> Menu
+04 -> ?
+05 -> ? https://mt-melsungen.de/tickets/einzeltickets
+06 -> https://mt-melsungen.de/news
+07 -> https://mt-melsungen.de/matchcenter/spielplaene
+08 -> ? https://mt-melsungen.de/matchcenter/tabellen
+09 -> https://mt-melsungen.de/matchcenter/statistiken
+10 -> ? https://mt-melsungen.de/teams/bundesliga
+11 -> ? https://mt-melsungen.de/teams/bundesliga
+12 -> ? 
+13 -> ? https://mt-melsungen.de/teams/bundesliga
+14 -> ?
+15 -> https://mt-melsungen.de/fans/einlaufkids
+16 -> https://mt-melsungen.de/fans/fanclubs
+17 -> https://mt-melsungen.de/fans/podcast
+18 -> https://mt-melsungen.de/fans/magazin
+19 -> https://mt-melsungen.de/fans/mediacenter
+20 -> https://mt-melsungen.de/die-mt/sponsoren
+21 -> https://mt-melsungen.de/die-mt/ansprechpartner 
+22 -> https://mt-melsungen.de/impressum
+---------------------
+
+
+
+
+Recording
+=====
+MT
+1. Menu sub head
+2. Only bunlesliga in tebbele
+3. Static banner image upload two image for desktop and responsive

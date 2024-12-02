@@ -1,0 +1,421 @@
+// Avenir Next Cyr
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Bold.eot');
+    src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+        url('../Fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Bold.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-ThinItalic.eot');
+    src: local('Avenir Next Cyr Thin Italic'), local('AvenirNextCyr-ThinItalic'),
+        url('../Fonts/AvenirNextCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-ThinItalic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-MediumItalic.eot');
+    src: local('Avenir Next Cyr Medium Italic'), local('AvenirNextCyr-MediumItalic'),
+        url('../Fonts/AvenirNextCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-MediumItalic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('../Fonts/AvenirNextCyr-UltraLightIt.eot');
+    src: local('Avenir Next Cyr Ultra Light Italic'), local('AvenirNextCyr-UltraLightIt'),
+        url('../Fonts/AvenirNextCyr-UltraLightIt.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-UltraLightIt.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-UltraLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Light.eot');
+    src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+        url('../Fonts/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Light.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Light.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Italic.eot');
+    src: local('Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'),
+        url('../Fonts/AvenirNextCyr-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Italic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Italic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-BoldItalic.eot');
+    src: local('Avenir Next Cyr Bold Italic'), local('AvenirNextCyr-BoldItalic'),
+        url('../Fonts/AvenirNextCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-BoldItalic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Heavy.eot');
+    src: local('Avenir Next Cyr Heavy'), local('AvenirNextCyr-Heavy'),
+        url('../Fonts/AvenirNextCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Heavy.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Heavy.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-HeavyItalic.eot');
+    src: local('Avenir Next Cyr Heavy Italic'), local('AvenirNextCyr-HeavyItalic'),
+        url('../Fonts/AvenirNextCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-HeavyItalic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Thin.eot');
+    src: local('Avenir Next Cyr Thin'), local('AvenirNextCyr-Thin'),
+        url('../Fonts/AvenirNextCyr-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Thin.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Thin.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Medium.eot');
+    src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+        url('../Fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Medium.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-DemiItalic.eot');
+    src: local('Avenir Next Cyr Demi Italic'), local('AvenirNextCyr-DemiItalic'),
+        url('../Fonts/AvenirNextCyr-DemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-DemiItalic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-DemiItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Demi.eot');
+    src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+        url('../Fonts/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Demi.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Demi.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-Regular.eot');
+    src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+        url('../Fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-Regular.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../Fonts/AvenirNextCyr-LightItalic.eot');
+    src: local('Avenir Next Cyr Light Italic'), local('AvenirNextCyr-LightItalic'),
+        url('../Fonts/AvenirNextCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-LightItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-LightItalic.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('../Fonts/AvenirNextCyr-UltraLight.eot');
+    src: local('Avenir Next Cyr Ultra Light'), local('AvenirNextCyr-UltraLight'),
+        url('../Fonts/AvenirNextCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/AvenirNextCyr-UltraLight.woff2') format('woff2'),
+        url('../Fonts/AvenirNextCyr-UltraLight.woff') format('woff'),
+        url('../Fonts/AvenirNextCyr-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+// Avenir Next Cyr
+
+
+
+
+
+
+// Sofia Sans Extra Condensed
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-Bold.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-Bold.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-Bold.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-Bold.svg#SofiaSansExtraCondensed-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-ExtraBold.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-ExtraBold.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-ExtraBold.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-ExtraBold.svg#SofiaSansExtraCondensed-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-ExtraLight.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-ExtraLight.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-ExtraLight.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-ExtraLight.svg#SofiaSansExtraCondensed-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-Black.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-Black.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-Black.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-Black.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-Black.svg#SofiaSansExtraCondensed-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-Light.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-Light.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-Light.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-Light.svg#SofiaSansExtraCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-Medium.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-Medium.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-Medium.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-Medium.svg#SofiaSansExtraCondensed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-Regular.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-Regular.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-Regular.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-Regular.svg#SofiaSansExtraCondensed-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-Thin.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-Thin.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-Thin.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-Thin.svg#SofiaSansExtraCondensed-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Sans Extra Condensed';
+    src: url('../Fonts/SofiaSansExtraCondensed-SemiBold.eot');
+    src: url('../Fonts/SofiaSansExtraCondensed-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/SofiaSansExtraCondensed-SemiBold.woff2') format('woff2'),
+        url('../Fonts/SofiaSansExtraCondensed-SemiBold.woff') format('woff'),
+        url('../Fonts/SofiaSansExtraCondensed-SemiBold.svg#SofiaSansExtraCondensed-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+// Sofia Sans Extra Condensed
+
+// stratos
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-ExtraBold.eot');
+    src: url('../Fonts/Stratos-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-ExtraBold.woff2') format('woff2'),
+        url('../Fonts/Stratos-ExtraBold.woff') format('woff'),
+        url('../Fonts/Stratos-ExtraBold.svg#Stratos-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-Bold.eot');
+    src: url('../Fonts/Stratos-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-Bold.woff2') format('woff2'),
+        url('../Fonts/Stratos-Bold.woff') format('woff'),
+        url('../Fonts/Stratos-Bold.svg#Stratos-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-Black.eot');
+    src: url('../Fonts/Stratos-Black.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-Black.woff2') format('woff2'),
+        url('../Fonts/Stratos-Black.woff') format('woff'),
+        url('../Fonts/Stratos-Black.svg#Stratos-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-ExtraLight.eot');
+    src: url('../Fonts/Stratos-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-ExtraLight.woff2') format('woff2'),
+        url('../Fonts/Stratos-ExtraLight.woff') format('woff'),
+        url('../Fonts/Stratos-ExtraLight.svg#Stratos-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-Light.eot');
+    src: url('../Fonts/Stratos-Light.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-Light.woff2') format('woff2'),
+        url('../Fonts/Stratos-Light.woff') format('woff'),
+        url('../Fonts/Stratos-Light.svg#Stratos-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-Medium.eot');
+    src: url('../Fonts/Stratos-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-Medium.woff2') format('woff2'),
+        url('../Fonts/Stratos-Medium.woff') format('woff'),
+        url('../Fonts/Stratos-Medium.svg#Stratos-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-Regular.eot');
+    src: url('../Fonts/Stratos-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-Regular.woff2') format('woff2'),
+        url('../Fonts/Stratos-Regular.woff') format('woff'),
+        url('../Fonts/Stratos-Regular.svg#Stratos-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-SemiBold.eot');
+    src: url('../Fonts/Stratos-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-SemiBold.woff2') format('woff2'),
+        url('../Fonts/Stratos-SemiBold.woff') format('woff'),
+        url('../Fonts/Stratos-SemiBold.svg#Stratos-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos';
+    src: url('../Fonts/Stratos-Thin.eot');
+    src: url('../Fonts/Stratos-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Stratos-Thin.woff2') format('woff2'),
+        url('../Fonts/Stratos-Thin.woff') format('woff'),
+        url('../Fonts/Stratos-Thin.svg#Stratos-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// stratos
+
