@@ -62,7 +62,7 @@
                     border: none;
                     background-color: transparent;
                     &::placeholder{
-                        color: black;
+                        color: var(--site-text-color);
                         opacity: 0.5;
                     }
                 }
@@ -385,7 +385,7 @@
                         &:hover, &.active{
                             & > a{
                                 background-color: white;
-                                color: black;
+                                color: var(--site-text-color);
                                 
                             }
                         }

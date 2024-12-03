@@ -333,6 +333,10 @@ jQuery('.main-nav.slide-action').addClass('loaded fadeOutUp');
 
   jQuery('.pricing-box-module .pricing-header').matchHeight({byRow: false});
 
+  jQuery('.news-widget-match-height-type-1 .news-title').matchHeight();
+  jQuery('.news-widget-match-height-type-1').matchHeight({byRow: false});
+  
+
 
 
 
