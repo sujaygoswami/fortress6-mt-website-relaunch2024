@@ -10673,6 +10673,10 @@ html, body {
     row-gap: 20px; }
     .mt-relaunch .my-row.default-row.has-margin-bottom > .my-col {
       margin-bottom: 20px; }
+    .mt-relaunch .my-row.default-row.md-row-gap {
+      row-gap: 50px; }
+      .mt-relaunch .my-row.default-row.md-row-gap.has-margin-bottom > .my-col {
+        margin-bottom: 50px; }
     .mt-relaunch .my-row.default-row.lg-row-gap {
       row-gap: 70px; }
       .mt-relaunch .my-row.default-row.lg-row-gap.has-margin-bottom > .my-col {
@@ -10758,6 +10762,10 @@ html, body {
     margin-bottom: 20px; }
   .mt-relaunch .element-gap.element-gap-type-6 {
     margin-bottom: 100px; }
+  .mt-relaunch .element-gap.element-gap-type-7 {
+    margin-bottom: 60px; }
+  .mt-relaunch .element-gap.element-gap-type-8 {
+    margin-bottom: 30px; }
   .mt-relaunch .element-gap:last-child {
     margin-bottom: 0px !important; }
   .mt-relaunch .site-btn {
@@ -10805,6 +10813,9 @@ html, body {
     .mt-relaunch .site-btn.down-arrow-icon-light {
       background-image: url(../Images/light-down-arrow.svg) !important;
       background-size: 16.23px !important; }
+    .mt-relaunch .site-btn.download-icon-light {
+      background-image: url(../Images/download-icon-light.svg) !important;
+      background-size: 16.81px !important; }
     .mt-relaunch .site-btn.block-btn {
       display: block;
       width: 100%; }
@@ -10852,6 +10863,9 @@ html, body {
     .mt-relaunch p.md-size {
       font-size: 16px;
       line-height: 25px; }
+    .mt-relaunch p.sm-size {
+      font-size: 15px;
+      line-height: 20px; }
   .mt-relaunch .entry ul {
     list-style: none;
     margin: 0px;
@@ -11018,6 +11032,8 @@ html, body {
       min-width: 115px; }
     .mt-relaunch .match-table.view-1.layout-2 table thead tr th.sm-size {
       min-width: 47px; }
+    .mt-relaunch .match-table.view-1.layout-2 table thead tr th.sm-size-plus {
+      min-width: 50px; }
   .mt-relaunch .match-table.view-1.layout-2 table tbody.layout-2.no-pad tr td {
     padding-left: 0px;
     padding-right: 0px; }
@@ -11089,6 +11105,10 @@ html, body {
         min-width: 47px;
         height: 50px;
         line-height: 50px; }
+        .mt-relaunch .match-table.view-1.layout-2 .match-schedule .match-timing .time-box.min-size {
+          min-width: 40px; }
+        .mt-relaunch .match-table.view-1.layout-2 .match-schedule .match-timing .time-box.md-size {
+          min-width: 75px; }
   .mt-relaunch .match-table.view-1.layout-2 tbody tr td {
     background-color: var(--site-grey-type-primary); }
     .mt-relaunch .match-table.view-1.layout-2 tbody tr td.serial {
@@ -11186,7 +11206,8 @@ html, body {
     background-position: center top; }
   .mt-relaunch .teaser-module .teaser-gradient {
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    pointer-events: none; }
     .mt-relaunch .teaser-module .teaser-gradient.set-back {
       background-repeat: no-repeat;
       background-size: cover;
@@ -11199,7 +11220,7 @@ html, body {
         height: auto; }
     .mt-relaunch .teaser-module .teaser-gradient.pos-1 {
       left: 0px;
-      bottom: 0px; }
+      bottom: -10px; }
   .mt-relaunch .teaser-module .teaser-product-img {
     position: absolute;
     width: 100%;
@@ -11436,6 +11457,20 @@ html, body {
     text-align: center; }
     .mt-relaunch .partners-module img {
       display: inline-block; }
+  .mt-relaunch .static-banner-module.type-2 .banner-img:after {
+    height: 277px;
+    background-image: url(../Images/static-banner-type-2-gradient.svg);
+    z-index: 20; }
+  .mt-relaunch .static-banner-module .banner-product {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    display: grid;
+    align-items: end;
+    justify-content: center; }
   .mt-relaunch .static-banner-module .banner-img {
     min-height: 594px;
     position: relative; }
@@ -11473,7 +11508,7 @@ html, body {
     font-style: italic;
     padding-right: 60px;
     padding-bottom: 56px;
-    z-index: 2; }
+    z-index: 30; }
     .mt-relaunch .static-banner-module .banner-title span {
       display: block;
       text-align: right; }
@@ -11795,6 +11830,12 @@ html, body {
     -ms-border-radius: 15px;
     border-radius: 15px;
     overflow: hidden; }
+    .mt-relaunch .site-tab-nav .nav-item:first-child button.nav-link {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px; }
+    .mt-relaunch .site-tab-nav .nav-item:last-child button.nav-link {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px; }
     .mt-relaunch .site-tab-nav button.nav-link {
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
@@ -11809,12 +11850,6 @@ html, body {
       line-height: 50px;
       background-color: transparent;
       text-align: center; }
-      .mt-relaunch .site-tab-nav button.nav-link:first-child {
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px; }
-      .mt-relaunch .site-tab-nav button.nav-link:last-child {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px; }
       .mt-relaunch .site-tab-nav button.nav-link.active {
         background-color: black;
         color: white; }
@@ -11822,11 +11857,29 @@ html, body {
     border: 0px;
     width: 100%; }
     .mt-relaunch .light-table-module table td {
-      padding: 0 12px; }
+      padding: 5px 12px; }
       .mt-relaunch .light-table-module table td:first-child {
         padding-left: 0px; }
       .mt-relaunch .light-table-module table td:last-child {
         padding-right: 0px; }
+  .mt-relaunch .player-card-module .card-number span {
+    display: inline-block;
+    font-size: 81px;
+    line-height: 70px;
+    font-family: var(--site-secondary-font);
+    font-weight: var(--site-secondary-font-bold);
+    color: var(--site-grey-type-primary-dark); }
+  .mt-relaunch .player-card-module .player-info {
+    margin-bottom: 10px; }
+    .mt-relaunch .player-card-module .player-info:last-child {
+      margin-bottom: 0px; }
+  .mt-relaunch .player-card-module .card-thumb {
+    background-color: white; }
+    .mt-relaunch .player-card-module .card-thumb > .main-wrap {
+      height: 256px;
+      display: grid;
+      justify-content: center;
+      align-items: end; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }
