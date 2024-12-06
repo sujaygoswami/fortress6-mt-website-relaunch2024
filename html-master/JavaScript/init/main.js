@@ -335,6 +335,8 @@ jQuery('.main-nav.slide-action').addClass('loaded fadeOutUp');
 
   jQuery('.news-widget-match-height-type-1 .news-title').matchHeight();
   jQuery('.news-widget-match-height-type-1').matchHeight({byRow: false});
+
+  jQuery('.download-module .download-item').matchHeight();
   
 
 
