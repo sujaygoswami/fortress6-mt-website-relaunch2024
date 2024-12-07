@@ -10659,6 +10659,8 @@ html, body {
     flex-grow: 1; }
   .mt-relaunch .grid-flex-v-align-center {
     align-items: center; }
+  .mt-relaunch .grid-flex-v-align-end {
+    align-items: end; }
   .mt-relaunch .grid-flex-justify-content-center {
     justify-content: center; }
   .mt-relaunch .inset-pad-type-1 {
@@ -10675,6 +10677,10 @@ html, body {
     row-gap: 20px; }
     .mt-relaunch .my-row.default-row.has-margin-bottom > .my-col {
       margin-bottom: 20px; }
+    .mt-relaunch .my-row.default-row.sm-row-gap {
+      row-gap: 30px; }
+      .mt-relaunch .my-row.default-row.sm-row-gap.has-margin-bottom > .my-col {
+        margin-bottom: 30px; }
     .mt-relaunch .my-row.default-row.md-row-gap {
       row-gap: 50px; }
       .mt-relaunch .my-row.default-row.md-row-gap.has-margin-bottom > .my-col {
@@ -10709,7 +10715,7 @@ html, body {
       padding-left: 58px;
       padding-right: 58px; }
     .mt-relaunch .my-row.extra-lg-row.has-margin-bottom > .my-col {
-      margin-bottom: 100px; }
+      margin-bottom: 116px; }
   .mt-relaunch .my-row.extra-lg-less {
     margin-left: -45px;
     margin-right: -45px;
@@ -11234,6 +11240,9 @@ html, body {
     .mt-relaunch .teaser-module .teaser-gradient.pos-1 {
       left: 0px;
       bottom: -10px; }
+    .mt-relaunch .teaser-module .teaser-gradient.pos-2 {
+      left: 0px;
+      bottom: 0px; }
   .mt-relaunch .teaser-module .teaser-product-img {
     position: absolute;
     width: 100%;
@@ -12012,6 +12021,27 @@ html, body {
     margin-bottom: 5px; }
     .mt-relaunch .download-module .download-primary:last-child {
       margin-bottom: 0px; }
+  .mt-relaunch .employee-card-module .employee-basic-info {
+    margin-bottom: 12px; }
+    .mt-relaunch .employee-card-module .employee-basic-info:last-child {
+      margin-bottom: 0px; }
+    .mt-relaunch .employee-card-module .employee-basic-info p {
+      margin-bottom: 0px; }
+  .mt-relaunch .employee-card-module .employee-dp {
+    margin-bottom: 30px; }
+    .mt-relaunch .employee-card-module .employee-dp:last-child {
+      margin-bottom: 0px; }
+  .mt-relaunch .iconic-simple-info {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    margin-bottom: 17px; }
+    .mt-relaunch .iconic-simple-info .icon {
+      width: 20px; }
+      .mt-relaunch .iconic-simple-info .icon img {
+        width: 100%; }
+    .mt-relaunch .iconic-simple-info .info p {
+      line-height: normal; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }

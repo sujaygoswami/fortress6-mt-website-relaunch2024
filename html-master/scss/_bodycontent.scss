@@ -71,6 +71,10 @@
         align-items: center;
     }
 
+    .grid-flex-v-align-end{
+        align-items: end;
+    }
+
     .grid-flex-justify-content-center{
         justify-content: center;
     }
@@ -98,6 +102,16 @@
             &.has-margin-bottom{
                 & > .my-col{
                     margin-bottom: $grid-gutter-width;
+                }
+            }
+
+
+            &.sm-row-gap{
+                row-gap: 30px;
+                &.has-margin-bottom{
+                    & > .my-col{
+                        margin-bottom: 30px;
+                    }
                 }
             }
 
@@ -166,7 +180,7 @@
 
             &.has-margin-bottom{
                 & > .my-col{
-                    margin-bottom: 100px;
+                    margin-bottom: 116px;
                 }
             }
         }
@@ -1038,6 +1052,10 @@
             &.pos-1{
                 left: 0px;
                 bottom: -10px;
+            }
+            &.pos-2{
+                left: 0px;
+                bottom: 0px;
             }
         }
 
@@ -2201,6 +2219,49 @@
         }
     }
     // download-module
+
+    // employee-card-module
+    .employee-card-module{
+        .employee-basic-info{
+            margin-bottom: 12px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            p{
+                margin-bottom: 0px;
+            }
+        }
+
+        .employee-dp{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    // employee-card-module
+
+    // iconic-simple-info
+    .iconic-simple-info{
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        margin-bottom: 17px;
+
+        .icon{
+            width: 20px;
+            img{
+                width: 100%;
+            }
+        }
+
+        .info{
+            p{
+                line-height: normal;
+            }
+        }
+    }
+    // iconic-simple-info
 
 
 
