@@ -188,6 +188,8 @@ if ($globalCarousel.length) {
   });
 }
 
+});
+
 jQuery('.global-carousel-type-1').slick({
   infinite: true,
   slidesToShow: 2,
@@ -211,7 +213,8 @@ jQuery('.global-carousel-slider-navigate-wrap').each(function(){
   jQuery(this).detach().appendTo(NAVIGATEPLACE);
 });
 
-});
+
+
 
 // menu trigger
 jQuery('.header-menu .menu-trigger').click(function(){
