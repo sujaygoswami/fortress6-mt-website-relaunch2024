@@ -263,6 +263,13 @@ jQuery('.filter-navigation-slider .the-slider').each(function(){
 });
 
 
+// item-with-hidden-check-radio
+  jQuery('.item-with-hidden-check-radio input').click(function(){
+    jQuery(this).parent().trigger('click');
+  });
+
+
+
 
 
 

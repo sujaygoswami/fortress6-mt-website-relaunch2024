@@ -10616,6 +10616,8 @@ html, body {
 
 .mt-relaunch {
   padding: 150px 0 20px 0; }
+  .mt-relaunch .column-uplift-type-1 {
+    margin-top: 75px; }
   .mt-relaunch .desktop-reverse-res-1-row-reverse {
     flex-direction: row-reverse; }
   .mt-relaunch .full-width-img {
@@ -10712,7 +10714,7 @@ html, body {
   .mt-relaunch .my-row.extra-lg-row {
     margin-left: -58px;
     margin-right: -58px;
-    row-gap: 100px; }
+    row-gap: 116px; }
     .mt-relaunch .my-row.extra-lg-row .my-col {
       padding-left: 58px;
       padding-right: 58px; }
@@ -10745,6 +10747,15 @@ html, body {
       padding-right: 17px; }
     .mt-relaunch .my-row.md-row-plus.has-margin-bottom > .my-col {
       margin-bottom: 35px; }
+  .mt-relaunch .my-row.tiny-row {
+    margin-left: -6px;
+    margin-right: -6px;
+    row-gap: 12px; }
+    .mt-relaunch .my-row.tiny-row .my-col {
+      padding-left: 6px;
+      padding-right: 6px; }
+    .mt-relaunch .my-row.tiny-row.has-margin-bottom > .my-col {
+      margin-bottom: 12px; }
   .mt-relaunch .global-border-radius-all {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -11284,11 +11295,17 @@ html, body {
     width: 100%;
     left: 0px;
     bottom: 0px;
-    text-align: center; }
+    text-align: center;
+    justify-content: center; }
     .mt-relaunch .teaser-module .teaser-product-img.pull-text-right {
-      text-align: right; }
+      text-align: right;
+      justify-content: right; }
     .mt-relaunch .teaser-module .teaser-product-img.pull-text-left {
-      text-align: left; }
+      text-align: left;
+      justify-content: left; }
+    .mt-relaunch .teaser-module .teaser-product-img.pull-text-center {
+      text-align: center;
+      justify-content: center; }
     .mt-relaunch .teaser-module .teaser-product-img img {
       display: inline-block;
       vertical-align: bottom; }
@@ -11349,8 +11366,7 @@ html, body {
       top: 0px;
       padding: 57px 24px 57px 24px; }
       .mt-relaunch .teaser-module .teaser-title.pos-type-4.view-2 {
-        padding: 30px 24px 30px 24px;
-        max-width: 50%; }
+        padding: 30px 24px 30px 24px; }
     .mt-relaunch .teaser-module .teaser-title span {
       display: inline-block; }
     .mt-relaunch .teaser-module .teaser-title.lg-size {
@@ -12046,7 +12062,8 @@ html, body {
       width: 100%; }
       .mt-relaunch .player-detail-info-module .info-table table tr td {
         padding: 10px 10px;
-        vertical-align: top; }
+        vertical-align: top;
+        min-width: 230px; }
         .mt-relaunch .player-detail-info-module .info-table table tr td.pwd-by img {
           padding-left: 55px; }
         .mt-relaunch .player-detail-info-module .info-table table tr td:first-child {
@@ -12105,6 +12122,22 @@ html, body {
     width: 100%;
     height: auto;
     opacity: 0; }
+  .mt-relaunch .collage-content-module-layout-1 {
+    display: grid;
+    justify-content: right; }
+    .mt-relaunch .collage-content-module-layout-1 > .main-wrap {
+      max-width: 416px;
+      position: relative;
+      padding-left: 70px; }
+      .mt-relaunch .collage-content-module-layout-1 > .main-wrap .water-mark {
+        position: absolute;
+        z-index: 1;
+        bottom: 0px;
+        left: 0px; }
+    .mt-relaunch .collage-content-module-layout-1 .collage-grid {
+      display: flex;
+      column-gap: 12px;
+      row-gap: 12px; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }

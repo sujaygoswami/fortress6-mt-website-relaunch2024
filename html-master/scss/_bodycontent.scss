@@ -1,6 +1,9 @@
 .mt-relaunch {
     padding: 150px 0 $grid-gutter-width 0;
     // basic
+    .column-uplift-type-1{
+        margin-top: 75px;
+    }
     .desktop-reverse-res-1-row-reverse{
         flex-direction: row-reverse;
     }
@@ -174,7 +177,7 @@
         &.extra-lg-row{
             margin-left: -58px;
             margin-right: -58px;
-            row-gap: 100px;
+            row-gap: 116px;
 
             .my-col{
                 padding-left: 58px;
@@ -235,6 +238,23 @@
             &.has-margin-bottom{
                 & > .my-col{
                     margin-bottom: 35px;
+                }
+            }
+        }
+
+        &.tiny-row{
+            margin-left: -6px;
+            margin-right: -6px;
+            row-gap: 12px;
+
+            .my-col{
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+
+            &.has-margin-bottom{
+                & > .my-col{
+                    margin-bottom: 12px;
                 }
             }
         }
@@ -1115,11 +1135,18 @@
             left: 0px;
             bottom: 0px;
             text-align: center;
+            justify-content: center;
             &.pull-text-right{
                 text-align: right;
+                justify-content: right;
             }
             &.pull-text-left{
                 text-align: left;
+                justify-content: left;
+            }
+            &.pull-text-center{
+                text-align: center;
+                justify-content: center;
             }
 
             img{
@@ -1212,7 +1239,6 @@
 
                 &.view-2{
                     padding: 30px 24px 30px 24px;
-                    max-width: 50%;
                 }
             }
 
@@ -2243,6 +2269,7 @@
                 td{
                     padding: 10px 10px;
                     vertical-align: top;
+                    min-width: 230px;
 
                     &.pwd-by{
                         img{
@@ -2362,6 +2389,31 @@
         }
     }
     // site-gallery-module
+
+    // collage-content-module-layout-1
+    .collage-content-module-layout-1{
+        display: grid;
+        justify-content: right;
+        & > .main-wrap{
+            max-width: 416px;
+            position: relative;
+            padding-left: 70px;
+            
+            .water-mark{
+                position: absolute;
+                z-index: 1;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+
+        .collage-grid{
+            display: flex;
+            column-gap: 12px;
+            row-gap: 12px;
+        }
+    }
+    // collage-content-module-layout-1
 
 
 
