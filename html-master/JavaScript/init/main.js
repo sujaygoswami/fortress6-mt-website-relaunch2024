@@ -160,7 +160,7 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
 
 
 // global carousel
-jQuery('.global-carousel').each(function(){
+jQuery('.global-carousel:not(.counter-hidden)').each(function(){
 
 
 var $globalCarousel = jQuery(this);
@@ -200,6 +200,11 @@ jQuery('.global-carousel-type-2').slick({
   slidesToShow: 3,
   slidesToScroll: 1
 });
+jQuery('.global-carousel-type-3').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+});
 
 jQuery('.type-arrow-pagination-view-1').each(function(){
   jQuery(this).find('.slick-arrow').wrapAll('<div class="slider-arrow-holder"></div>');
@@ -212,6 +217,8 @@ jQuery('.global-carousel-slider-navigate-wrap').each(function(){
   var NAVIGATEPLACE = jQuery(this).parents('section').find('.carousel-navigate-with-header');
   jQuery(this).detach().appendTo(NAVIGATEPLACE);
 });
+
+
 
 
 

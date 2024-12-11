@@ -10667,6 +10667,10 @@ html, body {
     align-items: end; }
   .mt-relaunch .grid-flex-justify-content-center {
     justify-content: center; }
+  .mt-relaunch .grid-flex-justify-content-left {
+    justify-content: left; }
+  .mt-relaunch .grid-flex-justify-content-right {
+    justify-content: right; }
   .mt-relaunch .inset-pad-type-1 {
     padding: 20px; }
   .mt-relaunch .pos-relative {
@@ -10871,6 +10875,10 @@ html, body {
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 25px; }
+  .mt-relaunch h5, .mt-relaunch .h5 {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 25px; }
   .mt-relaunch h6, .mt-relaunch .h6 {
     font-size: 25px;
     line-height: normal;
@@ -10884,6 +10892,10 @@ html, body {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 30px; }
+    .mt-relaunch p.para-head {
+      font-size: 20px;
+      line-height: 34px;
+      margin-bottom: 6px; }
     .mt-relaunch p.md-size {
       font-size: 16px;
       line-height: 25px; }
@@ -10996,9 +11008,9 @@ html, body {
   .mt-relaunch .content-organiser-module-type-1 .base-height {
     height: var(--start-page-content-organiser-base-height); }
   .mt-relaunch .content-organiser-module-type-1 .lg-box {
-    width: 530px; }
+    width: 25.99469%; }
   .mt-relaunch .content-organiser-module-type-1 .sm-box {
-    width: 490px; }
+    width: 24.08488%; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-lg-height {
     height: 40%; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height {
@@ -11031,6 +11043,8 @@ html, body {
     width: 100%;
     left: 0px;
     bottom: 0px; }
+  .mt-relaunch .global-post-info .entry:not(.flex-grow):first-child {
+    margin-left: auto; }
   .mt-relaunch .global-post-info .entry p {
     font-size: 13px;
     line-height: normal;
@@ -11049,7 +11063,8 @@ html, body {
     .mt-relaunch .news-listging-widget.block-item-view .news-thumb:last-child {
       margin-bottom: 0px; }
   .mt-relaunch .news-listging-widget.block-item-view .news-excerpt {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
   .mt-relaunch .news-listging-widget.block-item-view .news-title {
     max-width: 100%;
     padding-bottom: 0px;
@@ -11057,12 +11072,24 @@ html, body {
     .mt-relaunch .news-listging-widget.block-item-view .news-title:last-child {
       margin-bottom: 0px; }
   .mt-relaunch .news-listging-widget .news-thumb {
-    width: 138px; }
+    width: 39%; }
     .mt-relaunch .news-listging-widget .news-thumb img {
       width: 100%;
       height: auto; }
+    .mt-relaunch .news-listging-widget .news-thumb.set-back {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: cover; }
+      .mt-relaunch .news-listging-widget .news-thumb.set-back > img {
+        display: block;
+        opacity: 0; }
   .mt-relaunch .news-listging-widget .news-excerpt {
-    max-width: 62%; }
+    width: 61%; }
   .mt-relaunch .news-listging-widget.view-1 {
     display: flex;
     column-gap: 20px;
@@ -11299,10 +11326,12 @@ html, body {
     justify-content: center; }
     .mt-relaunch .teaser-module .teaser-product-img.pull-text-right {
       text-align: right;
-      justify-content: right; }
+      justify-content: right;
+      padding-right: 50px; }
     .mt-relaunch .teaser-module .teaser-product-img.pull-text-left {
       text-align: left;
-      justify-content: left; }
+      justify-content: left;
+      padding-left: 50px; }
     .mt-relaunch .teaser-module .teaser-product-img.pull-text-center {
       text-align: center;
       justify-content: center; }
@@ -11496,6 +11525,8 @@ html, body {
         opacity: 0.3; }
         .mt-relaunch .global-carousel-slider-navigate-wrap .slider__counter span:first-child {
           opacity: 1; }
+  .mt-relaunch .global-carousel .slick-track {
+    min-width: 100%; }
   .mt-relaunch .global-carousel .slick-list {
     margin-left: -10px;
     margin-right: -10px; }
@@ -12138,6 +12169,20 @@ html, body {
       display: flex;
       column-gap: 12px;
       row-gap: 12px; }
+  .mt-relaunch .partner-logo-module .main-wrap {
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center; }
+  .mt-relaunch .partner-logo-module img {
+    width: 100%;
+    height: auto; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }
