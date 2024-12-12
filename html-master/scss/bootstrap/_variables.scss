@@ -487,7 +487,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 1024px,
   xl: 1200px,
-  xxlmin: 1500px,
+  xxlmin: 1280px,
   xxl: 1600px
 ) !default;
 // scss-docs-end grid-breakpoints
@@ -505,8 +505,8 @@ $container-max-widths: (
   sm: 100%,
   md: 100%,
   lg: 100%,
-  xl: 1120px,
-  xxlmin: 1400px,
+  xl: 100%,
+  xxlmin: 1300px,
   xxl: 1480px
 ) !default;
 // scss-docs-end container-max-widths

@@ -276,6 +276,11 @@ jQuery('.filter-navigation-slider .the-slider').each(function(){
   });
 
 
+// player-detail-info-module 
+jQuery('.player-detail-info-module .info-table.parent-table table').each(function(){
+  var WIDTH = jQuery(this).width();
+  jQuery(this).parents('.player-detail-info').find('.info-table.child-table table').width(WIDTH);
+});
 
 
 

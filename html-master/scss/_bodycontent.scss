@@ -623,12 +623,19 @@
 
         
         .lg-box{
-            width: 490px / 1885px * 100%;
+            width: 35%;
+            @media screen and (min-width: $xxl) {
+                width: 490px / 1885px * 100%;
+            }
+            
         }
 
 
         .sm-box{
-            width: 454px / 1885px * 100%;
+            width: 30%;
+            @media screen and (min-width: $xxl) {
+                width: 454px / 1885px * 100%;
+            }
         }
 
         .inside-widget-box-lg-height{
@@ -1297,8 +1304,13 @@
                 line-height: 69px;
             }
             &.md-less-size{
-                font-size: 47px;
-                line-height: 67px;
+                font-size: 40px;
+                line-height: 60px;
+                @media screen and (min-width: $xxl){
+                    font-size: 47px;
+                    line-height: 67px;
+                }
+                
             }
             &.md-less-size-less{
                 font-size: 42px;
@@ -2311,11 +2323,7 @@
                     vertical-align: top;
                     min-width: 230px;
 
-                    &.pwd-by{
-                        img{
-                            padding-left: 55px;
-                        }
-                    }
+                    
 
                     &:first-child{
                         padding-left: 0px;

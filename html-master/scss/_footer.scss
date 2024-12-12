@@ -17,8 +17,13 @@
             .footer-social-links{
                 display: flex;
                 align-items: center;
-                column-gap: 56px;
-                row-gap: 56px;
+                column-gap: 35px;
+                row-gap: 35px;
+                @media screen and (min-width: $xxl){
+                    column-gap: 56px;
+                    row-gap: 56px;
+                }
+                
             }
 
             .footer-site-menu{
