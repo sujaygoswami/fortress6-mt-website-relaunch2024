@@ -283,6 +283,10 @@ jQuery('.player-detail-info-module .info-table.parent-table table').each(functio
 });
 
 
+// primary btn
+jQuery('.primary-btn').addClass('site-btn');
+
+
 
 
 
