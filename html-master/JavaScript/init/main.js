@@ -287,8 +287,12 @@ jQuery('.player-detail-info-module .info-table.parent-table table').each(functio
 jQuery('.primary-btn').addClass('site-btn');
 jQuery('.content-btn').addClass('site-btn primary-btn no-default-arrow down-arrow-icon-light anchor-link');
 jQuery('.download-btn').addClass('site-btn primary-btn no-default-arrow download-icon-light');
+jQuery('.download-btn').attr('download', 'download');
 
 
+// reset typo3 default setup
+jQuery('figure.table').removeClass('table');
+jQuery('.pricing-content table').find('th, td').wrapInner('<p></p>');
 
 
 

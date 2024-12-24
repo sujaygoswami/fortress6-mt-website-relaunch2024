@@ -11804,6 +11804,8 @@ html, body {
       padding-right: 10px;
       margin-bottom: 15px;
       padding-top: 0px; }
+  .mt-relaunch .pricing-box-module .pricing-content figure {
+    margin: 0px; }
   .mt-relaunch .pricing-box-module .pricing-content table {
     width: 100%;
     border: 0px; }
