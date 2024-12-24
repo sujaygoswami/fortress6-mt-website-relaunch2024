@@ -12197,6 +12197,52 @@ html, body {
   .mt-relaunch .partner-logo-module img {
     width: 100%;
     height: auto; }
+  .mt-relaunch .frame-type-form_formframework > form {
+    padding: 40px;
+    background-color: var(--site-grey-type-primary);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px; }
+    .mt-relaunch .frame-type-form_formframework > form .form-check {
+      margin-bottom: 10px; }
+      .mt-relaunch .frame-type-form_formframework > form .form-check:last-child {
+        margin-bottom: 0px; }
+      .mt-relaunch .frame-type-form_formframework > form .form-check input:not(.form-check-input) {
+        margin-left: -1.1em;
+        margin-right: 0.5em; }
+    .mt-relaunch .frame-type-form_formframework > form .form-check-label {
+      font-size: 18px;
+      line-height: normal; }
+    .mt-relaunch .frame-type-form_formframework > form > .row, .mt-relaunch .frame-type-form_formframework > form > .form-group, .mt-relaunch .frame-type-form_formframework > form > .clearfix {
+      margin-bottom: 44px; }
+      .mt-relaunch .frame-type-form_formframework > form > .row:last-child, .mt-relaunch .frame-type-form_formframework > form > .form-group:last-child, .mt-relaunch .frame-type-form_formframework > form > .clearfix:last-child {
+        margin-bottom: 0px; }
+  .mt-relaunch .frame-type-form_formframework .form-label {
+    font-size: 15px;
+    line-height: normal;
+    font-weight: var(--site-primary-font-bold);
+    margin-bottom: 14px; }
+  .mt-relaunch .frame-type-form_formframework .input .form-control {
+    border: 1px solid black;
+    height: 50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: var(--site-primary-font-medium);
+    color: black;
+    line-height: normal;
+    width: 100%; }
+    .mt-relaunch .frame-type-form_formframework .input .form-control.xxlarge {
+      height: 75px;
+      resize: vertical; }
+    .mt-relaunch .frame-type-form_formframework .input .form-control::placeholder {
+      color: black;
+      opacity: 0.5; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }

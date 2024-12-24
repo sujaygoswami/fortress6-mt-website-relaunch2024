@@ -293,6 +293,9 @@ jQuery('.download-btn').attr('download', 'download');
 // reset typo3 default setup
 jQuery('figure.table').removeClass('table');
 jQuery('.pricing-content table').find('th, td').wrapInner('<p></p>');
+jQuery('.frame-type-form_formframework .form-navigation button').addClass('site-btn primary-btn');
+jQuery('.frame-type-form_formframework .form-navigation button').removeClass('btn btn-primary');
+
 
 
 
@@ -376,6 +379,7 @@ jQuery('.main-nav.slide-action').addClass('loaded fadeOutUp');
 
 
 // adapt-height-parent-50
+jQuery('.adapt-height').parent('.the-main-module').addClass('adapt-height-parent-50-default-grid adapt-height-default-grid');
 jQuery('.adapt-height-parent-50-default-grid').each(function(){
   var HEIGHT = jQuery(this).height();
   jQuery(this).find('.adapt-height').height((HEIGHT/2) - 10);

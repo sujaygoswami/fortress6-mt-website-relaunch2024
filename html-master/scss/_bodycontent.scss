@@ -2492,6 +2492,73 @@
     }
     // partner-logo-module
 
+    // frame-type-form_formframework
+    .frame-type-form_formframework{
+        & > form{
+            padding: 40px;
+            background-color: var(--site-grey-type-primary);
+            @include border-radius(15px);
+
+            .form-check{
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+
+                input:not(.form-check-input){
+                    margin-left: -1.1em;
+                    margin-right: 0.5em;
+                }
+            }
+            .form-check-label{
+                font-size: 18px;
+                line-height: normal;
+            }
+
+            & > .row, & > .form-group, & > .clearfix{
+                margin-bottom: 44px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .form-label{
+            font-size: 15px;
+            line-height: normal;
+            font-weight: var(--site-primary-font-bold);
+            margin-bottom: 14px;
+        }
+
+        .input{
+            .form-control{
+                border: 1px solid black;
+                height: 50px;
+                @include border-radius(10px);
+                padding: 0 20px;
+                background-color: white;
+                font-size: 18px;
+                font-weight: var(--site-primary-font-medium);
+                color: black;
+                line-height: normal;
+                width: 100%;
+
+                &.xxlarge{
+                    height: 75px;
+                    resize: vertical;
+                }
+
+                &::placeholder{
+                    color: black;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        
+    }
+    // frame-type-form_formframework
+
 
 
 }
