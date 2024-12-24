@@ -285,6 +285,7 @@ jQuery('.player-detail-info-module .info-table.parent-table table').each(functio
 
 // primary btn
 jQuery('.primary-btn').addClass('site-btn');
+jQuery('.content-btn').addClass('site-btn primary-btn no-default-arrow down-arrow-icon-light anchor-link');
 
 
 
