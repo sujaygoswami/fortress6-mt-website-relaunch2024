@@ -2,7 +2,7 @@
 // Basic Bootstrap table
 //
 
-.table {
+.table, .contenttable {
   // Reset needed for nesting tables
   --#{$prefix}table-color-type: initial;
   --#{$prefix}table-bg-type: initial;

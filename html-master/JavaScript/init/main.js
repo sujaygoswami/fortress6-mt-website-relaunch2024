@@ -116,7 +116,8 @@ jQuery(window).scroll(function () {
 
 
 
-
+// very begining run
+jQuery('.no-default-table').find('.contenttable').removeClass('contenttable');
 
 
 
