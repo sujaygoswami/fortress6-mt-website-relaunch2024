@@ -10906,6 +10906,20 @@ html, body {
     .mt-relaunch p.sm-size {
       font-size: 15px;
       line-height: 20px; }
+  .mt-relaunch .entry td {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px; }
+    .mt-relaunch .entry td.para-head {
+      font-size: 20px;
+      line-height: 34px;
+      margin-bottom: 6px; }
+    .mt-relaunch .entry td.md-size {
+      font-size: 16px;
+      line-height: 25px; }
+    .mt-relaunch .entry td.sm-size {
+      font-size: 15px;
+      line-height: 20px; }
   .mt-relaunch .entry ul {
     list-style: none;
     margin: 0px;
