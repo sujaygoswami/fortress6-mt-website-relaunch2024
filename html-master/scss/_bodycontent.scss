@@ -42,41 +42,44 @@
         }
     }
 
-    .section-bottom-gap-1{
-        margin-bottom: 130px;
+    @media screen and (min-width: $xxlmin) {
+        .section-bottom-gap-1{
+            margin-bottom: 130px;
+        }
+        .section-bottom-gap-2{
+            margin-bottom: 100px;
+        }
+        .section-bottom-gap-3{
+            margin-bottom: 125px;
+        }
+        .section-bottom-gap-4{
+            margin-bottom: 65px;
+        }
+        .section-bottom-gap-5{
+            margin-bottom: 150px;
+        }
+        .section-bottom-gap-6{
+            margin-bottom: 80px;
+        }
+        .section-bottom-gap-7{
+            margin-bottom: 10px;
+        }
+        .section-bottom-gap-8{
+            margin-bottom: 40px;
+        }
+        .section-bottom-gap-9{
+            margin-bottom: 180px;
+        }
+    
+        .section-bottom-gap-10{
+            margin-bottom: 20px;
+        }
+    
+        .section-bottom-gap-11{
+            margin-bottom: 30px;
+        }
     }
-    .section-bottom-gap-2{
-        margin-bottom: 100px;
-    }
-    .section-bottom-gap-3{
-        margin-bottom: 125px;
-    }
-    .section-bottom-gap-4{
-        margin-bottom: 65px;
-    }
-    .section-bottom-gap-5{
-        margin-bottom: 150px;
-    }
-    .section-bottom-gap-6{
-        margin-bottom: 80px;
-    }
-    .section-bottom-gap-7{
-        margin-bottom: 10px;
-    }
-    .section-bottom-gap-8{
-        margin-bottom: 40px;
-    }
-    .section-bottom-gap-9{
-        margin-bottom: 180px;
-    }
-
-    .section-bottom-gap-10{
-        margin-bottom: 20px;
-    }
-
-    .section-bottom-gap-11{
-        margin-bottom: 30px;
-    }
+    
     
     .flex-grow{
         flex-grow: 1;
@@ -125,34 +128,41 @@
                 }
             }
 
-
-            &.sm-row-gap{
-                row-gap: 30px;
-                &.has-margin-bottom{
-                    & > .my-col{
-                        margin-bottom: 30px;
+            @media screen and (min-width: $xxlmin) {
+                &.sm-row-gap{
+                    row-gap: 30px;
+                    &.has-margin-bottom{
+                        & > .my-col{
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+    
+                &.md-row-gap{
+                    row-gap: 50px;
+                    &.has-margin-bottom{
+                        & > .my-col{
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+    
+                &.lg-row-gap{
+                    row-gap: 70px;
+                    &.has-margin-bottom{
+                        & > .my-col{
+                            margin-bottom: 70px;
+                        }
                     }
                 }
             }
-
-            &.md-row-gap{
-                row-gap: 50px;
-                &.has-margin-bottom{
-                    & > .my-col{
-                        margin-bottom: 50px;
-                    }
-                }
-            }
-
-            &.lg-row-gap{
-                row-gap: 70px;
-                &.has-margin-bottom{
-                    & > .my-col{
-                        margin-bottom: 70px;
-                    }
-                }
-            }
+            
         }
+
+
+
+
+    @media screen and (min-width: $xxlmin) {
 
         &.lg-row{
             margin-left: -23px;
@@ -272,6 +282,12 @@
                 }
             }
         }
+    }
+
+
+
+
+
         
     }
 
@@ -651,7 +667,9 @@
 
         
         .lg-box{
-            width: 35%;
+            @media screen and (min-width: $xxlmin) {
+                width: 35%;
+            }
             @media screen and (min-width: $xxl) {
                 width: 490px / 1885px * 100%;
             }
@@ -660,7 +678,9 @@
 
 
         .sm-box{
-            width: 30%;
+            @media screen and (min-width: $xxlmin) {
+                width: 30%;
+            }
             @media screen and (min-width: $xxl) {
                 width: 454px / 1885px * 100%;
             }
