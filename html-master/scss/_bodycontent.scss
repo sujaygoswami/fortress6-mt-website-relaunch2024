@@ -301,29 +301,32 @@
         @include border-radius(5px);
     }
     .element-gap{
-        &.element-gap-type-1{
-            margin-bottom: 15px;
-        }
-        &.element-gap-type-2{
-            margin-bottom: 10px;
-        }
-        &.element-gap-type-3{
-            margin-bottom: 40px;
-        }
-        &.element-gap-type-4{
-            margin-bottom: 45px;
-        }
-        &.element-gap-type-5{
-            margin-bottom: 20px;
-        }
-        &.element-gap-type-6{
-            margin-bottom: 100px;
-        }
-        &.element-gap-type-7{
-            margin-bottom: 60px;
-        }
-        &.element-gap-type-8{
-            margin-bottom: 30px;
+
+        @media screen and (min-width: $xxlmin) {
+            &.element-gap-type-1{
+                margin-bottom: 15px;
+            }
+            &.element-gap-type-2{
+                margin-bottom: 10px;
+            }
+            &.element-gap-type-3{
+                margin-bottom: 40px;
+            }
+            &.element-gap-type-4{
+                margin-bottom: 45px;
+            }
+            &.element-gap-type-5{
+                margin-bottom: 20px;
+            }
+            &.element-gap-type-6{
+                margin-bottom: 100px;
+            }
+            &.element-gap-type-7{
+                margin-bottom: 60px;
+            }
+            &.element-gap-type-8{
+                margin-bottom: 30px;
+            }
         }
 
         &:last-child{
@@ -1149,15 +1152,24 @@
     // teaser-module
     .teaser-module{
 
-
-        
-
-        &.desktop-min-height-1{
-            min-height: 490px;
+        .items-wrap{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
         }
-        &.desktop-min-height-2{
-            min-height: 600px;
+
+        @media screen and (min-width: $xxlmin) {
+            &.desktop-min-height-1{
+                min-height: 490px;
+            }
+            &.desktop-min-height-2{
+                min-height: 600px;
+            }
         }
+
+       
 
         .match-vs{
             position: absolute;
@@ -1443,14 +1455,19 @@
 
     // adapt height
     .adapt-height-default-grid{
-        row-gap: 20px;
-        column-gap: 20px;
         display: flex;
         flex-wrap: wrap;
-
+        @media screen and (min-width: $xxlmin) {
+        row-gap: 20px;
+        column-gap: 20px;
+        }
         .adapt-height{
             flex-grow: 1;
             width: 100%;
+            min-height: 210px;
+            @media screen and (min-width: $xxlmin) {
+                min-height: inherit;
+            }
         }
     }
     // adapt height

@@ -1,3 +1,37 @@
+var site = {}
+
+// break point vars
+var $xxlmin = 1280;
+// break point vars
+
+// GLOBALTABMOBILECONVERTEDSLIDER
+site.GLOBALTABMOBILECONVERTEDSLIDER = function () {
+
+
+
+jQuery('.global-tab-mobile-converted-slider').each(function(){
+
+  jQuery(this).find('.tab-mobile-main-slider-navigate-wrap').addClass('carousel-navigate-with-header');
+
+  jQuery(this).find('.tab-mobile-main-slider .the-slider').removeAttr('class').attr('class', '');
+  jQuery(this).find('.tab-mobile-main-slider > div').addClass('the-slider global-carousel two-column-global-carousel global-carousel-type-1 element-gap element-gap-type-4 type-arrow-pagination-view-1');
+  
+
+  
+  jQuery(this).find('.tab-mobile-main-slider .the-slider .my-col').removeAttr('class').attr('class', '');
+  jQuery(this).find('.tab-mobile-main-slider .the-slider > div').addClass('item');
+
+
+  jQuery('.global-carousel-type-1').parents('.section-row').addClass('overflow-hidden');  
+  
+});
+
+
+};
+// GLOBALTABMOBILECONVERTEDSLIDER
+
+
+
 jQuery(document).ready(function(){
 
 
@@ -60,8 +94,9 @@ var checkMobile = function(){
 //Execute Check
 checkMobile();
 
-
-
+if ($(window).width() < $xxlmin) {
+site.GLOBALTABMOBILECONVERTEDSLIDER();
+}
 
 
 // global vars
@@ -72,7 +107,7 @@ var HEADERHEIGHT = jQuery('header.header').height();
 
 
 // object notation
-var site = {}
+
 
 
 
@@ -194,7 +229,15 @@ if ($globalCarousel.length) {
 jQuery('.global-carousel-type-1').slick({
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 jQuery('.global-carousel-type-2').slick({
   infinite: true,
@@ -296,7 +339,6 @@ jQuery('figure.table').removeClass('table');
 jQuery('.pricing-content table').find('th, td').wrapInner('<p></p>');
 jQuery('.frame-type-form_formframework .form-navigation button').addClass('site-btn primary-btn');
 jQuery('.frame-type-form_formframework .form-navigation button').removeClass('btn btn-primary');
-
 
 
 
@@ -406,12 +448,17 @@ jQuery(window).resize(function(){
 
 });
 
-
+// teaser-module
+jQuery('.teaser-module .items-wrap').each(function(){
+  var HEIGHT = jQuery(this).height();
+  jQuery(this).parents('.teaser-module').css('min-height', HEIGHT);
+});
 // teaser module min height
 jQuery('.teaser-module.has-min-height').each(function(){
   var HEIGHT = jQuery(this).parents('.the-main-module').height();
   jQuery(this).height(HEIGHT);
 });
+
 
 
 });
