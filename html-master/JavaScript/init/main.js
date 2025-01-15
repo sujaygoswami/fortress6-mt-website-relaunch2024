@@ -14,7 +14,7 @@ jQuery('.global-tab-mobile-converted-slider').each(function(){
   jQuery(this).find('.tab-mobile-main-slider-navigate-wrap').addClass('carousel-navigate-with-header');
 
   jQuery(this).find('.tab-mobile-main-slider .the-slider').removeAttr('class').attr('class', '');
-  jQuery(this).find('.tab-mobile-main-slider > div').addClass('the-slider global-carousel two-column-global-carousel global-carousel-type-1 element-gap element-gap-type-4 type-arrow-pagination-view-1');
+  jQuery(this).find('.tab-mobile-main-slider > div').addClass('the-slider global-carousel equal-height-item two-column-global-carousel global-carousel-type-1 element-gap element-gap-type-4 type-arrow-pagination-view-1');
   
 
   
@@ -448,11 +448,7 @@ jQuery(window).resize(function(){
 
 });
 
-// teaser-module
-jQuery('.teaser-module .items-wrap').each(function(){
-  var HEIGHT = jQuery(this).height();
-  jQuery(this).parents('.teaser-module').css('min-height', HEIGHT);
-});
+
 // teaser module min height
 jQuery('.teaser-module.has-min-height').each(function(){
   var HEIGHT = jQuery(this).parents('.the-main-module').height();

@@ -18,29 +18,36 @@
         padding-left: $grid-gutter-width;
         padding-right: $grid-gutter-width;
     }
-    .container-inset-type-1{
-        max-width: 1190px;
-        &.inset-pad-type-1{
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 0px;
-            padding-bottom: 0px;
+
+    @media screen and (min-width: $xxlmin) {
+        .container-inset-type-1{
+            max-width: 1190px;
+            &.inset-pad-type-1{
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+        }
+
+        .container-inset-type-2{
+            max-width: 1250px;
+        }
+
+        .container-inset-type-3{
+            max-width: 960px;
+        }
+    
+        .container-inset-child-wrap{
+            &.type-1{
+                max-width: 806px / 1250px * 100%;
+            }
         }
     }
 
-    .container-inset-type-2{
-        max-width: 1250px;
-    }
+    
 
-    .container-inset-type-3{
-        max-width: 960px;
-    }
-
-    .container-inset-child-wrap{
-        &.type-1{
-            max-width: 806px / 1250px * 100%;
-        }
-    }
+    
 
     @media screen and (min-width: $xxlmin) {
         .section-bottom-gap-1{
@@ -1152,13 +1159,9 @@
     // teaser-module
     .teaser-module{
 
-        .items-wrap{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0px;
-            top: 0px;
-        }
+       
+
+       
 
         @media screen and (min-width: $xxlmin) {
             &.desktop-min-height-1{
@@ -1257,6 +1260,7 @@
             img{
                 display: inline-block;
                 vertical-align: bottom;
+                margin: 0 auto;
             }
 
             &.pos-1{
@@ -1699,7 +1703,7 @@
             &::after{
                 position: absolute;
                 width: 100%;
-                height: 594px;
+                height: 100%;
                 left: 0px;
                 bottom: 0px;
                 background-image: url(../Images/static-banner-gradient.svg);
@@ -1707,6 +1711,7 @@
                 background-position: right bottom;
                 display: block;
                 content: ' ';
+                background-size: contain;
             }
             &.set-back{
                 background-size: cover;
