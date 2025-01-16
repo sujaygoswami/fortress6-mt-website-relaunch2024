@@ -4,8 +4,10 @@
     .column-uplift-type-1{
         margin-top: 75px;
     }
-    .desktop-reverse-res-1-row-reverse{
-        flex-direction: row-reverse;
+    @media screen and (min-width: $xxlmin) {
+        .desktop-reverse-res-1-row-reverse{
+            flex-direction: row-reverse;
+        }
     }
    .full-width-img{
         width: 100%;
@@ -513,6 +515,11 @@
                 line-height: 20px;
             }
             }
+
+        li{
+            font-size: 18px;
+            line-height: 32px;
+        }    
         ul{
             list-style: none;
             margin: 0px;

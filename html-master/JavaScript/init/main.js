@@ -30,6 +30,56 @@ jQuery('.global-tab-mobile-converted-slider').each(function(){
 };
 // GLOBALTABMOBILECONVERTEDSLIDER
 
+// GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER
+site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
+
+
+
+  jQuery('.mobile-pricing-box-slider').each(function(){
+
+    var $carousel = jQuery(this).find('.main-carousel');
+
+    jQuery(this).parents('.section-row').addClass('overflow-hidden');
+  
+     jQuery(this).find('.mobile-sliding-item > .main-wrap > .my-row').removeClass('row my-row default-row');
+     jQuery(this).find('.mobile-sliding-item .carousel-cell').removeClass('col-auto my-col');
+
+
+     $carousel.flickity({
+      cellAlign: 'left',
+      contain: true,
+      pageDots: false,
+      prevNextButtons: false,
+      freeScroll: true,
+    });
+
+    
+
+    
+
+    
+    
+  });
+  
+  
+  };
+  // GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER
+
+  // GLOBALFILTER
+  site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
+    var $btns = $('.filter-module .item-with-hidden-check-radio input').click(function() {
+      if (this.id == 'all') {
+        $('#parent > div').fadeIn(450);
+      } else {
+        var $el = $('.' + this.id).fadeIn(450);
+        $('#parent > div').not($el).hide();
+      }
+      $btns.removeClass('active');
+      $(this).addClass('active');
+    }) 
+  };  
+  // GLOBALFILTER
+
 
 
 jQuery(document).ready(function(){
@@ -94,8 +144,10 @@ var checkMobile = function(){
 //Execute Check
 checkMobile();
 
+// mobile convert slider
 if ($(window).width() < $xxlmin) {
 site.GLOBALTABMOBILECONVERTEDSLIDER();
+site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
 }
 
 
@@ -230,6 +282,7 @@ jQuery('.global-carousel-type-1').slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
+  touchThreshold: 500,
   responsive: [
     {
       breakpoint: 767,
@@ -242,12 +295,14 @@ jQuery('.global-carousel-type-1').slick({
 jQuery('.global-carousel-type-2').slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  touchThreshold: 500,
 });
 jQuery('.global-carousel-type-3').slick({
   infinite: true,
   slidesToShow: 4,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  touchThreshold: 500,
 });
 
 jQuery('.type-arrow-pagination-view-1').each(function(){
@@ -410,6 +465,7 @@ jQuery('.main-nav.slide-action').addClass('loaded fadeOutUp');
   jQuery('.global-carousel.equal-height-item .item').matchHeight();
 
   jQuery('.pricing-box-module .pricing-header').matchHeight({byRow: false});
+  jQuery('.pricing-box-module .pricing-box').matchHeight({byRow: false});
 
   jQuery('.news-widget-match-height-type-1 .news-title').matchHeight();
   jQuery('.news-widget-match-height-type-1').matchHeight({byRow: false});
