@@ -320,6 +320,8 @@ jQuery('.global-carousel-type-3').slick({
   touchThreshold: 500,
 });
 
+jQuery('.download-carousel-wrap').parents('section.section-row').removeClass('section-row');
+
 jQuery('.type-arrow-pagination-view-1').each(function(){
   jQuery(this).find('.slick-arrow').wrapAll('<div class="slider-arrow-holder"></div>');
   jQuery(this).find('.slider__counter, .slider-arrow-holder').wrapAll('<div class="global-carousel-slider-navigate-wrap"></div>');
@@ -328,7 +330,7 @@ jQuery('.type-arrow-pagination-view-1').each(function(){
 });
 
 jQuery('.global-carousel-slider-navigate-wrap').each(function(){
-  var NAVIGATEPLACE = jQuery(this).parents('section, .section-row').find('.carousel-navigate-with-header');
+  var NAVIGATEPLACE = jQuery(this).parents('.section-row, .download-carousel-wrap').find('.carousel-navigate-with-header');
   jQuery(this).detach().appendTo(NAVIGATEPLACE);
 });
 
