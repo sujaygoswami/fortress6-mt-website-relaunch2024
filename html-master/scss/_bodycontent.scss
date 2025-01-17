@@ -345,6 +345,17 @@
     
     // basic
 
+    // static-filter-module
+    .static-filter-module{
+        .resulted-row{
+            display: none;
+            &:first-child{
+                display: block;
+            }
+        }
+    }
+    // static-filter-module
+
     // site btn
     .site-btn{
         @include border-radius(15px);
@@ -926,52 +937,56 @@
                     }
 
                     tbody{
-                        &.layout-2{
-                            &.no-pad{
+                        @media screen and (min-width: $xxlmin) {
+                            &.layout-2{
+                                &.no-pad{
+                                    tr{
+                                        td{
+                                            padding-left: 0px;
+                                            padding-right: 0px;
+                                        }
+                                    }
+                                }
                                 tr{
-                                    td{
-                                        padding-left: 0px;
-                                        padding-right: 0px;
-                                    }
-                                }
-                            }
-                            tr{
-                                border: none;
-                                &:last-child{
-                                    td{
-                                        &:first-child{
-                                            border-top-left-radius: 10px;
-                                            border-bottom-left-radius: 10px;
-                                        }
-                                        &:last-child{
-                                            border-top-right-radius: 10px;
-                                            border-bottom-right-radius: 10px;
-                                        }
-                                    }
-                                }
-                                td{
-                                    padding: 18px 30px;
                                     border: none;
-
-                                    &:first-child{
-                                        border-bottom-left-radius: 10px;
-                                        border-top-left-radius: 10px;
-                                    }
-
                                     &:last-child{
-                                        border-bottom-right-radius: 10px;
-                                        border-top-right-radius: 10px;
+                                        td{
+                                            &:first-child{
+                                                border-top-left-radius: 10px;
+                                                border-bottom-left-radius: 10px;
+                                            }
+                                            &:last-child{
+                                                border-top-right-radius: 10px;
+                                                border-bottom-right-radius: 10px;
+                                            }
+                                        }
                                     }
-
-                                    &.make-row-gap{
-                                        padding: 0px;
-                                        height: 20px;
-                                        background-color: transparent;
-                                        font-size: 0px;
+                                    td{
+                                        
+                                        padding: 18px 30px;
+                                        border: none;
+    
+                                        &:first-child{
+                                            border-bottom-left-radius: 10px;
+                                            border-top-left-radius: 10px;
+                                        }
+    
+                                        &:last-child{
+                                            border-bottom-right-radius: 10px;
+                                            border-top-right-radius: 10px;
+                                        }
+    
+                                        &.make-row-gap{
+                                            padding: 0px;
+                                            height: 20px;
+                                            background-color: transparent;
+                                            font-size: 0px;
+                                        }
                                     }
                                 }
-                            }
+                            } 
                         }
+                        
                         tr{
                             border: none;
                             &.no-border{
@@ -1004,8 +1019,11 @@
                                 }
                             }
                             td{
-                                padding: 18px 0;
-                                border-top: 1px solid rgba($color: #000000, $alpha: 0.19);
+                                @media screen and (min-width: $xxlmin) {
+                                    padding: 18px 0;
+                                    border-top: 1px solid rgba($color: #000000, $alpha: 0.19);      
+                                }
+                                
 
                                 &.left-right-gap-creator{
                                     width: 30px;
@@ -1031,8 +1049,11 @@
                         row-gap: 20px;
                     }
                     .team-name{
-                        font-size: 16px;
-                        font-weight: var(--site-primary-font-bold);
+                        @media screen and (min-width: $xxlmin) {
+                            font-size: 16px;
+                            font-weight: var(--site-primary-font-bold);   
+                        }
+                        
                     }
                     .match-timing{
                         column-gap: 5px;
@@ -2100,6 +2121,7 @@
 
                     .dropdown-item{
                         cursor: pointer;
+                        font-size: 18px;
                         &:active{
                             background-color: black;
                             color: white;

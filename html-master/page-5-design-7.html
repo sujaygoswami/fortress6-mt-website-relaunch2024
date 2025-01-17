@@ -22,7 +22,7 @@
     <![endif]-->
 
     <!-- header -->
-    <header class="header">
+    <header class="header d-none d-xxlmin-block">
         <div class="main-wrap global-border-radius-all">
             <!-- logo holder -->
             <div class="header-logo-holder">
@@ -294,7 +294,7 @@
 
 
         <!-- section -->
-        <section class="section-row clearfix has-fluid-container section-bottom-gap-6">
+        <section class="section-row clearfix has-fluid-container section-bottom-gap-6 section-mobile-gap-avg">
             <div class="container-fluid">
                 <!-- module -->
                 <div class="static-banner-module pos-relative global-border-radius-all overflow-hidden">
@@ -310,7 +310,7 @@
         <!-- section -->
 
         <!-- section -->
-        <section class="section-row clearfix has-centered-container section-bottom-gap-8">
+        <section class="section-row clearfix has-centered-container section-bottom-gap-8 section-mobile-gap-avg">
             <div class="container">
                 <div class="container-inset-type-1 inset-pad-type-1 mx-auto">
                     <!-- two column grid system -->
@@ -349,7 +349,7 @@
 
 
         <!-- section -->
-        <section class="section-row clearfix has-centered-container section-bottom-gap-7">
+        <section class="section-row clearfix has-centered-container section-bottom-gap-7 section-mobile-gap-avg">
             <div class="container">
                 <div class="container-inset-type-1 inset-pad-type-1 mx-auto">
                     <!-- single column grid system-->
@@ -379,7 +379,7 @@
         <!-- section -->
 
         <!-- section -->
-        <section class="section-row clearfix has-centered-container section-bottom-gap-4">
+        <section class="section-row clearfix has-centered-container section-bottom-gap-4 section-mobile-gap-avg">
             <div class="container">
                 <div class="container-inset-type-1 inset-pad-type-1 mx-auto">
                     <!-- single column grid system-->
@@ -394,26 +394,33 @@
                                     <div class="module-header element-gap element-gap-type-5 header-with-multi-item">
                                         <div class="row default-row my-row grid-flex-v-align-center">
                                             <!-- col -->
-                                             <div class="col-auto my-col">
+                                            <div class="col-xxlmin-auto col-12 my-col">
                                                 <div class="main-wrap">
                                                     <h3>SPIELPLAN</h3>
                                                 </div>
-                                             </div>
+                                            </div>
                                             <!-- col -->
                                             <!-- col -->
-                                            <div class="col-auto my-col ms-auto">
+                                            <div class="col-auto my-col ms-xxlmin-auto">
                                                 <div class="main-wrap">
                                                     <ul class="nav nav-tabs site-tab-nav" id="myTab" role="tablist">
                                                         <li class="nav-item" role="presentation">
-                                                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Bundesliga</button>
+                                                            <button class="nav-link active" id="home-tab"
+                                                                data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                                                                type="button" role="tab" aria-controls="home-tab-pane"
+                                                                aria-selected="true">Bundesliga</button>
                                                         </li>
                                                         <li class="nav-item" role="presentation">
-                                                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">EHF-Pokal</button>
+                                                            <button class="nav-link" id="profile-tab"
+                                                                data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                                                                type="button" role="tab"
+                                                                aria-controls="profile-tab-pane"
+                                                                aria-selected="false">EHF-Pokal</button>
                                                         </li>
-                                                      </ul>
+                                                    </ul>
                                                 </div>
-                                             </div>
-                                            <!-- col -->  
+                                            </div>
+                                            <!-- col -->
                                         </div>
                                     </div>
                                     <!-- module header -->
@@ -421,16 +428,18 @@
                                     <div class="the-main-module tab-content" id="myTabContent">
 
                                         <!-- tab pane -->
-                                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                            aria-labelledby="home-tab" tabindex="0">
                                             <!-- match table -->
-                                            <div class="match-table view-1 layout-2">
+                                            <div class="match-table view-1 layout-2 mobile-view-1 mobile-separate-row-view">
                                                 <table cellspacing="0" cellpadding="0">
 
                                                     <thead>
 
                                                         <tr>
 
-                                                            <th class="pull-text-center has-force-radius-all" colspan="3">
+                                                            <th class="pull-text-center has-force-radius-all"
+                                                                colspan="3">
                                                                 Team</th>
 
                                                         </tr>
@@ -443,13 +452,14 @@
                                                     <tbody class="layout-2">
                                                         <!-- tr -->
                                                         <tr>
-
+                                                          
                                                             <td>
                                                                 <div class="match-schedule jc-left">
                                                                     <!-- team-info -->
                                                                     <div class="team-info">
                                                                         <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
+                                                                                src="Images/MT-team-Logo.svg"
+                                                                                width="52">
                                                                         </div>
                                                                         <div class="team-name">MT Melsungen</div>
                                                                     </div>
@@ -460,11 +470,12 @@
 
 
 
-                                                            <td>
-                                                                <div class="match-timing-head-info pull-text-center">
+                                                            <td class="mobile-px-0">
+                                                                <div class="match-timing-head-info pull-text-center d-none d-xxlmin-block">
                                                                     <strong>19.10.24</strong><span>//</span><strong>19:00
                                                                         Uhr</strong>
                                                                 </div>
+                                                                <div class="mobile-match-date d-block d-xxlmin-none"><strong>Sa, 19.10.24</strong> // 19:00 Uhr</div>
                                                                 <div class="match-schedule">
 
                                                                     <!-- match-timing -->
@@ -486,7 +497,8 @@
                                                                     <div class="team-info">
                                                                         <div class="team-name">MT Melsungen</div>
                                                                         <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
+                                                                                src="Images/MT-team-Logo.svg"
+                                                                                width="52">
                                                                         </div>
                                                                     </div>
                                                                     <!-- team-info -->
@@ -496,7 +508,7 @@
                                                         </tr>
                                                         <!-- tr -->
                                                         <!-- tr -->
-                                                        <tr>
+                                                        <tr class="mobile-separator">
                                                             <td colspan="3" class="make-row-gap">&nbsp;</td>
                                                         </tr>
                                                         <!-- tr -->
@@ -508,7 +520,8 @@
                                                                     <!-- team-info -->
                                                                     <div class="team-info">
                                                                         <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
+                                                                                src="Images/MT-team-Logo.svg"
+                                                                                width="52">
                                                                         </div>
                                                                         <div class="team-name">MT Melsungen</div>
                                                                     </div>
@@ -519,11 +532,12 @@
 
 
 
-                                                            <td>
-                                                                <div class="match-timing-head-info pull-text-center">
+                                                            <td class="mobile-px-0">
+                                                                <div class="match-timing-head-info pull-text-center d-none d-xxlmin-block">
                                                                     <strong>19.10.24</strong><span>//</span><strong>19:00
                                                                         Uhr</strong>
                                                                 </div>
+                                                                <div class="mobile-match-date d-block d-xxlmin-none"><strong>Sa, 19.10.24</strong> // 19:00 Uhr</div>
                                                                 <div class="match-schedule">
 
                                                                     <!-- match-timing -->
@@ -545,7 +559,8 @@
                                                                     <div class="team-info">
                                                                         <div class="team-name">MT Melsungen</div>
                                                                         <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
+                                                                                src="Images/MT-team-Logo.svg"
+                                                                                width="52">
                                                                         </div>
                                                                     </div>
                                                                     <!-- team-info -->
@@ -555,7 +570,7 @@
                                                         </tr>
                                                         <!-- tr -->
                                                         <!-- tr -->
-                                                        <tr>
+                                                        <tr class="mobile-separator">
                                                             <td colspan="3" class="make-row-gap">&nbsp;</td>
                                                         </tr>
                                                         <!-- tr -->
@@ -567,7 +582,8 @@
                                                                     <!-- team-info -->
                                                                     <div class="team-info">
                                                                         <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
+                                                                                src="Images/MT-team-Logo.svg"
+                                                                                width="52">
                                                                         </div>
                                                                         <div class="team-name">MT Melsungen</div>
                                                                     </div>
@@ -578,11 +594,12 @@
 
 
 
-                                                            <td>
-                                                                <div class="match-timing-head-info pull-text-center">
+                                                            <td class="mobile-px-0">
+                                                                <div class="match-timing-head-info pull-text-center d-none d-xxlmin-block">
                                                                     <strong>19.10.24</strong><span>//</span><strong>19:00
                                                                         Uhr</strong>
                                                                 </div>
+                                                                <div class="mobile-match-date d-block d-xxlmin-none"><strong>Sa, 19.10.24</strong> // 19:00 Uhr</div>
                                                                 <div class="match-schedule">
 
                                                                     <!-- match-timing -->
@@ -604,7 +621,8 @@
                                                                     <div class="team-info">
                                                                         <div class="team-name">MT Melsungen</div>
                                                                         <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
+                                                                                src="Images/MT-team-Logo.svg"
+                                                                                width="52">
                                                                         </div>
                                                                     </div>
                                                                     <!-- team-info -->
@@ -629,214 +647,7 @@
                                         </div>
                                         <!-- tab pane -->
 
-                                        <!-- tab pane -->
-                                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                                            <!-- match table -->
-                                            <div class="match-table view-1 layout-2">
-                                                <table cellspacing="0" cellpadding="0">
-
-                                                    <thead>
-
-                                                        <tr>
-
-                                                            <th class="pull-text-center has-force-radius-all" colspan="3">
-                                                                Team</th>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <th colspan="3" class="gap-creator">&nbsp;</th>
-                                                        </tr>
-
-                                                    </thead>
-
-                                                    <tbody class="layout-2">
-                                                        <!-- tr -->
-                                                        <tr>
-
-                                                            <td>
-                                                                <div class="match-schedule jc-left">
-                                                                    <!-- team-info -->
-                                                                    <div class="team-info">
-                                                                        <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
-                                                                        </div>
-                                                                        <div class="team-name">MT Melsungen</div>
-                                                                    </div>
-                                                                    <!-- team-info -->
-                                                                </div>
-                                                            </td>
-
-
-
-
-                                                            <td>
-                                                                <div class="match-timing-head-info pull-text-center">
-                                                                    <strong>19.10.24</strong><span>//</span><strong>19:00
-                                                                        Uhr</strong>
-                                                                </div>
-                                                                <div class="match-schedule">
-
-                                                                    <!-- match-timing -->
-                                                                    <div class="match-timing md-gap">
-                                                                        <div class="time-box">20</div>
-                                                                        <div class="time-box">:</div>
-                                                                        <div class="time-box">28</div>
-                                                                    </div>
-                                                                    <!-- match-timing -->
-
-
-
-                                                                </div>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="match-schedule jc-right">
-                                                                    <!-- team-info -->
-                                                                    <div class="team-info">
-                                                                        <div class="team-name">MT Melsungen</div>
-                                                                        <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- team-info -->
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
-                                                        <!-- tr -->
-                                                        <!-- tr -->
-                                                        <tr>
-                                                            <td colspan="3" class="make-row-gap">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- tr -->
-                                                        <!-- tr -->
-                                                        <tr>
-
-                                                            <td>
-                                                                <div class="match-schedule jc-left">
-                                                                    <!-- team-info -->
-                                                                    <div class="team-info">
-                                                                        <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
-                                                                        </div>
-                                                                        <div class="team-name">MT Melsungen</div>
-                                                                    </div>
-                                                                    <!-- team-info -->
-                                                                </div>
-                                                            </td>
-
-
-
-
-                                                            <td>
-                                                                <div class="match-timing-head-info pull-text-center">
-                                                                    <strong>19.10.24</strong><span>//</span><strong>19:00
-                                                                        Uhr</strong>
-                                                                </div>
-                                                                <div class="match-schedule">
-
-                                                                    <!-- match-timing -->
-                                                                    <div class="match-timing md-gap">
-                                                                        <div class="time-box">20</div>
-                                                                        <div class="time-box">:</div>
-                                                                        <div class="time-box">28</div>
-                                                                    </div>
-                                                                    <!-- match-timing -->
-
-
-
-                                                                </div>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="match-schedule jc-right">
-                                                                    <!-- team-info -->
-                                                                    <div class="team-info">
-                                                                        <div class="team-name">MT Melsungen</div>
-                                                                        <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- team-info -->
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
-                                                        <!-- tr -->
-                                                        <!-- tr -->
-                                                        <tr>
-                                                            <td colspan="3" class="make-row-gap">&nbsp;</td>
-                                                        </tr>
-                                                        <!-- tr -->
-                                                        <!-- tr -->
-                                                        <tr>
-
-                                                            <td>
-                                                                <div class="match-schedule jc-left">
-                                                                    <!-- team-info -->
-                                                                    <div class="team-info">
-                                                                        <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
-                                                                        </div>
-                                                                        <div class="team-name">MT Melsungen</div>
-                                                                    </div>
-                                                                    <!-- team-info -->
-                                                                </div>
-                                                            </td>
-
-
-
-
-                                                            <td>
-                                                                <div class="match-timing-head-info pull-text-center">
-                                                                    <strong>19.10.24</strong><span>//</span><strong>19:00
-                                                                        Uhr</strong>
-                                                                </div>
-                                                                <div class="match-schedule">
-
-                                                                    <!-- match-timing -->
-                                                                    <div class="match-timing md-gap">
-                                                                        <div class="time-box">20</div>
-                                                                        <div class="time-box">:</div>
-                                                                        <div class="time-box">28</div>
-                                                                    </div>
-                                                                    <!-- match-timing -->
-
-
-
-                                                                </div>
-                                                            </td>
-
-                                                            <td>
-                                                                <div class="match-schedule jc-right">
-                                                                    <!-- team-info -->
-                                                                    <div class="team-info">
-                                                                        <div class="team-name">MT Melsungen</div>
-                                                                        <div class="team-dp"><img
-                                                                                src="Images/MT-team-Logo.svg" width="52">
-                                                                        </div>
-                                                                    </div>
-                                                                    <!-- team-info -->
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
-                                                        <!-- tr -->
-
-
-
-
-
-
-
-
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <!-- match table -->
-                                        </div>    
-                                        <!-- tab pane -->
+                                       
 
                                     </div>
                                     <!-- main module -->
@@ -853,7 +664,7 @@
         <!-- section -->
 
         <!-- section -->
-        <section class="section-row clearfix has-centered-container section-bottom-gap-4">
+        <section class="section-row clearfix has-centered-container section-bottom-gap-4 section-mobile-gap-avg">
             <div class="container">
                 <div class="container-inset-type-1 inset-pad-type-1 mx-auto">
                     <!-- single column grid system-->
@@ -866,23 +677,24 @@
                                     <!-- module -->
                                     <!-- teaser module -->
                                     <div
-                                    class="teaser-module global-border-radius-all pos-relative overflow-hidden auto-height has-bottom-action">
-                                    <div class="teaser-bild set-back full-height">
-                                        <img src="Images/tebelle-page-teaser-bg-img.svg">
-                                        <div class="teaser-title pull-text-left lg-less-size pos-type-4">
-                                            <span class="sub lg-size">Jetzt Ticket Sichern und </span>
-                                            <span>LIVE DABEI SEIN</span>
-                                        </div>
-                                        <div class="teaser-product-img pull-text-right"><img
-                                                src="Images/tebbele-page-product-img-1.png"></div>
-                                        
-                                        <div class="module-action-wrap">
-                                            <a class="site-btn block-btn light-btn" href="#">Zum Eventim-Ticketshop</a>
-                                        </div>
-                                    </div>
+                                        class="teaser-module global-border-radius-all pos-relative overflow-hidden auto-height has-bottom-action has-min-height mobile-min-height-1 get-this-height">
+                                        <div class="teaser-bild set-back full-height">
+                                            <img src="Images/tebelle-page-teaser-bg-img.svg">
+                                            <div class="teaser-title pull-text-left lg-less-size pos-type-4">
+                                                <span class="sub lg-size">Jetzt Ticket Sichern und </span>
+                                                <span>LIVE DABEI SEIN</span>
+                                            </div>
+                                            <div class="teaser-product-img pull-text-right has-mobile-max-width"><img
+                                                    src="Images/tebbele-page-product-img-1.png"></div>
 
-                                </div>
-                                <!-- teaser module -->
+                                            <div class="module-action-wrap">
+                                                <a class="site-btn block-btn light-btn" href="#">Zum
+                                                    Eventim-Ticketshop</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- teaser module -->
                                     <!-- module -->
                                 </div>
                             </div>
@@ -923,19 +735,19 @@
                 <div class="partners-module">
                     <div class="container">
                         <div class="row my-row default-row grid-flex-v-align-center grid-flex-justify-content-center">
-                            <div class="col">
+                            <div class="col-xxlmin col-12 my-col">
                                 <div class="main-wrap"><img src="Images/partner-logo-1.svg"></div>
                             </div>
-                            <div class="col">
+                            <div class="col-xxlmin col-3 my-col">
                                 <div class="main-wrap"><img src="Images/partner-logo-2.svg"></div>
                             </div>
-                            <div class="col">
+                            <div class="col-xxlmin col-3 my-col">
                                 <div class="main-wrap"><img src="Images/partner-logo-3.svg"></div>
                             </div>
-                            <div class="col">
+                            <div class="col-xxlmin col-3 my-col">
                                 <div class="main-wrap"><img src="Images/partner-logo-4.svg"></div>
                             </div>
-                            <div class="col">
+                            <div class="col-xxlmin col-3 my-col">
                                 <div class="main-wrap"><img src="Images/partner-logo-5.svg"></div>
                             </div>
                         </div>
@@ -950,11 +762,11 @@
                     <div class="footer-primary-part">
                         <div class="container">
                             <!-- row -->
-                            <div class="row my-row default-row element-gap element-gap-type-6">
+                            <div class="row my-row default-row element-gap element-gap-type-6 mobile-lg-row-gap tab-mobile-mb-md">
                                 <!-- col -->
-                                <div class="col-auto my-col">
+                                <div class="col-xxlmin-auto col-12 my-col">
                                     <div class="main-wrap">
-                                        <div class="footer-item-head text-white element-gap element-gap-type-5">
+                                        <div class="footer-item-head text-white element-gap element-gap-type-5 tab-mobile-mb-xs">
                                             <h4>SERVICE HOTLINE</h4>
                                         </div>
                                         <div class="row my-row md-row-plus grid-flex-v-align-center">
@@ -988,9 +800,9 @@
                                 </div>
                                 <!-- col -->
                                 <!-- col -->
-                                <div class="col-auto my-col ms-auto">
+                                <div class="col-xxlmin-auto col-12 my-col ms-xxlmin-auto">
                                     <div class="main-wrap">
-                                        <div class="footer-item-head text-white element-gap element-gap-type-5">
+                                        <div class="footer-item-head text-white element-gap element-gap-type-5 tab-mobile-mb-xs">
                                             <h4>E-MAIL</h4>
                                         </div>
                                         <div class="the-footer-item">
@@ -1004,7 +816,34 @@
                                 <!-- col -->
 
                                 <!-- col -->
-                                <div class="col-auto my-col ms-auto">
+                                <div class="col-12 my-col my-col ms-xxlmin-auto d-block d-xxlmin-none">
+                                    <div class="main-wrap">
+                                        <div class="footer-item-head text-white element-gap element-gap-type-5">
+                                            <h6 class="sm-font">SERVICE</h6>
+                                        </div>
+                                        <div class="row my-row default-row grid-flex-v-align-center">
+                                            <!-- col -->
+                                            <div class="col-auto my-col">
+                                                <div class="main-wrap">
+                                                    <div class="the-footer-item">
+                                                        <div class="footer-site-menu">
+                                                            <ul>
+                                                                <li><a href="#">Kontakt</a></li>
+                                                                <li><a href="#">Impressum</a></li>
+                                                                <li><a href="#">AGB & Datenschutz</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- col -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+
+                                <!-- col -->
+                                <div class="col-auto my-col ms-xxlmin-auto d-none d-xxlmin-block">
                                     <div class="main-wrap">
                                         <div class="footer-item-head text-white element-gap element-gap-type-5">
                                             <h4>FOLGE DEINER MT</h4>
@@ -1025,9 +864,9 @@
                             <!-- row -->
 
                             <!-- row -->
-                            <div class="row my-row default-row element-gap element-gap-type-6">
+                            <div class="row my-row default-row element-gap element-gap-type-6 mobile-lg-row-gap">
                                 <!-- col -->
-                                <div class="col-3 my-col">
+                                <div class="col-xxlmin-3 col-12 my-col d-none d-xxlmin-block">
                                     <div class="main-wrap">
                                         <div class="footer-item-head text-white element-gap element-gap-type-5">
                                             <h6 class="sm-font">SEITEN</h6>
@@ -1071,8 +910,26 @@
                                     </div>
                                 </div>
                                 <!-- col -->
+                                 <!-- col -->
+                                 <div class="col-auto my-col ms-xxlmin-auto d-block d-xxlmin-none">
+                                    <div class="main-wrap">
+                                        <div class="footer-item-head text-white element-gap element-gap-type-5">
+                                            <h4>FOLGE DEINER MT</h4>
+                                        </div>
+                                        <div class="the-footer-item">
+                                            <div class="footer-social-links text-white">
+                                                <a href="#"><img src="Images/insta-white.svg" width="38"></a>
+                                                <a href="#"><img src="Images/fb-white.svg" width="20"></a>
+                                                <a href="#"><img src="Images/tikTok-white.svg" width="36"></a>
+                                                <a href="#"><img src="Images/youtube-white.svg" width="54"></a>
+                                                <a href="#"><img src="Images/linkdin-white.svg" width="41"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col --> 
                                 <!-- col -->
-                                <div class="col-2 my-col ms-auto">
+                                <div class="col-xxlmin-2 col-12 my-col my-col ms-xxlmin-auto d-none d-xxlmin-block">
                                     <div class="main-wrap">
                                         <div class="footer-item-head text-white element-gap element-gap-type-5">
                                             <h6 class="sm-font">SERVICE</h6>
@@ -1098,7 +955,7 @@
                                 </div>
                                 <!-- col -->
                                 <!-- col -->
-                                <div class="col-7 my-col ms-auto">
+                                <div class="col-xxlmin-7 col-12 my-col ms-xxlmin-auto">
                                     <div class="main-wrap">
                                         <div class="footer-item-head text-white element-gap element-gap-type-5">
                                             <h6 class="sm-font">AUSGEZEICHNET</h6>
@@ -1132,17 +989,17 @@
                     <div class="footer-secondary-part">
                         <div class="main-wrap">
                             <div class="row my-row default-row grid-flex-v-align-center">
-                                <div class="col-auto my-col">
-                                    <div class="main-wrap">
+                                <div class="col-xxlmin-auto col-12 my-col">
+                                    <div class="main-wrap tab-mobile-text-center">
                                         <p>© 2024 MT Spielbetriebs- und Marketing AG</p>
                                     </div>
                                 </div>
-                                <div class="col-auto my-col ms-auto">
-                                    <div class="main-wrap website-by">
+                                <div class="col-xxlmin-auto col-12 my-col ms-auto">
+                                    <div class="main-wrap website-by tab-mobile-text-center tab-mobile-jc-center">
                                         <div>
                                             <p>Website by</p>
                                         </div>
-                                        <div><img src="Images/website-by.svg"></div>
+                                        <div><img src="Images/website-by.svg" class="d-none d-xxlmin-block"><img src="Images/website-by-white.svg" class="d-block d-xxlmin-none"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1165,6 +1022,7 @@
     <script src="JavaScript/lib/jquery.matchHeight-min.js"></script>
     <script src="JavaScript/lib/slick.min.js"></script>
     <script src="JavaScript/lib/fancybox.umd.js"></script>
+    <script src="JavaScript/lib/flickity.pkgd.min.js"></script>
     <!-- endbuild -->
     <!-- build:js -->
     <script src="JavaScript/init/main.js"></script>

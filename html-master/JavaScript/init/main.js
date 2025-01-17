@@ -71,12 +71,25 @@ site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
       if (this.id == 'all') {
         $('#parent > div').fadeIn(450);
       } else {
-        var $el = $('.' + this.id).fadeIn(450);
-        $('#parent > div').not($el).hide();
+        var $el = jQuery('.' + this.id).fadeIn(450);
+        jQuery(this).parents('.static-filter-module').find('.result-parent > .resulted-row').not($el).hide();
       }
       $btns.removeClass('active');
       $(this).addClass('active');
-    }) 
+    });
+    
+
+    jQuery('.filter-params .item-with-hidden-check-radio input').each(function(){
+      
+
+      jQuery(this).click(function(){
+        if(jQuery(this).is(':checked')) {
+          var CHECKEDTEXT = jQuery(this).parent('.dropdown-item').find('span').text();
+          jQuery(this).parents('.dropdown').find('.dropdown-toggle span').text(CHECKEDTEXT);
+      }
+      
+      });
+    });
   };  
   // GLOBALFILTER
 
@@ -147,8 +160,10 @@ checkMobile();
 // mobile convert slider
 if ($(window).width() < $xxlmin) {
 site.GLOBALTABMOBILECONVERTEDSLIDER();
-site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
 }
+
+// html filter
+site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
 
 
 // global vars
@@ -313,7 +328,7 @@ jQuery('.type-arrow-pagination-view-1').each(function(){
 });
 
 jQuery('.global-carousel-slider-navigate-wrap').each(function(){
-  var NAVIGATEPLACE = jQuery(this).parents('section').find('.carousel-navigate-with-header');
+  var NAVIGATEPLACE = jQuery(this).parents('section, .section-row').find('.carousel-navigate-with-header');
   jQuery(this).detach().appendTo(NAVIGATEPLACE);
 });
 
@@ -506,8 +521,12 @@ jQuery(window).resize(function(){
 
 
 // teaser module min height
-jQuery('.teaser-module.has-min-height').each(function(){
+jQuery('.teaser-module.has-min-height:not(.get-this-height)').each(function(){
   var HEIGHT = jQuery(this).parents('.the-main-module').height();
+  jQuery(this).height(HEIGHT);
+});
+jQuery('.teaser-module.has-min-height.get-this-height').each(function(){
+  var HEIGHT = jQuery(this).height();
   jQuery(this).height(HEIGHT);
 });
 
