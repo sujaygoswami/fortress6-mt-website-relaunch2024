@@ -2341,6 +2341,10 @@
                 display: grid;
                 justify-content: center;
                 align-items: end;
+
+                img{
+                    max-height: 100%;
+                }
             }
         }
     }

@@ -4,6 +4,9 @@
     .mt-relaunch{
         padding-bottom: 10px;
         // basic
+        .global-border-radius-all-lg{
+            @include border-radius(10px);
+        }
         .mobile-px-0{
             padding-left: 0px !important;
             padding-right: 0px !important;
@@ -275,6 +278,9 @@
             &.mail-icon-dark{
                 background-size: 15.6px;
             }
+            &.download-icon-light{
+                background-size: 13.68px !important;
+            }
 
            
 
@@ -351,10 +357,37 @@
         }
         // content-organiser-module-type-1
 
+        // player-card-module
+        .player-card-module{
+            .card-thumb{
+                & > .main-wrap{
+                    height: 110px;
+
+                    img{
+                        height: 100px;
+                    }
+                }
+            }
+            .card-number{
+                span{
+                    font-size: 33px;
+                    line-height: 40px;
+                }
+            }
+        }
+        // player-card-module
+        
+
         // global-content-card
         .global-content-card{
             &.view-2{
                 padding: 15px;
+            }
+            &.view-4{
+                padding: 10px;
+            }
+            &.view-5{
+                padding: 20px;
             }
 
             .card-header-bordered{
@@ -900,6 +933,87 @@
         }
         // partners-module
 
+        // player-detail-info-module
+        .player-detail-info-module{
+            & > .main-wrap{
+                position: relative;
+                .player-detail-image{
+                    max-width: 120px;
+                    position: absolute;
+                    left: -5px;
+                    top: -10px;
+
+                    & + .player-detail-info .info-table:not(.child-table){
+                        padding-left: 110px;
+                    }
+                }
+
+                .player-detail-info{
+                    left: inherit;
+
+                    .player-number{
+                        span{
+                            font-size: 68px;
+                            line-height: 79px;
+                        }
+                    }
+                }
+            }
+
+            .info-card{
+                &.has-full-power-batch{
+                    &:after{
+                        width: 92.79px;
+                        height: 92.44px;
+                        background-size: 92.79px;
+                        right: -8px;
+                        top: -32px;
+                    }
+                }
+                
+            }
+
+            .info-table{
+                padding-left: 0px;
+                padding-right: 0px;
+
+                table{
+                    tr{
+                        td{
+                            min-width: inherit;
+                        }
+                    }
+                }
+
+                &.child-table{
+                    table{
+                        tr{
+                            td{
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+
+                &.parent-table{
+                    table{
+                        tr{
+                            display: block;
+                            padding-bottom: 5px;
+                            td{
+                                display: block;
+                                padding: 0px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        // player-detail-info-module
+
+        
+
         // static-banner-module
         .static-banner-module{
             .banner-img{
@@ -909,11 +1023,44 @@
                 }
             }
 
+            .static-banner-bottom-action{
+                right: 10px;
+                bottom: 14px;
+                .link-box{
+                    padding: 8px 17px;
+                    column-gap: 16px;
+
+                    img{
+                        max-width: 23px;
+                    }
+                }
+            }
+
+            .title-product-static-wrap{
+
+                .banner-product{
+                    max-width: 55%;
+                    left: inherit;
+                }
+                
+            }
+
             .banner-title{
                 font-size: 30px;
                 line-height: 34px;
                 padding-right: 18px;
                 padding-bottom: 18px;
+                &.view-2{
+                    span{
+                        font-size: 25px;
+                        line-height: 25px;
+                        &.sub{
+                            font-size: 15px;
+                            line-height: 21px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
 
                 span{
                     &.sub{
