@@ -22,9 +22,10 @@ jQuery('.global-tab-mobile-converted-slider').each(function(){
   jQuery(this).find('.tab-mobile-main-slider .the-slider > div').addClass('item');
 
 
-  jQuery('.global-carousel-type-1').parents('.section-row').addClass('overflow-hidden');  
+    
   
 });
+jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-4').parents('.section-row').addClass('overflow-hidden');
 
 
 };
@@ -66,7 +67,7 @@ site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
   // GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER
 
   // GLOBALFILTER
-  site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
+  site.GLOBALFILTER = function () {
     var $btns = $('.filter-module .item-with-hidden-check-radio input').click(function() {
       if (this.id == 'all') {
         $('#parent > div').fadeIn(450);
@@ -157,13 +158,18 @@ var checkMobile = function(){
 //Execute Check
 checkMobile();
 
+// breadcrumb-section
+var breadcrumbNextClass = $('.breadcrumb-section').next('.section-row').find('.container > div:first-child').attr('class');
+$('.breadcrumb-section .breadcrumb-container').addClass(breadcrumbNextClass);
+
 // mobile convert slider
 if ($(window).width() < $xxlmin) {
 site.GLOBALTABMOBILECONVERTEDSLIDER();
+site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
 }
 
 // html filter
-site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
+site.GLOBALFILTER();
 
 
 // global vars
@@ -312,12 +318,35 @@ jQuery('.global-carousel-type-2').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   touchThreshold: 500,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });
 jQuery('.global-carousel-type-3').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
   touchThreshold: 500,
+});
+
+jQuery('.global-carousel-type-4').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  touchThreshold: 500,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
 jQuery('.download-carousel-wrap').parents('section.section-row').removeClass('section-row');
@@ -413,6 +442,21 @@ jQuery('figure.table').removeClass('table');
 jQuery('.pricing-content table').find('th, td').wrapInner('<p></p>');
 jQuery('.frame-type-form_formframework .form-navigation button').addClass('site-btn primary-btn');
 jQuery('.frame-type-form_formframework .form-navigation button').removeClass('btn btn-primary');
+
+
+// powermail forms
+jQuery('.tx-indexedsearch-searchbox').each(function(){
+  jQuery(this).find('.tx-indexedsearch-form').addClass('form-group mb-3');
+  jQuery(this).find('label').addClass('form-label');
+  jQuery(this).find('input[type="text"]').wrap('<div class="input"></div>');
+  jQuery(this).find('input[type="text"]').addClass('form-control');
+  jQuery(this).find('.tx-indexedsearch-searchbox-button').addClass('site-btn primary-btn');
+});
+jQuery('.tx-indexedsearch-browsebox').each(function(){
+  jQuery(this).addClass('pagination grid-flex-justify-content-center');
+  jQuery(this).find('> li').addClass('page-item');
+  jQuery(this).find('> li a').addClass('page-link');
+});
 
 
 

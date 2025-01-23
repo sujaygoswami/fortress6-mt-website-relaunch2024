@@ -33,6 +33,9 @@
             &.tab-mobile-mb-md{
                 margin-bottom: 30px;
             }
+            &.tab-mobile-mb-lg{
+                margin-bottom: 50px;
+            }
             
         }
         .section-mobile-gap-avg{
@@ -42,6 +45,12 @@
                 margin-bottom: 7px;
             }
         }
+
+        .section-mobile-gap-lg{
+            margin-bottom: 65px;
+        }
+
+
         
         .container, .container-fluid{
             padding-left: $mobile-gutter;
@@ -400,6 +409,17 @@
             .content-card-with-cover-img{
                 .cover-img{
                     width: 100%;
+                    .img-badge{
+                        padding: 20px;
+
+                        & > .main-wrap{
+                            height: 90px;
+                            img{
+                                max-width: 70px;
+                                max-height: 90px;
+                            }
+                        }
+                    }
                 }
                 .context{
                     width: 100%;
@@ -438,7 +458,7 @@
                 button{
                     font-size: 14px;
                     line-height: normal;
-                    padding: 10px 30px 10px 10px;
+                    padding: 10px 30px 10px 0px;
 
                     &::after{
                         width: 18px;
@@ -870,8 +890,39 @@
         }
 
         .global-carousel{
+
+            .global-content-card{
+                .content-card-with-cover-img{
+                    .cover-img{
+                        .img-badge{
+                            &  > .main-wrap{
+                                height: 44px;
+                                @include border-radius(15px);
+                                img{
+                                    max-width: 60px;
+                                    max-height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
             &.global-carousel-type-1{
                 padding-right: 100px;
+                .slick-list{
+                    overflow: inherit;
+                }
+            }
+            &.global-carousel-type-2{
+                padding-right: 20px;
+                .slick-list{
+                    overflow: inherit;
+                }
+            }
+            &.global-carousel-type-4{
+                padding-right: 40px;
                 .slick-list{
                     overflow: inherit;
                 }
@@ -950,6 +1001,11 @@
 
                 .player-detail-info{
                     left: inherit;
+                    max-width: inherit;
+
+                    &.layout-2{
+                        margin-top: 30px;
+                    }
 
                     .player-number{
                         span{
@@ -973,9 +1029,24 @@
                 
             }
 
+            .player-number{
+                &.layout-2{
+                    width: auto;
+                }
+                img{
+                    max-width: 70px;
+                }
+            }
+
             .info-table{
                 padding-left: 0px;
                 padding-right: 0px;
+
+                .pwd-by{
+                    img{
+                        max-width: 150px;
+                    }
+                }
 
                 table{
                     tr{
@@ -1167,6 +1238,15 @@
         }
         // footer
 
+        .frame-type-form_formframework, .tx-indexedsearch-searchbox{
+            & > form{
+                padding: 20px;
+                & > .row{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
         
 
        
@@ -1262,6 +1342,18 @@
     .mt-relaunch{
         .only-mobile-height-auto{
             height: auto;
+        }
+
+        .frame-type-form_formframework{
+            .row{
+                & > div{
+                    width: 100%;
+                    margin-top: 20px;
+                    &:first-child{
+                        margin-top: 0px;
+                    }
+                }
+            }
         }
         
     }

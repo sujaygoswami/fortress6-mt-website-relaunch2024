@@ -1602,23 +1602,27 @@
         }
 
         &.view-2{
-            .slick-list{
-                margin-left: -15px;
-                margin-right: -15px;
-                .slick-slide{
-                    padding-left: 15px;
-                    padding-right: 15px;
+            @media screen and (min-width: $xxlmin) {
+                .slick-list{
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    .slick-slide{
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
                 }
             }
         }
 
         &.view-3{
-            .slick-list{
-                margin-left: -17px;
-                margin-right: -17px;
-                .slick-slide{
-                    padding-left: 17px;
-                    padding-right: 17px;
+            @media screen and (min-width: $xxlmin) {
+                .slick-list{
+                    margin-left: -17px;
+                    margin-right: -17px;
+                    .slick-slide{
+                        padding-left: 17px;
+                        padding-right: 17px;
+                    }
                 }
             }
         }
@@ -2372,9 +2376,11 @@
 
             &.layout-2{
                 left: inherit;
+                max-width: 100%;
             }
 
             .player-number{
+                margin-left: auto;
                 span{
                     display: inline-block;
                     font-size: 135px;
@@ -2412,10 +2418,10 @@
         padding-left: 30px;
         padding-right: 30px;
         flex-grow: 1;
+        width: 70%;
         &.layout-2{
             padding-left: 0px;
             padding-right: 0px;
-            width: 70%;
         }
         .profile-detail-card-social{
             display: flex;
@@ -2532,6 +2538,9 @@
     // site-gallery-module
     .site-gallery-module{
         .set-back{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
             a{
                 height: 100%;
                 width: 100%;
@@ -2591,7 +2600,17 @@
     // partner-logo-module
 
     // frame-type-form_formframework
-    .frame-type-form_formframework{
+    .tx-indexedsearch-res{
+        padding: 20px 0;
+        border-bottom: 1px solid var(--site-grey-type-primary);
+    }
+    .tx-indexedsearch-browsebox.pagination{
+        margin-top: 10px;
+    }
+    .frame-type-form_formframework, .tx-indexedsearch-searchbox{
+        & + .tx-indexedsearch-info-sword, & + .tx-indexedsearch-info-sword + .tx-indexedsearch-browsebox{
+            display: none;
+        }
         & > form{
             padding: 40px;
             background-color: var(--site-grey-type-primary);
