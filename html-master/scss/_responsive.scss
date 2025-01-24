@@ -165,16 +165,24 @@
                 line-height: 25px;
             }
         }
+        h1{
+            font-size: 50px;
+            line-height: 50px;
+        }
         h2{
             font-size: 30px;
             line-height: 30px;
         }
         h3{
-            font-size: 30px;
+            font-size: 25px;
             line-height: normal;
         }
         h4{
             font-size: 20px;
+            line-height: normal;
+        }
+        h5{
+            font-size: 18px;
             line-height: normal;
         }
         h6{
@@ -513,6 +521,12 @@
                 }
                 &.pos-2{
                     padding-bottom: 30px;
+                }
+
+                &.responsive-image-manage-type-two{
+                    img{
+                        max-width: 50%;
+                    }
                 }
                
             }
@@ -909,7 +923,7 @@
             }
 
 
-            &.global-carousel-type-1{
+            &.global-carousel-type-1, &.global-carousel-type-3{
                 padding-right: 100px;
                 .slick-list{
                     overflow: inherit;
@@ -1318,6 +1332,14 @@
                         max-width: 50%;
                     }
                 }
+
+                &.responsive-image-manage-type-two{
+                    img{
+                        max-width: 35%;
+                    }
+                }
+
+                
                 
                 img{
                     max-width: 60%;

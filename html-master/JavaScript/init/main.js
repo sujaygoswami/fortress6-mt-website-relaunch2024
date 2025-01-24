@@ -25,7 +25,7 @@ jQuery('.global-tab-mobile-converted-slider').each(function(){
     
   
 });
-jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-4').parents('.section-row').addClass('overflow-hidden');
+jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-3, .global-carousel-type-4').parents('.section-row').addClass('overflow-hidden');
 
 
 };
@@ -68,29 +68,35 @@ site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
 
   // GLOBALFILTER
   site.GLOBALFILTER = function () {
-    var $btns = $('.filter-module .item-with-hidden-check-radio input').click(function() {
-      if (this.id == 'all') {
-        $('#parent > div').fadeIn(450);
-      } else {
-        var $el = jQuery('.' + this.id).fadeIn(450);
-        jQuery(this).parents('.static-filter-module').find('.result-parent > .resulted-row').not($el).hide();
-      }
-      $btns.removeClass('active');
-      $(this).addClass('active');
-    });
-    
 
-    jQuery('.filter-params .item-with-hidden-check-radio input').each(function(){
-      
+    jQuery('.static-filter-module').each(function(){
 
-      jQuery(this).click(function(){
+      var STATICFILTERTRIGGER = jQuery(this).find('.item-with-hidden-check-radio input');
+      var PARENT = jQuery(this).find('.result-parent');
+
+
+      jQuery(STATICFILTERTRIGGER).click(function() {
+        if (this.id == 'all') {
+          jQuery('PARENT > .resulted-row').fadeIn(450);
+        } else {
+          var $el = jQuery('.' + this.id).fadeIn(450);
+          jQuery(this).parents('.static-filter-module').find('.result-parent > .resulted-row').not($el).hide();
+        }
+        STATICFILTERTRIGGER.removeClass('active');
+        jQuery(this).addClass('active');
+
         if(jQuery(this).is(':checked')) {
           var CHECKEDTEXT = jQuery(this).parent('.dropdown-item').find('span').text();
           jQuery(this).parents('.dropdown').find('.dropdown-toggle span').text(CHECKEDTEXT);
       }
-      
       });
+
+
+      
     });
+   
+
+    
   };  
   // GLOBALFILTER
 
@@ -332,6 +338,20 @@ jQuery('.global-carousel-type-3').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   touchThreshold: 500,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
 });
 
 jQuery('.global-carousel-type-4').slick({

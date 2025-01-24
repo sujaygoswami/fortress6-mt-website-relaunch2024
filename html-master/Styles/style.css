@@ -10875,6 +10875,10 @@ html, body {
     font-family: var(--site-secondary-font);
     font-weight: var(--site-secondary-font-bold);
     text-transform: uppercase; }
+  .mt-relaunch h1, .mt-relaunch .h1 {
+    font-size: 90px;
+    line-height: normal;
+    margin-bottom: 25px; }
   .mt-relaunch h2, .mt-relaunch .h2 {
     font-size: 70px;
     line-height: normal;
@@ -12471,14 +12475,20 @@ html, body {
       .mt-relaunch p.md-size {
         font-size: 14px;
         line-height: 25px; }
+    .mt-relaunch h1, .mt-relaunch .h1 {
+      font-size: 50px;
+      line-height: 50px; }
     .mt-relaunch h2, .mt-relaunch .h2 {
       font-size: 30px;
       line-height: 30px; }
     .mt-relaunch h3, .mt-relaunch .h3 {
-      font-size: 30px;
+      font-size: 25px;
       line-height: normal; }
     .mt-relaunch h4, .mt-relaunch .h4 {
       font-size: 20px;
+      line-height: normal; }
+    .mt-relaunch h5, .mt-relaunch .h5 {
+      font-size: 18px;
       line-height: normal; }
     .mt-relaunch h6, .mt-relaunch .h6 {
       font-size: 15px;
@@ -12655,6 +12665,8 @@ html, body {
       max-width: 65%; }
     .mt-relaunch .teaser-module .teaser-product-img.pos-2 {
       padding-bottom: 30px; }
+    .mt-relaunch .teaser-module .teaser-product-img.responsive-image-manage-type-two img {
+      max-width: 50%; }
     .mt-relaunch .teaser-module .bottom-info {
       padding: 0 20px;
       bottom: 74px; }
@@ -12866,9 +12878,9 @@ html, body {
       .mt-relaunch .global-carousel .global-content-card .content-card-with-cover-img .cover-img .img-badge > .main-wrap img {
         max-width: 60px;
         max-height: 30px; }
-    .mt-relaunch .global-carousel.global-carousel-type-1 {
+    .mt-relaunch .global-carousel.global-carousel-type-1, .mt-relaunch .global-carousel.global-carousel-type-3 {
       padding-right: 100px; }
-      .mt-relaunch .global-carousel.global-carousel-type-1 .slick-list {
+      .mt-relaunch .global-carousel.global-carousel-type-1 .slick-list, .mt-relaunch .global-carousel.global-carousel-type-3 .slick-list {
         overflow: inherit; }
     .mt-relaunch .global-carousel.global-carousel-type-2 {
       padding-right: 20px; }
@@ -13061,6 +13073,8 @@ html, body {
     padding: 85px 20px; }
   .mt-relaunch .teaser-module .teaser-product-img.has-mobile-max-width img {
     max-width: 50%; }
+  .mt-relaunch .teaser-module .teaser-product-img.responsive-image-manage-type-two img {
+    max-width: 35%; }
   .mt-relaunch .teaser-module .teaser-product-img img {
     max-width: 60%; }
   .mt-relaunch .teaser-module .teaser-product-img.no-max-width img {
@@ -15339,8 +15353,8 @@ Copyright (c) 2015 Daniel Eden
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("../Fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../Fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../Fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../Fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../Fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
