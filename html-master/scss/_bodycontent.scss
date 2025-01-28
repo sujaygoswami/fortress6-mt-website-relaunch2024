@@ -1102,7 +1102,7 @@
                         td{
                             background-color: var(--site-grey-type-primary);
 
-                            &.serial{
+                            &.serial, .serial{
                                 font-size: 25px;
                                 font-weight: var(--site-primary-font-bold);
                             }
@@ -2136,9 +2136,21 @@
                 top: 0px;
             }
         }
+        
 
         .filter-param-sort-list-field{
             .dropdown{
+                .field-label-operlap{
+                    font-size: 12px;
+                    font-weight: var(--site-primary-font-bold);
+                    display: inline-block;
+                    position: absolute;
+                    left: 5px;
+                    top: -10px;
+                    padding: 0 5px;
+                    background-color: white;
+                    z-index: 1;
+                }
                 .dropdown-menu{
                     border-color: black;
                     @include border-radius(15px);

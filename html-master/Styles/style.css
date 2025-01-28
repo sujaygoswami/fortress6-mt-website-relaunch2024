@@ -11262,7 +11262,7 @@ html, body {
           min-width: 75px; }
   .mt-relaunch .match-table.view-1.layout-2 tbody tr td {
     background-color: var(--site-grey-type-primary); }
-    .mt-relaunch .match-table.view-1.layout-2 tbody tr td.serial {
+    .mt-relaunch .match-table.view-1.layout-2 tbody tr td.serial, .mt-relaunch .match-table.view-1.layout-2 tbody tr td .serial {
       font-size: 25px;
       font-weight: var(--site-primary-font-bold); }
   .mt-relaunch .match-table.view-1 thead tr th {
@@ -11954,6 +11954,16 @@ html, body {
       position: absolute;
       right: 0px;
       top: 0px; }
+  .mt-relaunch .filter-module .filter-param-sort-list-field .dropdown .field-label-operlap {
+    font-size: 12px;
+    font-weight: var(--site-primary-font-bold);
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    padding: 0 5px;
+    background-color: white;
+    z-index: 1; }
   .mt-relaunch .filter-module .filter-param-sort-list-field .dropdown .dropdown-menu {
     border-color: black;
     -webkit-border-radius: 15px;
@@ -12416,9 +12426,9 @@ html, body {
         margin-bottom: 30px; }
       .mt-relaunch .element-gap.tab-mobile-mb-lg {
         margin-bottom: 50px; }
-    .mt-relaunch .section-mobile-gap-avg {
+    .mt-relaunch .section-mobile-gap-avg, .mt-relaunch .element-gap-avg {
       margin-bottom: 35px; }
-      .mt-relaunch .section-mobile-gap-avg.section-bottom-gap-7 {
+      .mt-relaunch .section-mobile-gap-avg.section-bottom-gap-7, .mt-relaunch .element-gap-avg.section-bottom-gap-7 {
         margin-bottom: 7px; }
     .mt-relaunch .section-mobile-gap-lg {
       margin-bottom: 65px; }
@@ -12605,7 +12615,8 @@ html, body {
       position: relative; }
       .mt-relaunch .filter-module .filter-param-sort-list-field .dropdown .btn span {
         margin: 0px;
-        display: block; }
+        display: block;
+        font-weight: normal; }
       .mt-relaunch .filter-module .filter-param-sort-list-field .dropdown .btn:after {
         background-size: 11px;
         position: absolute;
@@ -12856,7 +12867,7 @@ html, body {
       padding: 10px; }
       .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td.left-right-gap-creator {
         padding: 0 4px; }
-      .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td.serial {
+      .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td.serial, .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td .serial {
         font-size: 18px; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 .match-schedule .match-timing .time-separation {
       font-size: 13px;
@@ -13062,7 +13073,72 @@ html, body {
     .mt-relaunch .frame-type-form_formframework > form, .mt-relaunch .tx-indexedsearch-searchbox > form {
       padding: 20px; }
       .mt-relaunch .frame-type-form_formframework > form > .row, .mt-relaunch .tx-indexedsearch-searchbox > form > .row {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+    .mt-relaunch .responsive-scroll-table-parent {
+      position: relative; }
+    .mt-relaunch .responsive-scrollable-table tbody {
+      border-bottom: 3px solid var(--site-grey-type-primary); }
+      .mt-relaunch .responsive-scrollable-table tbody td p.responsive-schedule.sm-size {
+        line-height: normal;
+        font-size: 8px; }
+        .mt-relaunch .responsive-scrollable-table tbody td p.responsive-schedule.sm-size br {
+          display: none; }
+    .mt-relaunch .responsive-scrollable-table .responsive-bottom-action-button {
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      border-top: 1px solid #f8f9fa6e !important; }
+    .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-1 {
+      margin-left: 150px;
+      overflow-x: scroll;
+      overflow-y: visible; }
+    .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-2 {
+      margin-left: 50px;
+      overflow-x: scroll;
+      overflow-y: visible; }
+    .mt-relaunch .responsive-scrollable-table.has-responsive-bottom-action {
+      padding-bottom: 80px; }
+    .mt-relaunch .responsive-scrollable-table th.fix-item, .mt-relaunch .responsive-scrollable-table td.fix-item {
+      left: 0;
+      position: absolute;
+      top: auto;
+      border-right: 1px solid #f8f9fa6e !important; }
+      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-1, .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-1 {
+        width: 150px; }
+      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-2, .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-2 {
+        width: 50px; }
+    .mt-relaunch .responsive-scrollable-table .responsive-table-hidden-item {
+      display: none; }
+    .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-1 {
+      -webkit-border-radius: 10px 0 0 10px;
+      -moz-border-radius: 10px 0 0 10px;
+      -ms-border-radius: 10px 0 0 10px;
+      border-radius: 10px 0 0 10px; }
+    .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-2 {
+      -webkit-border-radius: 0 10px 10px 0;
+      -moz-border-radius: 0 10px 10px 0;
+      -ms-border-radius: 0 10px 10px 0;
+      border-radius: 0 10px 10px 0; }
+    .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-3 {
+      -webkit-border-radius: 10px 0 0 0;
+      -moz-border-radius: 10px 0 0 0;
+      -ms-border-radius: 10px 0 0 0;
+      border-radius: 10px 0 0 0; }
+    .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-4 {
+      -webkit-border-radius: 0 10px 0 0;
+      -moz-border-radius: 0 10px 0 0;
+      -ms-border-radius: 0 10px 0 0;
+      border-radius: 0 10px 0 0; }
+    .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-5 {
+      -webkit-border-radius: 0 0 10px 10px;
+      -moz-border-radius: 0 0 10px 10px;
+      -ms-border-radius: 0 0 10px 10px;
+      border-radius: 0 0 10px 10px; }
+    .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-6 {
+      -webkit-border-radius: 0 0 0 10px;
+      -moz-border-radius: 0 0 0 10px;
+      -ms-border-radius: 0 0 0 10px;
+      border-radius: 0 0 0 10px; } }
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .mt-relaunch .only-tab-column-system {
