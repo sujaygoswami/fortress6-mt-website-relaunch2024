@@ -764,10 +764,10 @@
         .site-tab-nav{
             button{
                 &.nav-link{
-                    font-size: 12px;
-                    height: 40px;
-                    padding: 0 20px;
-                    line-height: 40px;
+                    font-size: 10px;
+                    height: 30px;
+                    padding: 0 10px;
+                    line-height: 30px;
                 }
             }
         }
@@ -961,6 +961,7 @@
 
                             .team-dp img{
                                 max-width: 30px;
+                                max-height: 30px;
                             }
                         }
                     }
@@ -1346,15 +1347,30 @@
         // responsive-scrollable-table
         .responsive-scroll-table-parent{
             position: relative;
+            // background-color: var(--site-grey-type-primary);
+            // border-radius: 0 0 10px 10px;
         }
         .responsive-scrollable-table{
             tbody{
                 border-bottom: 3px solid var(--site-grey-type-primary);
+                    
 
                 &.has-td-min-hieght{
+                    border-bottom: none;
                     td{
-                        min-height: 53px;
+                        height: 80px;
+                        overflow: hidden;
+
+                       
+                            .tbody-min-height-follower{
+                                height: 60px;
+                                display: grid;
+                                align-items: center;
+                            }
+                        
                     }
+
+                    
                 }
 
                 td{
@@ -1379,7 +1395,7 @@
             }
 
             &.for-responsive-fix-width-type-1{
-                margin-left: 150px;
+                margin-left: 200px;
                 overflow-x: scroll;
                 overflow-y: visible;
             }
@@ -1401,7 +1417,7 @@
                     border-right: 1px solid #f8f9fa6e !important;
 
                     &.fix-width-type-1{
-                        width: 150px;
+                        width: 200px;
                     }
                     &.fix-width-type-2{
                         width: 50px;

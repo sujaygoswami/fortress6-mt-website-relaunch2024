@@ -103,11 +103,9 @@ site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
   // responsive scrolable table
   
   site.RESPONSIVETABLEHEIGHT = function () {
-    jQuery('.responsive-scrollable-table').each(function(){
-      var HEIGHT = jQuery(this).find('tbody').find('td:not(.fix-item)').height();
-      jQuery(this).find('td.fix-item.manage-height-type-1').height(HEIGHT + 5);
-      jQuery(this).find('td.fix-item.manage-height-type-2').height(HEIGHT);
-      jQuery(this).find('td.fix-item.manage-height-type-3').height(HEIGHT + 7);
+    jQuery('.has-td-min-hieght tr').each(function(){
+      var HEIGHT = jQuery(this).find('td:not(.fix-item)').height();
+      jQuery(this).find('td.fix-item').height(HEIGHT + 30);
     });
   };
   // responsive scrolable table
@@ -192,10 +190,7 @@ site.GLOBALFILTER();
 // global vars
 var HEADERHEIGHT = jQuery('header.header').height();
 
-// responsive table
-if ($(window).width() < $xxlmin) {
-  // site.RESPONSIVETABLEHEIGHT();
-};
+
 
 
 
@@ -620,6 +615,12 @@ jQuery('.teaser-module.has-min-height.get-this-height').each(function(){
   var HEIGHT = jQuery(this).height();
   jQuery(this).height(HEIGHT);
 });
+
+
+// responsive table
+// if ($(window).width() < $xxlmin) {
+//   site.RESPONSIVETABLEHEIGHT();
+// };
 
 
 

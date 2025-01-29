@@ -12823,10 +12823,10 @@ html, body {
     .mt-relaunch .global-content-card.view-1 {
       padding: 20px; }
     .mt-relaunch .site-tab-nav button.nav-link {
-      font-size: 12px;
-      height: 40px;
-      padding: 0 20px;
-      line-height: 40px; }
+      font-size: 10px;
+      height: 30px;
+      padding: 0 10px;
+      line-height: 30px; }
     .mt-relaunch .match-table.view-1 .match-schedule {
       column-gap: 5px;
       row-gap: 5px; }
@@ -12935,7 +12935,8 @@ html, body {
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 .match-schedule .team-name {
       font-size: 12px; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 .match-schedule .team-dp img {
-      max-width: 30px; }
+      max-width: 30px;
+      max-height: 30px; }
     .mt-relaunch .global-tab-mobile-converted-slider .my-row {
       margin-left: 0px !important;
       margin-right: 0px !important; }
@@ -13126,8 +13127,15 @@ html, body {
       position: relative; }
     .mt-relaunch .responsive-scrollable-table tbody {
       border-bottom: 3px solid var(--site-grey-type-primary); }
-      .mt-relaunch .responsive-scrollable-table tbody.has-td-min-hieght td {
-        min-height: 53px; }
+      .mt-relaunch .responsive-scrollable-table tbody.has-td-min-hieght {
+        border-bottom: none; }
+        .mt-relaunch .responsive-scrollable-table tbody.has-td-min-hieght td {
+          height: 80px;
+          overflow: hidden; }
+          .mt-relaunch .responsive-scrollable-table tbody.has-td-min-hieght td .tbody-min-height-follower {
+            height: 60px;
+            display: grid;
+            align-items: center; }
       .mt-relaunch .responsive-scrollable-table tbody td p.responsive-schedule.sm-size {
         line-height: normal;
         font-size: 8px; }
@@ -13139,7 +13147,7 @@ html, body {
       left: 0px;
       border-top: 1px solid #f8f9fa6e !important; }
     .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-1 {
-      margin-left: 150px;
+      margin-left: 200px;
       overflow-x: scroll;
       overflow-y: visible; }
     .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-2 {
@@ -13154,7 +13162,7 @@ html, body {
       top: auto;
       border-right: 1px solid #f8f9fa6e !important; }
       .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-1, .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-1 {
-        width: 150px; }
+        width: 200px; }
       .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-2, .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-2 {
         width: 50px; }
     .mt-relaunch .responsive-scrollable-table .responsive-table-hidden-item {
