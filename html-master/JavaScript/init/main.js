@@ -495,6 +495,13 @@ jQuery('.tx-indexedsearch-browsebox').each(function(){
 });
 
 
+// responsive-search-trigger
+jQuery('.responsive-search-trigger').click(function(){
+  jQuery(this).toggleClass('triggered');
+  jQuery('.header-search .field-holder').toggleClass('mobile-toggle-view');
+});
+
+
 
 
 

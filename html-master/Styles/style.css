@@ -12398,7 +12398,55 @@ html, body {
 
 @media screen and (max-width: 1279px) {
   .mt-relaunch {
-    padding-bottom: 10px; }
+    padding: 70px 0px 10px 0px; }
+    .mt-relaunch header.header {
+      top: 10px;
+      padding: 0 10px; }
+      .mt-relaunch header.header .responsive-search-trigger {
+        width: 18.78px;
+        height: 18.78px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-image: url(../Images/search-icon-white-thick.svg);
+        background-size: 18.78px;
+        cursor: pointer; }
+        .mt-relaunch header.header .responsive-search-trigger.triggered {
+          background-image: url(../Images/close-icon-white.svg); }
+      .mt-relaunch header.header > .main-wrap {
+        height: 52px;
+        padding: 0 10px; }
+      .mt-relaunch header.header .header-service-part {
+        column-gap: 23px; }
+      .mt-relaunch header.header .header-search > div {
+        display: inline-block;
+        vertical-align: middle; }
+        .mt-relaunch header.header .header-search > div.field-holder {
+          visibility: hidden;
+          width: 150px;
+          height: 30px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px; }
+          .mt-relaunch header.header .header-search > div.field-holder.mobile-toggle-view {
+            visibility: visible; }
+          .mt-relaunch header.header .header-search > div.field-holder .btn-input {
+            width: 30px;
+            background-size: 18px; }
+          .mt-relaunch header.header .header-search > div.field-holder .text-input {
+            padding-left: 10px;
+            padding-right: 30px;
+            font-size: 10px; }
+      .mt-relaunch header.header .header-menu {
+        width: 30px; }
+        .mt-relaunch header.header .header-menu .menu-trigger {
+          transform: scale(0.6); }
+      .mt-relaunch header.header .header-logo-holder {
+        column-gap: 6px; }
+        .mt-relaunch header.header .header-logo-holder .primary-logo img {
+          width: 32px; }
+        .mt-relaunch header.header .header-logo-holder .secondary-logo img {
+          width: 70px; }
     .mt-relaunch .global-border-radius-all-lg {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
