@@ -1270,7 +1270,14 @@
             tbody{
                 border-bottom: 3px solid var(--site-grey-type-primary);
 
+                &.has-td-min-hieght{
+                    td{
+                        min-height: 53px;
+                    }
+                }
+
                 td{
+                    
                     p.responsive-schedule{
                         &.sm-size{
                             line-height: normal;
@@ -1342,6 +1349,9 @@
            }
            .responsibe-table-round-part-type-6{
             @include border-radius(0 0 0 10px);
+           }
+           .responsibe-table-round-part-type-7{
+            @include border-radius(0 0 10px 0);
            }
         }
         // responsive-scrollable-table
