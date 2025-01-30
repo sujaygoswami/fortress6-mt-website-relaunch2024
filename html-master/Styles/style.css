@@ -10565,8 +10565,9 @@ html, body {
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover ul.sub-item {
             opacity: 1;
             pointer-events: auto; }
-          .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover > a {
-            background-image: url(../Images/next-arrow-dark.svg); }
+          @media screen and (min-width: 1280px) {
+            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover > a {
+              background-image: url(../Images/next-arrow-dark.svg); } }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item {
             list-style: none;
             margin: 0px;
@@ -10597,9 +10598,10 @@ html, body {
               text-transform: uppercase; }
               .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item li a {
                 color: white; }
-          .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:hover > a, .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.active > a {
-            background-color: white;
-            color: var(--site-text-color); }
+          @media screen and (min-width: 1280px) {
+            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:hover > a, .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.active > a {
+              background-color: white;
+              color: var(--site-text-color); } }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:last-child {
             margin-bottom: 0px; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li > a {
@@ -11333,7 +11335,7 @@ html, body {
         line-height: 43px; }
   @media screen and (min-width: 1280px) {
     .mt-relaunch .teaser-module.desktop-min-height-1 {
-      min-height: 490px; }
+      min-height: 500px; }
     .mt-relaunch .teaser-module.desktop-min-height-2 {
       min-height: 600px; } }
   .mt-relaunch .teaser-module .match-vs {
@@ -12402,6 +12404,28 @@ html, body {
     .mt-relaunch header.header {
       top: 10px;
       padding: 0 10px; }
+      .mt-relaunch header.header .main-nav {
+        padding: 70px 10px 10px 10px; }
+        .mt-relaunch header.header .main-nav > .main-wrap {
+          padding: 40px 25px; }
+          .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap {
+            width: 100% !important; }
+            .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap.nav-secondary > ul > li {
+              font-size: 20px;
+              line-height: normal; }
+            .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li {
+              font-size: 30px;
+              line-height: normal; }
+              .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu > a {
+                background-size: 10.71px;
+                background-position: right 0px center;
+                padding-right: 20px; }
+              .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li > a {
+                width: 100%;
+                padding-left: 0px;
+                padding-right: 0px; }
+        .mt-relaunch header.header .main-nav .service-nav-col {
+          display: none; }
       .mt-relaunch header.header .responsive-search-trigger {
         width: 18.78px;
         height: 18.78px;
@@ -12441,6 +12465,8 @@ html, body {
         width: 30px; }
         .mt-relaunch header.header .header-menu .menu-trigger {
           transform: scale(0.6); }
+          .mt-relaunch header.header .header-menu .menu-trigger.clicked .close-text {
+            display: none; }
       .mt-relaunch header.header .header-logo-holder {
         column-gap: 6px; }
         .mt-relaunch header.header .header-logo-holder .primary-logo img {

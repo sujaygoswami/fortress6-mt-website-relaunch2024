@@ -339,7 +339,11 @@
                                 }
 
                                 & > a{
-                                    background-image: url(../Images/next-arrow-dark.svg);
+
+                                    @media screen and (min-width: $xxlmin) {
+                                        background-image: url(../Images/next-arrow-dark.svg);
+                                    }
+                                    
                                 }
                             }
                             ul.sub-item{
@@ -387,8 +391,10 @@
 
                         &:hover, &.active{
                             & > a{
-                                background-color: white;
-                                color: var(--site-text-color);
+                                @media screen and (min-width: $xxlmin) {
+                                    background-color: white;
+                                    color: var(--site-text-color);
+                                }
                                 
                             }
                         }

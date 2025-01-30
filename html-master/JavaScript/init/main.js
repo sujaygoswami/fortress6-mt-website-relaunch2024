@@ -533,7 +533,7 @@ jQuery('.nav-items-wrap').each(function(){
   var SUBTRACTWIDTHFORPAD = MAXWIDTHNAVSUB + 107;
   var NAVWRAPHEIGHT = jQuery(this).height();
   // console.log(MAXWIDTHNAVSUB);
-  jQuery(this).find('.sub-item').width(MAXWIDTHNAVSUB);
+  jQuery(this).find('.sub-item').width(MAXWIDTHNAVSUB + 10);
   jQuery(this).find('.sub-item').css('min-height', NAVWRAPHEIGHT);
   jQuery(this).width(MAXWIDTHNAVSUB + ORIGINALWIDTH + 107);
   // jQuery(this).find('.parent-menu').css('padding-right', SUBTRACTWIDTHFORPAD);
@@ -560,6 +560,10 @@ jQuery('.main-nav.slide-action').addClass('loaded fadeOutUp');
   });
 
   jQuery('.get-grid-main-module-height .the-main-module').matchHeight();
+
+//   jQuery('.get-grid-main-module-height').each(function() {
+//     jQuery(this).children('.the-main-module').matchHeight();
+// });
 
   jQuery('.equal-card-header .the-card-header').matchHeight();
 
