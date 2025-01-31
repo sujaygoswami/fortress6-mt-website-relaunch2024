@@ -111,6 +111,22 @@ site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
   // responsive scrolable table
 
 
+  // responsive MOBILESUBMENUFUNCTION
+  
+  site.MOBILESUBMENUFUNCTION = function () {
+    jQuery('.main-nav li.has-sub-menu a').click(function(){
+      jQuery(this).parent().find('.sub-item').show();
+      jQuery(this).parent().find('.sub-item').addClass('slideInRight');
+      jQuery(this).parent().find('.sub-item').removeClass('slideOutRight');
+    });
+    jQuery('.main-nav li.has-sub-menu .responsive-menu-back').click(function(){
+      jQuery(this).parents('.sub-item').addClass('slideOutRight');
+      jQuery(this).parents('.sub-item').removeClass('slideInRight');
+    });
+  };
+  // responsive MOBILESUBMENUFUNCTION
+
+
 jQuery(document).ready(function(){
 
 
@@ -181,7 +197,12 @@ $('.breadcrumb-section .breadcrumb-container').addClass(breadcrumbNextClass);
 if ($(window).width() < $xxlmin) {
 site.GLOBALTABMOBILECONVERTEDSLIDER();
 site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
-}
+};
+
+// responsive MOBILESUBMENUFUNCTION
+if ($(window).width() < $xxlmin) {
+  site.MOBILESUBMENUFUNCTION();
+};
 
 // html filter
 site.GLOBALFILTER();

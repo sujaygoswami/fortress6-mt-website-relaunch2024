@@ -14,6 +14,15 @@
 
                 & > .main-wrap{
                     padding: 40px 25px;
+                    height: calc(100vh - 90px);
+                    background-image: url(../Images/mobile-sub-menu-bg.svg);
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    background-size: cover;
+
+                    &::after{
+                        display: none;
+                    }
 
                     .nav-items-wrap{
                         width: 100% !important;
@@ -34,6 +43,66 @@
                                         background-size: 10.71px;
                                         background-position: right 0px center;
                                         padding-right: 20px;
+                                    }
+
+                                    .responsive-menu-back{
+                                        padding: 0 0 25px 0;
+                                        margin-bottom: 25px;
+                                        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.37);
+
+                                        i{
+                                            font-style: normal;
+                                            display: inline-block;
+                                            font-size: 12px;
+                                            font-family: var(--site-primary-font);
+                                            font-weight: var(--site-primary-font-bold);
+                                            padding-left: 25px;
+                                            background-repeat: no-repeat;
+                                            background-position: left center;
+                                            background-size: 7.89px;
+                                            background-image: url(../Images/menu-back-arrow-white.svg);
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                    ul.sub-item{
+                                        opacity: 1;
+                                        visibility: visible;
+                                        position: fixed;
+                                        height: calc(100vh - 90px);
+                                        z-index: 1;
+                                        background-image: url(../Images/mobile-sub-menu-bg.svg);
+                                        background-repeat: no-repeat;
+                                        background-position: center top;
+                                        background-size: cover;
+                                        width: calc(100% - 20px) !important;
+                                        left: 10px;
+                                        top: 70px;
+                                        padding: 25px !important;
+                                        @include border-radius(10px);
+                                        pointer-events: auto;
+                                        display: none;
+
+                                        &.animated{
+                                            -webkit-animation-duration: 0.5s;
+                                            animation-duration: 0.5s;
+                                        }
+
+                                        li{
+                                            font-size: 30px;
+                                            line-height: normal;
+                                        }
+
+                                        &.parent-label{
+                                            ul{
+                                                padding-top: 44px;
+                                                li{
+                                                    font-size: 25px;
+                                                    line-height: normal;
+                                                    margin-bottom: 33px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                                 & > a{

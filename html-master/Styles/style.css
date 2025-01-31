@@ -10562,9 +10562,10 @@ html, body {
             background-repeat: no-repeat;
             background-position: right 23px center;
             background-size: 12.98px; }
-          .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover ul.sub-item {
-            opacity: 1;
-            pointer-events: auto; }
+          @media screen and (min-width: 1280px) {
+            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover ul.sub-item {
+              opacity: 1;
+              pointer-events: auto; } }
           @media screen and (min-width: 1280px) {
             .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover > a {
               background-image: url(../Images/next-arrow-dark.svg); } }
@@ -12407,7 +12408,14 @@ html, body {
       .mt-relaunch header.header .main-nav {
         padding: 70px 10px 10px 10px; }
         .mt-relaunch header.header .main-nav > .main-wrap {
-          padding: 40px 25px; }
+          padding: 40px 25px;
+          height: calc(100vh - 90px);
+          background-image: url(../Images/mobile-sub-menu-bg.svg);
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-size: cover; }
+          .mt-relaunch header.header .main-nav > .main-wrap::after {
+            display: none; }
           .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap {
             width: 100% !important; }
             .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap.nav-secondary > ul > li {
@@ -12420,6 +12428,54 @@ html, body {
                 background-size: 10.71px;
                 background-position: right 0px center;
                 padding-right: 20px; }
+              .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu .responsive-menu-back {
+                padding: 0 0 25px 0;
+                margin-bottom: 25px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.37); }
+                .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu .responsive-menu-back i {
+                  font-style: normal;
+                  display: inline-block;
+                  font-size: 12px;
+                  font-family: var(--site-primary-font);
+                  font-weight: var(--site-primary-font-bold);
+                  padding-left: 25px;
+                  background-repeat: no-repeat;
+                  background-position: left center;
+                  background-size: 7.89px;
+                  background-image: url(../Images/menu-back-arrow-white.svg);
+                  cursor: pointer; }
+              .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu ul.sub-item {
+                opacity: 1;
+                visibility: visible;
+                position: fixed;
+                height: calc(100vh - 90px);
+                z-index: 1;
+                background-image: url(../Images/mobile-sub-menu-bg.svg);
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: cover;
+                width: calc(100% - 20px) !important;
+                left: 10px;
+                top: 70px;
+                padding: 25px !important;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                border-radius: 10px;
+                pointer-events: auto;
+                display: none; }
+                .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.animated {
+                  -webkit-animation-duration: 0.5s;
+                  animation-duration: 0.5s; }
+                .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu ul.sub-item li {
+                  font-size: 30px;
+                  line-height: normal; }
+                .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label ul {
+                  padding-top: 44px; }
+                  .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label ul li {
+                    font-size: 25px;
+                    line-height: normal;
+                    margin-bottom: 33px; }
               .mt-relaunch header.header .main-nav > .main-wrap .nav-items-wrap > ul > li > a {
                 width: 100%;
                 padding-left: 0px;

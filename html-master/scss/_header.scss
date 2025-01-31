@@ -333,9 +333,11 @@
                                 background-size: 12.98px;
                             }
                             &:hover{
-                                ul.sub-item{
-                                    opacity: 1;
-                                    pointer-events: auto;
+                                @media screen and (min-width: $xxlmin) {
+                                    ul.sub-item{
+                                        opacity: 1;
+                                        pointer-events: auto;
+                                    }
                                 }
 
                                 & > a{
