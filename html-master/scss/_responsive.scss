@@ -717,6 +717,12 @@
                         max-width: 65%;
                     }
                 }
+                &.has-mobile-max-height{
+                    img{
+                        max-height: 180px;
+                        width: auto;
+                    }
+                }
                 &.pos-2{
                     padding-bottom: 30px;
                 }
@@ -1456,6 +1462,22 @@
                 padding: 20px;
                 & > .row{
                     margin-bottom: 20px;
+                }
+            }
+
+            .form-label{
+                font-size: 14px;
+            }
+
+            .input{
+                .form-control{
+                    font-size: 14px;
+                }
+            }
+
+            & > form{
+                .form-check-label{
+                    font-size: 14px;
                 }
             }
         }

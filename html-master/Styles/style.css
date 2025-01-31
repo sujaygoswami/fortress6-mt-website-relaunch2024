@@ -12818,6 +12818,9 @@ html, body {
       padding-right: 20px; }
     .mt-relaunch .teaser-module .teaser-product-img.has-mobile-max-width img {
       max-width: 65%; }
+    .mt-relaunch .teaser-module .teaser-product-img.has-mobile-max-height img {
+      max-height: 180px;
+      width: auto; }
     .mt-relaunch .teaser-module .teaser-product-img.pos-2 {
       padding-bottom: 30px; }
     .mt-relaunch .teaser-module .teaser-product-img.responsive-image-manage-type-two img {
@@ -13205,6 +13208,12 @@ html, body {
       padding: 20px; }
       .mt-relaunch .frame-type-form_formframework > form > .row, .mt-relaunch .tx-indexedsearch-searchbox > form > .row {
         margin-bottom: 20px; }
+    .mt-relaunch .frame-type-form_formframework .form-label, .mt-relaunch .tx-indexedsearch-searchbox .form-label {
+      font-size: 14px; }
+    .mt-relaunch .frame-type-form_formframework .input .form-control, .mt-relaunch .tx-indexedsearch-searchbox .input .form-control {
+      font-size: 14px; }
+    .mt-relaunch .frame-type-form_formframework > form .form-check-label, .mt-relaunch .tx-indexedsearch-searchbox > form .form-check-label {
+      font-size: 14px; }
     .mt-relaunch .responsive-scroll-table-parent {
       position: relative; }
     .mt-relaunch .responsive-scrollable-table tbody {
