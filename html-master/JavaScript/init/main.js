@@ -266,6 +266,10 @@ jQuery(window).scroll(function () {
 jQuery('.no-default-table').find('.contenttable').removeClass('contenttable');
 
 
+// site-accordion-module
+jQuery('.site-accordion-module .contenttable').wrap('<div class="table-responsive"></div>');
+
+
 
 
 

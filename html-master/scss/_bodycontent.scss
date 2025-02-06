@@ -2342,6 +2342,7 @@
 
             td{
                 padding: 5px 12px;
+                min-width: 50px;
 
                 &:first-child{
                     padding-left: 0px;
@@ -2640,6 +2641,15 @@
     }
     .tx-indexedsearch-browsebox.pagination{
         margin-top: 10px;
+    }
+    .tx-indexedsearch-info{
+        display: none;
+    }
+    .tx-indexedsearch-description{
+        margin-bottom: 0px;
+    }
+    .tx-indexedsearch-searchbox{
+        margin-top: 15px;
     }
     .frame-type-form_formframework, .tx-indexedsearch-searchbox{
         & + .tx-indexedsearch-info-sword, & + .tx-indexedsearch-info-sword + .tx-indexedsearch-browsebox{
