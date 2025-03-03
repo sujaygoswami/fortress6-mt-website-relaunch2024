@@ -2721,5 +2721,48 @@
     // frame-type-form_formframework
 
 
+    // match-vs-module
+    .match-vs-module{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        align-items: flex-end;
+
+        .bottom-info{
+            padding: 0px;
+        }
+
+        .primary-item{
+            display: flex;
+            align-items: center;
+            column-gap: 35px;
+            row-gap: 35px;
+            padding: 0 24px;
+            flex-wrap: wrap;
+            & > div{
+                position: static;
+
+                &.bottom-info{
+                    max-width: 45%;
+                }
+                &.match-vs{
+                    max-width: 45%;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .secondary-item{
+            & > div{
+                position: static;
+            }
+        }
+    }
+    // match-vs-module
+
+
 
 }

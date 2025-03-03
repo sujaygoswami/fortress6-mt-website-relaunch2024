@@ -10346,7 +10346,8 @@ html, body {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    column-gap: 70px; }
   .mt-relaunch header.header .header-logo-holder {
     display: flex;
     align-items: center;
@@ -10356,11 +10357,31 @@ html, body {
   .mt-relaunch header.header .header-service-part {
     display: flex;
     align-items: center;
-    column-gap: 45px; }
+    column-gap: 32px; }
+  .mt-relaunch header.header .header-primary-menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    column-gap: 25px;
+    row-gap: 25px; }
+    .mt-relaunch header.header .header-primary-menu ul li {
+      margin: 0px;
+      padding: 0px;
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: normal;
+      text-transform: uppercase;
+      font-family: var(--site-secondary-font);
+      font-weight: var(--site-third-font-Extra-bold);
+      color: white; }
+      .mt-relaunch header.header .header-primary-menu ul li a {
+        color: white;
+        text-decoration: none; }
   .mt-relaunch header.header .header-search form {
     height: 100%; }
   .mt-relaunch header.header .header-search .field-holder {
-    width: 408px;
+    width: 355px;
     height: 45px;
     background-color: white;
     -webkit-border-radius: 10px;
@@ -12342,6 +12363,32 @@ html, body {
     .mt-relaunch .frame-type-form_formframework .input .form-control::placeholder, .mt-relaunch .tx-indexedsearch-searchbox .input .form-control::placeholder {
       color: black;
       opacity: 0.5; }
+  .mt-relaunch .match-vs-module {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: flex-end; }
+    .mt-relaunch .match-vs-module .bottom-info {
+      padding: 0px; }
+    .mt-relaunch .match-vs-module .primary-item {
+      display: flex;
+      align-items: center;
+      column-gap: 35px;
+      row-gap: 35px;
+      padding: 0 24px;
+      flex-wrap: wrap; }
+      .mt-relaunch .match-vs-module .primary-item > div {
+        position: static; }
+        .mt-relaunch .match-vs-module .primary-item > div.bottom-info {
+          max-width: 45%; }
+        .mt-relaunch .match-vs-module .primary-item > div.match-vs {
+          max-width: 45%;
+          margin-left: auto; }
+    .mt-relaunch .match-vs-module .secondary-item > div {
+      position: static; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }
