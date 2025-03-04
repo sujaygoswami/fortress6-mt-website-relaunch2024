@@ -405,6 +405,12 @@ jQuery('.global-carousel-type-4').slick({
   ]
 });
 
+jQuery('.global-carousel-type-5').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+
 jQuery('.download-carousel-wrap').parents('section.section-row').removeClass('section-row');
 
 jQuery('.type-arrow-pagination-view-1').each(function(){

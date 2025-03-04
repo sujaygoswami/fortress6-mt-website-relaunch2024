@@ -1,6 +1,9 @@
 .mt-relaunch {
     padding: 150px 0 $grid-gutter-width 0;
     // basic
+    .pointer-auto{
+        pointer-events: auto;
+    }
     .has-frame-loader{
         position: relative;
 
@@ -744,6 +747,14 @@
             height: 60%;
         }
 
+        .inside-widget-box-lg-height-2{
+            height: 20%;
+        }
+
+        .inside-widget-box-xl-height-2{
+            height: 80%;
+        }
+
         .inset-box-padding-type-1{
             padding: 15px;
         }
@@ -788,6 +799,24 @@
             width: 100%;
             left: 0px;
             bottom: 0px;
+        }
+
+        .content-gradient-card-wrap{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            bottom: 0px;
+            background-size: cover;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-image: url(../Images/organised-content-gradiend-overlay.svg);
+            display: grid;
+            align-items: flex-end;
+
+            .overlay-context{
+                padding: 40px 50px;
+            }
         }
 
         .content-card{
@@ -859,7 +888,7 @@
             }
         }
         .news-thumb{
-            width: 39%;
+            width: 33%;
             img{
                 width: 100%;
                 height: auto;
@@ -1341,6 +1370,9 @@
                     &.view-2{
                         padding-left: 25px;
                     }
+                    &.view-3{
+                        padding-left: 15px;
+                    }
                 }
             }
 
@@ -1421,7 +1453,7 @@
                 font-size: 40px;
                 line-height: 60px;
                 @media screen and (min-width: $xxl){
-                    font-size: 47px;
+                    font-size: 46px;
                     line-height: 67px;
                 }
                 
@@ -2721,15 +2753,98 @@
     // frame-type-form_formframework
 
 
+    // teaser-bild-inset-slider
+    .teaser-module{
+
+        &.it-has-inset-slider{
+
+            .teaser-title {
+                span{
+                    max-width: 55%;
+                }
+            }
+
+            .carousel-navigate-with-header{
+                position: absolute;
+                right: 24px;
+                top: 55px;
+                z-index: 1;
+
+                &.light-ver{
+                    color: white;
+
+                    .slider-arrow-holder{
+                        border-color: white;
+
+                        button{
+                            height: 40px;
+                            width: 46px;
+                            &:hover{
+                                background-color: white;
+                                &.slick-prev{
+                                    background-image: url(../Images/prev-arrow-dark.svg);
+                                }
+                                &.slick-next{
+                                    background-image: url(../Images/next-arrow-dark.svg);
+                                }
+                            }
+                            &.slick-prev{
+                                background-image: url(../Images/prev-arrow-white.svg);
+                            }
+                            &.slick-next{
+                                background-image: url(../Images/next-arrow-white.svg);
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+    .teaser-module-inset-slider{
+        height: 100%;
+
+        
+
+        .global-carousel{
+            height: 100%;
+
+            .slick-list{
+                height: 100%;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+
+                .slick-slide{
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+
+                .slick-track{
+                    height: 100%;
+
+                    .item{
+                        height: 100%;
+                        display: grid;
+                        align-items: end;
+                    }
+                }
+            }
+        }
+    }
+    // teaser-bild-inset-slider
+
+
     // match-vs-module
     .match-vs-module{
-        position: absolute;
+        position: static;
         left: 0px;
         bottom: 0px;
         width: 100%;
         height: auto;
         display: grid;
         align-items: flex-end;
+        
 
         .bottom-info{
             padding: 0px;
@@ -2740,7 +2855,7 @@
             align-items: center;
             column-gap: 35px;
             row-gap: 35px;
-            padding: 0 24px;
+            padding: 0 24px 20px 24px;
             flex-wrap: wrap;
             & > div{
                 position: static;

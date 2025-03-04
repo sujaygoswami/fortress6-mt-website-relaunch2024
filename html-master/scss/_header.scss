@@ -40,6 +40,17 @@
             }
         }
 
+        .logo-caption{
+            font-size: 18px;
+            font-family: var(--site-third-font);
+            font-weight: var(--site-third-medium);
+            transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
+            transform-origin: left;
+            position: relative;
+            left: 20px;
+            top: -5px;
+        }
+
         .header-service-part{
             display: flex;
             align-items: center;

@@ -10354,6 +10354,15 @@ html, body {
     column-gap: 20px; }
     .mt-relaunch header.header .header-logo-holder .primary-logo img {
       width: 78px; }
+  .mt-relaunch header.header .logo-caption {
+    font-size: 18px;
+    font-family: var(--site-third-font);
+    font-weight: var(--site-third-medium);
+    transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
+    transform-origin: left;
+    position: relative;
+    left: 20px;
+    top: -5px; }
   .mt-relaunch header.header .header-service-part {
     display: flex;
     align-items: center;
@@ -10638,6 +10647,8 @@ html, body {
 
 .mt-relaunch {
   padding: 150px 0 20px 0; }
+  .mt-relaunch .pointer-auto {
+    pointer-events: auto; }
   .mt-relaunch .has-frame-loader {
     position: relative; }
     .mt-relaunch .has-frame-loader .the-loader {
@@ -11094,6 +11105,10 @@ html, body {
     height: 40%; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height {
     height: 60%; }
+  .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-lg-height-2 {
+    height: 20%; }
+  .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height-2 {
+    height: 80%; }
   .mt-relaunch .content-organiser-module-type-1 .inset-box-padding-type-1 {
     padding: 15px; }
   .mt-relaunch .content-organiser-module-type-1 .padding-top-gap {
@@ -11115,6 +11130,20 @@ html, body {
     width: 100%;
     left: 0px;
     bottom: 0px; }
+  .mt-relaunch .image-with-overlay-caption-content-module .content-gradient-card-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-image: url(../Images/organised-content-gradiend-overlay.svg);
+    display: grid;
+    align-items: flex-end; }
+    .mt-relaunch .image-with-overlay-caption-content-module .content-gradient-card-wrap .overlay-context {
+      padding: 40px 50px; }
   .mt-relaunch .image-with-overlay-caption-content-module .content-card .entry p {
     margin-bottom: 5px; }
   .mt-relaunch .global-post-info.absolute-pos-type-1 {
@@ -11151,7 +11180,7 @@ html, body {
     .mt-relaunch .news-listging-widget.block-item-view .news-title:last-child {
       margin-bottom: 0px; }
   .mt-relaunch .news-listging-widget .news-thumb {
-    width: 39%; }
+    width: 33%; }
     .mt-relaunch .news-listging-widget .news-thumb img {
       width: 100%;
       height: auto; }
@@ -11440,6 +11469,8 @@ html, body {
       padding-left: 35px; }
       .mt-relaunch .teaser-module .teaser-title.pull-text-left .sub.view-2 {
         padding-left: 25px; }
+      .mt-relaunch .teaser-module .teaser-title.pull-text-left .sub.view-3 {
+        padding-left: 15px; }
     .mt-relaunch .teaser-module .teaser-title .sub {
       font-size: 27px;
       line-height: 32px;
@@ -11496,7 +11527,7 @@ html, body {
       line-height: 60px; }
       @media screen and (min-width: 1600px) {
         .mt-relaunch .teaser-module .teaser-title.md-less-size {
-          font-size: 47px;
+          font-size: 46px;
           line-height: 67px; } }
     .mt-relaunch .teaser-module .teaser-title.md-less-size-less {
       font-size: 42px;
@@ -12363,8 +12394,49 @@ html, body {
     .mt-relaunch .frame-type-form_formframework .input .form-control::placeholder, .mt-relaunch .tx-indexedsearch-searchbox .input .form-control::placeholder {
       color: black;
       opacity: 0.5; }
-  .mt-relaunch .match-vs-module {
+  .mt-relaunch .teaser-module.it-has-inset-slider .teaser-title span {
+    max-width: 55%; }
+  .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header {
     position: absolute;
+    right: 24px;
+    top: 55px;
+    z-index: 1; }
+    .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver {
+      color: white; }
+      .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder {
+        border-color: white; }
+        .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder button {
+          height: 40px;
+          width: 46px; }
+          .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder button:hover {
+            background-color: white; }
+            .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder button:hover.slick-prev {
+              background-image: url(../Images/prev-arrow-dark.svg); }
+            .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder button:hover.slick-next {
+              background-image: url(../Images/next-arrow-dark.svg); }
+          .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder button.slick-prev {
+            background-image: url(../Images/prev-arrow-white.svg); }
+          .mt-relaunch .teaser-module.it-has-inset-slider .carousel-navigate-with-header.light-ver .slider-arrow-holder button.slick-next {
+            background-image: url(../Images/next-arrow-white.svg); }
+  .mt-relaunch .teaser-module-inset-slider {
+    height: 100%; }
+    .mt-relaunch .teaser-module-inset-slider .global-carousel {
+      height: 100%; }
+      .mt-relaunch .teaser-module-inset-slider .global-carousel .slick-list {
+        height: 100%;
+        margin-left: 0px !important;
+        margin-right: 0px !important; }
+        .mt-relaunch .teaser-module-inset-slider .global-carousel .slick-list .slick-slide {
+          padding-left: 0px !important;
+          padding-right: 0px !important; }
+        .mt-relaunch .teaser-module-inset-slider .global-carousel .slick-list .slick-track {
+          height: 100%; }
+          .mt-relaunch .teaser-module-inset-slider .global-carousel .slick-list .slick-track .item {
+            height: 100%;
+            display: grid;
+            align-items: end; }
+  .mt-relaunch .match-vs-module {
+    position: static;
     left: 0px;
     bottom: 0px;
     width: 100%;
@@ -12378,7 +12450,7 @@ html, body {
       align-items: center;
       column-gap: 35px;
       row-gap: 35px;
-      padding: 0 24px;
+      padding: 0 24px 20px 24px;
       flex-wrap: wrap; }
       .mt-relaunch .match-vs-module .primary-item > div {
         position: static; }
