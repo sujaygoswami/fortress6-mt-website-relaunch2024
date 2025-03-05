@@ -121,6 +121,10 @@
         align-items: end;
     }
 
+    .grid-flex-v-align-start{
+        align-items: flex-start;
+    }
+
     .grid-flex-justify-content-center{
         justify-content: center;
     }
@@ -2947,9 +2951,25 @@
                 display: flex;
                 column-gap: 13px;
 
+                &.grid-flex-v-align-start{
+                    span{
+                        margin-top: 4px;
+                        @media screen and (max-width: ($xxlmin - 1px)) {
+                            margin-top: 1px;
+                        }
+                    }
+                }
+
                 span{
                     width: 21px;
                     text-align: center;
+                    @media screen and (max-width: ($xxlmin - 1px)) {
+                        width: 15px;
+
+                        img{
+                            max-width: 15px;
+                        }
+                    }
                     img{
                         display: inline-block;
                         vertical-align: middle;

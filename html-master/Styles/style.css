@@ -10725,6 +10725,8 @@ html, body {
     align-items: center; }
   .mt-relaunch .grid-flex-v-align-end {
     align-items: end; }
+  .mt-relaunch .grid-flex-v-align-start {
+    align-items: flex-start; }
   .mt-relaunch .grid-flex-justify-content-center {
     justify-content: center; }
   .mt-relaunch .grid-flex-justify-content-left {
@@ -12512,9 +12514,19 @@ html, body {
     .mt-relaunch .iconic-list-items > .main-wrap > div {
       display: flex;
       column-gap: 13px; }
+      .mt-relaunch .iconic-list-items > .main-wrap > div.grid-flex-v-align-start span {
+        margin-top: 4px; }
+        @media screen and (max-width: 1279px) {
+          .mt-relaunch .iconic-list-items > .main-wrap > div.grid-flex-v-align-start span {
+            margin-top: 1px; } }
       .mt-relaunch .iconic-list-items > .main-wrap > div span {
         width: 21px;
         text-align: center; }
+        @media screen and (max-width: 1279px) {
+          .mt-relaunch .iconic-list-items > .main-wrap > div span {
+            width: 15px; }
+            .mt-relaunch .iconic-list-items > .main-wrap > div span img {
+              max-width: 15px; } }
         .mt-relaunch .iconic-list-items > .main-wrap > div span img {
           display: inline-block;
           vertical-align: middle; }
@@ -12528,7 +12540,7 @@ html, body {
     -ms-border-radius: 15px;
     border-radius: 15px; }
     .mt-relaunch footer.footer .footer-main-part .footer-primary-part {
-      padding: 70px 0 118px 0; }
+      padding: 70px 0 40px 0; }
   .mt-relaunch footer.footer .footer-social-links {
     display: flex;
     align-items: center;
@@ -12559,13 +12571,12 @@ html, body {
     -ms-border-radius: 15px;
     border-radius: 15px;
     background-color: white;
-    padding: 35px;
-    min-height: 157px; }
+    padding: 20px; }
     .mt-relaunch footer.footer .footer-partner-card .main-wrap {
       height: 100%;
       display: flex;
-      column-gap: 45px;
-      row-gap: 45px;
+      column-gap: 40px;
+      row-gap: 40px;
       align-items: center; }
   .mt-relaunch footer.footer .footer-secondary-part {
     padding: 30px; }

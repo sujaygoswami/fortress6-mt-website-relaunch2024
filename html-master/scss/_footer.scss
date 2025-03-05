@@ -9,7 +9,7 @@
                 @include border-radius(15px);
 
                 .footer-primary-part{
-                    padding: 70px 0 118px 0;
+                    padding: 70px 0 40px 0;
                 }
 
             }
@@ -53,14 +53,13 @@
             .footer-partner-card{
                 @include border-radius(15px);
                 background-color: white;
-                padding: 35px;
-                min-height: 157px;
+                padding: 20px;
 
                 .main-wrap{
                     height: 100%;
                     display: flex;
-                    column-gap: 45px;
-                    row-gap: 45px;
+                    column-gap: 40px;
+                    row-gap: 40px;
                     align-items: center;
                 }
             }
