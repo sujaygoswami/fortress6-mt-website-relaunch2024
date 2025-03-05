@@ -26,6 +26,10 @@
             position: relative;
             z-index: 1;
             column-gap: 70px;
+
+            @media screen and (max-width: $xxl) and (min-width: $xxlmin) {
+                column-gap: 20px;
+            }
         }
 
         .header-logo-holder{
@@ -95,6 +99,10 @@
                 background-color: white;
                 @include border-radius(10px);
                 position: relative;
+
+                @media screen and (max-width: $xxl) and (min-width: $xxlmin) {
+                    width: 250px;
+                }
 
                 .text-input{
                     width: 100%;
