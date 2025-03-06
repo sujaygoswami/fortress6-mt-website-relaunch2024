@@ -4,6 +4,24 @@
     .mt-relaunch{
         padding: 70px 0px 10px 0px;
 
+        .global-fluid-mx-padding-tab-mobile{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        .section-top-gap-1{
+            margin-top: 20px;
+        }
+
+
+        a{
+            &.link-copy{
+                background-size: 26.61px;
+                padding-left: 40px;
+            }
+        }
+
         // header
         header.header{
             top: 10px;
@@ -489,6 +507,12 @@
             line-height: 14px;
             background-size: 7.5px;
             background-position: right 12px center;
+
+            &.back-btn{
+                padding-left: 40px;
+                padding-right: 12px;
+                background-size: 8.95px;
+            }
 
             &.video-outline-icon-dark{
                 background-size: 12px !important;
@@ -1209,11 +1233,23 @@
             @include border-radius(10px);
             padding: 20px 0;
 
+            .sm-row-gap, .my-row{
+                row-gap: 30px;
+            }
+
             
 
-            .col-12{
+                .lg-logo{
+                    img{
+                        max-width: 175px;
+                    }
+                }
+                
+            
+
+            .sm-logo, .md-logo{
                 img{
-                    max-width: 138px;
+                    max-width: 100%;
                 }
             }
             
@@ -1700,6 +1736,14 @@
             }
         }
         // teaser-module
+
+        // global carousel
+        .global-carousel{
+            &.in-tab-no-upcoming-seen{
+                padding-right: 0px !important;
+            }
+        }
+        // global carousel
         
     }
 }

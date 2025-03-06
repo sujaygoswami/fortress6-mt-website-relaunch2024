@@ -1,6 +1,28 @@
 .mt-relaunch {
     padding: 150px 0 $grid-gutter-width 0;
     // basic
+    main{
+        .entry{
+            a{
+                color: var(--site-primary-color);
+            }
+        }
+    }
+    a{
+        &.link-copy{
+            padding-left: 45px;
+            background-repeat: no-repeat;
+            background-size: 34.36px;
+            background-position: left;
+            background-image: url(../Images/noun-link-copy-primary.svg);
+            min-height: 25px;
+            display: inline-block;
+        }
+    }
+    .global-fluid-mx-padding{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
     .pointer-auto{
         pointer-events: auto;
     }
@@ -41,6 +63,14 @@
         padding-right: $grid-gutter-width;
     }
 
+
+
+    .section-top-gap-1{
+        margin-top: 70px;
+    }
+
+
+
     @media screen and (min-width: $xxlmin) {
         .container-inset-type-1{
             max-width: 1190px;
@@ -69,7 +99,7 @@
 
     
 
-    
+   
 
     @media screen and (min-width: $xxlmin) {
         .section-bottom-gap-1{
@@ -330,6 +360,9 @@
     .global-border-radius-all-lg{
         @include border-radius(15px);
     }
+    .global-border-radius-all-lg-plus{
+        @include border-radius(20px);
+    }
     .global-border-radius-all-sm{
         @include border-radius(5px);
     }
@@ -393,6 +426,7 @@
         background-repeat: no-repeat;
         background-position: right 20px center;
         background-size: 12.98px;
+        
 
         &.no-default-arrow{
             background-image: none !important;
@@ -412,6 +446,13 @@
                 padding-left: 53px;
                 padding-right: 24px;
             }
+        }
+
+        &.back-btn{
+            background-image: url(../Images/prev-arrow-white.svg) !important;
+            padding-right: 22px;
+            padding-left: 63.4px;
+            background-position: left 20px center;
         }
 
         &.headphone-icon-dark{
@@ -1200,6 +1241,16 @@
                 align-items: center;
                 column-gap: 8px;
                 justify-content: center;
+
+                span{
+                    padding: 0 8px;
+                }
+            }
+
+            .mobile-match-date{
+                span{
+                    padding: 0 5px;
+                }
             }
 
             .match-schedule{
@@ -1717,8 +1768,22 @@
         @include border-radius(15px);
         padding: 35px 0;
         text-align: center;
+        
+        .my-row{
+            align-items: center;
+        }
         img{
             display: inline-block;
+        }
+
+        .lg-logo{
+            img{
+
+                @media screen and (min-width: $xxl) {
+                    max-width: 365px;
+                }
+                
+            }
         }
     }
     // partners module

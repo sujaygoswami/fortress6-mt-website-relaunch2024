@@ -10653,6 +10653,19 @@ html, body {
 
 .mt-relaunch {
   padding: 150px 0 20px 0; }
+  .mt-relaunch main .entry a {
+    color: var(--site-primary-color); }
+  .mt-relaunch a.link-copy {
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: 34.36px;
+    background-position: left;
+    background-image: url(../Images/noun-link-copy-primary.svg);
+    min-height: 25px;
+    display: inline-block; }
+  .mt-relaunch .global-fluid-mx-padding {
+    padding-left: 80px;
+    padding-right: 80px; }
   .mt-relaunch .pointer-auto {
     pointer-events: auto; }
   .mt-relaunch .has-frame-loader {
@@ -10682,6 +10695,8 @@ html, body {
   .mt-relaunch .container-fluid, .mt-relaunch .container-sm, .mt-relaunch .container-md, .mt-relaunch .container-lg, .mt-relaunch .container-xl, .mt-relaunch .container-xxlmin, .mt-relaunch .container-xxl, .mt-relaunch .container {
     padding-left: 20px;
     padding-right: 20px; }
+  .mt-relaunch .section-top-gap-1 {
+    margin-top: 70px; }
   @media screen and (min-width: 1280px) {
     .mt-relaunch .container-inset-type-1 {
       max-width: 1190px; }
@@ -10834,6 +10849,11 @@ html, body {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     border-radius: 15px; }
+  .mt-relaunch .global-border-radius-all-lg-plus {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px; }
   .mt-relaunch .global-border-radius-all-sm {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -10892,6 +10912,11 @@ html, body {
       .mt-relaunch .site-btn.iconic-left-icon.lg-icon {
         padding-left: 53px;
         padding-right: 24px; }
+    .mt-relaunch .site-btn.back-btn {
+      background-image: url(../Images/prev-arrow-white.svg) !important;
+      padding-right: 22px;
+      padding-left: 63.4px;
+      background-position: left 20px center; }
     .mt-relaunch .site-btn.headphone-icon-dark {
       background-size: 22.31px;
       background-image: url(../Images/icon-headphone-dark-2.svg) !important; }
@@ -11368,6 +11393,10 @@ html, body {
     align-items: center;
     column-gap: 8px;
     justify-content: center; }
+    .mt-relaunch .match-table.view-1 .match-timing-head-info span {
+      padding: 0 8px; }
+  .mt-relaunch .match-table.view-1 .mobile-match-date span {
+    padding: 0 5px; }
   .mt-relaunch .match-table.view-1 .match-schedule {
     display: flex;
     column-gap: 30px;
@@ -11707,8 +11736,13 @@ html, body {
     border-radius: 15px;
     padding: 35px 0;
     text-align: center; }
+    .mt-relaunch .partners-module .my-row {
+      align-items: center; }
     .mt-relaunch .partners-module img {
       display: inline-block; }
+    @media screen and (min-width: 1600px) {
+      .mt-relaunch .partners-module .lg-logo img {
+        max-width: 365px; } }
   .mt-relaunch .static-banner-module .static-banner-bottom-action {
     position: absolute;
     right: 0px;
@@ -12596,6 +12630,14 @@ html, body {
 @media screen and (max-width: 1279px) {
   .mt-relaunch {
     padding: 70px 0px 10px 0px; }
+    .mt-relaunch .global-fluid-mx-padding-tab-mobile {
+      padding-left: 20px;
+      padding-right: 20px; }
+    .mt-relaunch .section-top-gap-1 {
+      margin-top: 20px; }
+    .mt-relaunch a.link-copy {
+      background-size: 26.61px;
+      padding-left: 40px; }
     .mt-relaunch header.header {
       top: 10px;
       padding: 0 10px; }
@@ -12907,6 +12949,10 @@ html, body {
       line-height: 14px;
       background-size: 7.5px;
       background-position: right 12px center; }
+      .mt-relaunch .site-btn.back-btn {
+        padding-left: 40px;
+        padding-right: 12px;
+        background-size: 8.95px; }
       .mt-relaunch .site-btn.video-outline-icon-dark {
         background-size: 12px !important; }
       .mt-relaunch .site-btn.gallery-icon-outline-dark {
@@ -13288,8 +13334,12 @@ html, body {
       -ms-border-radius: 10px;
       border-radius: 10px;
       padding: 20px 0; }
-      .mt-relaunch .partners-module .col-12 img {
-        max-width: 138px; }
+      .mt-relaunch .partners-module .sm-row-gap, .mt-relaunch .partners-module .my-row {
+        row-gap: 30px; }
+      .mt-relaunch .partners-module .lg-logo img {
+        max-width: 175px; }
+      .mt-relaunch .partners-module .sm-logo img, .mt-relaunch .partners-module .md-logo img {
+        max-width: 100%; }
     .mt-relaunch .player-detail-info-module > .main-wrap {
       position: relative; }
       .mt-relaunch .player-detail-info-module > .main-wrap .player-detail-image {
@@ -13528,7 +13578,9 @@ html, body {
   .mt-relaunch .teaser-module .teaser-product-img img {
     max-width: 60%; }
   .mt-relaunch .teaser-module .teaser-product-img.no-max-width img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .mt-relaunch .global-carousel.in-tab-no-upcoming-seen {
+    padding-right: 0px !important; } }
 
 @media screen and (max-width: 767px) {
   .mt-relaunch .only-mobile-height-auto {

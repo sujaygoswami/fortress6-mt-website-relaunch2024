@@ -404,6 +404,12 @@ jQuery('.global-carousel-type-4').slick({
     }
   ]
 });
+jQuery('.global-carousel-type-4').each(function(){
+  var ITEM = jQuery(this).find('.item').length;
+  if(ITEM <= 3 ){
+    jQuery(this).addClass('in-tab-no-upcoming-seen');
+  }
+});
 
 jQuery('.global-carousel-type-5').slick({
   infinite: true,
