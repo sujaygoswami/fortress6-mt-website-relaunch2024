@@ -13412,9 +13412,11 @@ html, body {
       .mt-relaunch .static-banner-module .banner-title span.sub {
         font-size: 13px;
         line-height: 15px; }
-    .mt-relaunch .bredcrumb-module ul li {
-      font-size: 15px;
-      letter-spacing: 1.5px; }
+    .mt-relaunch .bredcrumb-module {
+      margin-bottom: 15px; }
+      .mt-relaunch .bredcrumb-module ul li {
+        font-size: 15px;
+        letter-spacing: 1.5px; }
     .mt-relaunch footer.footer {
       padding: 0 10px; }
       .mt-relaunch footer.footer .footer-secondary-part {
