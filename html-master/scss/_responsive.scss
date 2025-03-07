@@ -927,10 +927,10 @@
         .site-tab-nav{
             button{
                 &.nav-link{
-                    font-size: 10px;
-                    height: 30px;
-                    padding: 0 10px;
-                    line-height: 30px;
+                    font-size: 12px;
+                    height: 40px;
+                    padding: 0 15px;
+                    line-height: 40px;
                 }
             }
         }
@@ -1541,6 +1541,22 @@
             position: relative;
             // background-color: var(--site-grey-type-primary);
             // border-radius: 0 0 10px 10px;
+
+            &:after{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 40px;
+                height: 35px;
+                background-image: url(../Images/responsive-table-indication.svg);
+                background-repeat: no-repeat;
+                background-position: left -14px top;
+                background-size: cover;
+                content: ' ';
+                pointer-events: none;
+                background-color: var(--site-primary-color);
+                border-radius: 0 10px 10px 0;
+            }
         }
         .responsive-scrollable-table{
             tbody{
@@ -1583,7 +1599,7 @@
                 position: absolute;
                 width: 100%;
                 left: 0px;
-                border-top: 1px solid #f8f9fa6e !important;
+                border-top: 1px solid #dddddd !important;
             }
 
             &.for-responsive-fix-width-type-1{

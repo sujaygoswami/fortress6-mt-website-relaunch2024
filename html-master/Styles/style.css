@@ -13160,10 +13160,10 @@ html, body {
     .mt-relaunch .global-content-card.view-1 {
       padding: 20px; }
     .mt-relaunch .site-tab-nav button.nav-link {
-      font-size: 10px;
-      height: 30px;
-      padding: 0 10px;
-      line-height: 30px; }
+      font-size: 12px;
+      height: 40px;
+      padding: 0 15px;
+      line-height: 40px; }
     .mt-relaunch .match-table.view-1 .match-schedule {
       column-gap: 5px;
       row-gap: 5px; }
@@ -13474,6 +13474,20 @@ html, body {
       font-size: 14px; }
     .mt-relaunch .responsive-scroll-table-parent {
       position: relative; }
+      .mt-relaunch .responsive-scroll-table-parent:after {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 40px;
+        height: 35px;
+        background-image: url(../Images/responsive-table-indication.svg);
+        background-repeat: no-repeat;
+        background-position: left -14px top;
+        background-size: cover;
+        content: ' ';
+        pointer-events: none;
+        background-color: var(--site-primary-color);
+        border-radius: 0 10px 10px 0; }
     .mt-relaunch .responsive-scrollable-table tbody {
       border-bottom: 3px solid var(--site-grey-type-primary); }
       .mt-relaunch .responsive-scrollable-table tbody.has-td-min-hieght {
@@ -13494,7 +13508,7 @@ html, body {
       position: absolute;
       width: 100%;
       left: 0px;
-      border-top: 1px solid #f8f9fa6e !important; }
+      border-top: 1px solid #dddddd !important; }
     .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-1 {
       margin-left: 200px;
       overflow-x: scroll;
