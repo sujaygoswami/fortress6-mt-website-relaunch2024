@@ -4,6 +4,9 @@ var site = {}
 var $xxlmin = 1280;
 // break point vars
 
+
+
+
 // GLOBALTABMOBILECONVERTEDSLIDER
 site.GLOBALTABMOBILECONVERTEDSLIDER = function () {
 
@@ -188,6 +191,25 @@ var checkMobile = function(){
 
 //Execute Check
 checkMobile();
+
+
+currLoc = $(location).attr('href');
+jQuery('#current-url').html(currLoc);
+
+
+// text copy
+jQuery('.copy-function-present-url').copyOnClick({
+
+  confirmShow:true,
+  copyMode:"html",
+  confirmClass:"copy-confirmation",
+  confirmText:"Link Copied",
+  confirmTime: 3,
+  
+
+  
+});
+
 
 // breadcrumb-section
 var breadcrumbNextClass = $('.breadcrumb-section').next('.section-row').find('.container > div:first-child').attr('class');

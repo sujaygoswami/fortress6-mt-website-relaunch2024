@@ -1,0 +1,86 @@
+.mt-relaunch{
+
+	footer{
+        &.footer{
+            padding: 0px $grid-gutter-width;
+
+            .footer-main-part{
+                background-color: var(--site-primary-color);
+                @include border-radius(15px);
+
+                .footer-primary-part{
+                    padding: 70px 0 118px 0;
+                }
+
+            }
+
+            .footer-social-links{
+                display: flex;
+                align-items: center;
+                column-gap: 35px;
+                row-gap: 35px;
+                @media screen and (min-width: $xxl){
+                    column-gap: 56px;
+                    row-gap: 56px;
+                }
+                
+            }
+
+            .footer-site-menu{
+                ul{
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+
+                    li{
+                        margin: 0 0 12px 0;
+                        padding: 0px;
+                        color: white;
+                        font-size: 18px;
+                        line-height: normal;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .footer-partner-card{
+                @include border-radius(15px);
+                background-color: white;
+                padding: 35px;
+                min-height: 157px;
+
+                .main-wrap{
+                    height: 100%;
+                    display: flex;
+                    column-gap: 45px;
+                    row-gap: 45px;
+                    align-items: center;
+                }
+            }
+
+            .footer-secondary-part{
+                padding: 30px;
+                & > .main-wrap{
+                    padding: 20px 30px;
+                    @include border-radius(10px);
+                    background-color: white;
+                }
+            }
+
+            .website-by{
+                display: flex;
+                align-items: center;
+                column-gap: 14px;
+                row-gap: 14px;
+            }
+        }
+    }
+	
+}

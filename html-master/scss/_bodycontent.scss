@@ -1,6 +1,14 @@
 .mt-relaunch {
     padding: 150px 0 $grid-gutter-width 0;
     // basic
+    .copy-confirmation{
+       padding: 1rem;
+       color: var(--site-alert-color);
+       background-color: var(--site-alert-bg);
+       border: 1px solid var(--site-alert-border-color);
+       margin-bottom: 1rem;
+       border-radius: 5px;
+    }
     main{
         .entry{
             a{
@@ -25,6 +33,23 @@
     }
     .pointer-auto{
         pointer-events: auto;
+    }
+
+    img{
+        &.hover-type-1{
+            @include transition(all 0.3s ease 0s);
+
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    .global-hover-scale-effect-1{
+        @include transition(all 0.3s ease 0s);
+        &:hover{
+            transform: scale(0.9);
+        }
     }
 
     .global-hoverd-image-parent{
@@ -447,6 +472,11 @@
         background-repeat: no-repeat;
         background-position: right 20px center;
         background-size: 12.98px;
+        @include transition(all 0.5s ease 0s);
+
+        &:hover{
+            transform: scale(0.95);
+        }
         
 
         &.no-default-arrow{
@@ -2050,9 +2080,17 @@
                 letter-spacing: 2.5px;
                 font-family: var(--site-secondary-font);
                 font-weight: var(--site-secondary-font-Semi-bold);
-                opacity: 0.3;
+                &:not(.current-page){
+                    a{
+                        &:hover{
+                            color: #8E1920;
+                            opacity: 1;
+                        }
+                    }
+                }
                 &:after{
                     content: '/';
+                    opacity: 0.3;
                 }
                 &:last-child{
                     &:after{
@@ -2067,11 +2105,16 @@
                 &.current-page{
                     opacity: 1;
                     pointer-events: none;
+
+                    a{
+                        opacity: 1;
+                    }
                 }
                 
                 a{
                     color: var(--site-text-color);
                     margin-right: 10px;
+                    opacity: 0.3;
                 }
             }
         }
