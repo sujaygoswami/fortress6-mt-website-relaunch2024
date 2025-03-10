@@ -665,5 +665,27 @@ jQuery('.teaser-module.has-min-height.get-this-height').each(function(){
 
 
 
+// paralax
+var controller = $.superscrollorama();
+jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {  
+  var PARENTS = jQuery(this);
+
+  var reactiveItem1 = jQuery(this).find('.reactive-item-type-1');
+
+  // TweenMax.from(ferris, 0, { rotation:0, yoyo:true, repeat:-1, ease:Linear.easeNone } );
+  // TweenMax.to(ferris, 10, { rotation:360, yoyo:true, repeat:-1, ease:Linear.easeNone } );
+  
+  var paralaxCard = TweenMax.to(
+    $(PARENTS).find(reactiveItem1), 0.1, { rotation:0, }
+  );
+  var paralaxCard = TweenMax.to(
+    $(PARENTS).find(reactiveItem1), 0.1, { rotation:180, }
+  );
+  controller.pin(PARENTS, 900, { offset: -900, anim: paralaxCard });
+  
+});
+
+
+
 });
 

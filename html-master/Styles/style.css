@@ -10234,6 +10234,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   color: var(--site-text-color);
+  font-family: var(--site-primary-font);
   font-weight: var(--site-primary-font-normal); }
   .mt-relaunch *:focus {
     outline: 0; }
@@ -10668,6 +10669,14 @@ html, body {
     padding-right: 80px; }
   .mt-relaunch .pointer-auto {
     pointer-events: auto; }
+  .mt-relaunch .global-hoverd-image-parent:hover .global-hoverd-image .normal-img {
+    display: none; }
+  .mt-relaunch .global-hoverd-image-parent:hover .global-hoverd-image .hovered-img {
+    display: inline-block; }
+  .mt-relaunch .global-hoverd-image .normal-img {
+    display: inline-block; }
+  .mt-relaunch .global-hoverd-image .hovered-img {
+    display: none; }
   .mt-relaunch .has-frame-loader {
     position: relative; }
     .mt-relaunch .has-frame-loader .the-loader {
@@ -12260,8 +12269,21 @@ html, body {
   .mt-relaunch .player-detail-info-module .info-card {
     display: flex;
     flex-wrap: wrap; }
+    .mt-relaunch .player-detail-info-module .info-card.has-full-power-batch.has-batch-item:after {
+      display: none; }
     .mt-relaunch .player-detail-info-module .info-card.has-full-power-batch:after {
       content: ' ';
+      width: 236.16px;
+      height: 235.28px;
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-image: url(../Images/full-power-batch.svg);
+      background-size: 236.16px;
+      position: absolute;
+      right: -85px;
+      top: -85px;
+      z-index: -1; }
+    .mt-relaunch .player-detail-info-module .info-card.has-full-power-batch .the-batch {
       width: 236.16px;
       height: 235.28px;
       background-repeat: no-repeat;
@@ -12564,6 +12586,10 @@ html, body {
         .mt-relaunch .iconic-list-items > .main-wrap > div span img {
           display: inline-block;
           vertical-align: middle; }
+  .mt-relaunch .paralax-pause-scroller {
+    position: static !important; }
+  .mt-relaunch .superscrollorama-pin-spacer {
+    height: auto !important; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }
@@ -13358,6 +13384,12 @@ html, body {
           font-size: 68px;
           line-height: 79px; }
     .mt-relaunch .player-detail-info-module .info-card.has-full-power-batch:after {
+      width: 92.79px;
+      height: 92.44px;
+      background-size: 92.79px;
+      right: -8px;
+      top: -32px; }
+    .mt-relaunch .player-detail-info-module .info-card.has-full-power-batch .the-batch {
       width: 92.79px;
       height: 92.44px;
       background-size: 92.79px;
