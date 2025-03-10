@@ -3140,4 +3140,50 @@
 
 
 
+    // switcher module start
+    .switcher-module{
+
+        .site-tab-nav{
+            button{
+                &.nav-link{
+                    &.active{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .ball{
+            background-color: rgba(0,0,0,0.1);
+            width:0px;
+            height:100%;
+            border-radius:15px;
+            position:absolute;
+            @include transition(all 0.5s ease 0s);
+            left: 0px;
+            top: 0px;
+            z-index: -2;
+          }
+
+
+          .running-active-back{
+            width: 0px;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            top: 0px;
+            border-radius: 15px;
+            background-color: var(--site-secondary-color);
+            pointer-events: none;
+            @include transition(all 0.3s ease 0s);
+            background-color: black;
+            z-index: -1;
+          }
+          
+    }
+    // switcher module end
+
+
+
 }

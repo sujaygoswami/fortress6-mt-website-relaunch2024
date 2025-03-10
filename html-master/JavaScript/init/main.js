@@ -5,7 +5,54 @@ var $xxlmin = 1280;
 // break point vars
 
 
+site.TABSWITCHER = function () {
+jQuery('.switcher-module').each(function () {
 
+
+
+  jQuery(this).find('.switch-item').click(function () {
+    var WIDTH = jQuery(this).find('.active').parent().width();
+    var POSITION = jQuery(this).find('.active').parent().position();
+
+    
+
+    jQuery(this).parents('.switcher-module').find('.running-active-back').width(WIDTH);
+    jQuery(this).parents('.switcher-module').find('.running-active-back').css('left', POSITION.left);
+  });
+
+
+  jQuery(this).find('.switch-item').hover(function () {
+    var WIDTH = jQuery(this).width();
+    var POSITION = jQuery(this).position();
+
+    
+
+    jQuery(this).parents('.switcher-module').find('.ball').width(WIDTH);
+    jQuery(this).parents('.switcher-module').find('.ball').css('left', POSITION.left);
+  });
+  
+
+
+
+
+  jQuery(this).find('.switch-item .active').each(function () {
+    var WIDTH = jQuery(this).parent().width();
+    var POSITION = jQuery(this).parent().position();
+
+ 
+
+    jQuery(this).parents('.switcher-module').find('.running-active-back').width(WIDTH);
+    jQuery(this).parents('.switcher-module').find('.running-active-back').css('left', POSITION.left);
+  });
+
+ 
+
+
+
+});
+
+
+};
 
 // GLOBALTABMOBILECONVERTEDSLIDER
 site.GLOBALTABMOBILECONVERTEDSLIDER = function () {
@@ -706,6 +753,11 @@ jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {
   controller.pin(PARENTS, 900, { offset: -900, anim: paralaxCard });
   
 });
+
+
+
+// switcher
+site.TABSWITCHER();
 
 
 

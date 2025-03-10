@@ -12621,6 +12621,33 @@ html, body {
     position: static !important; }
   .mt-relaunch .superscrollorama-pin-spacer {
     height: auto !important; }
+  .mt-relaunch .switcher-module .site-tab-nav button.nav-link.active {
+    background-color: transparent; }
+  .mt-relaunch .switcher-module .ball {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 0px;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    left: 0px;
+    top: 0px;
+    z-index: -2; }
+  .mt-relaunch .switcher-module .running-active-back {
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    border-radius: 15px;
+    background-color: var(--site-secondary-color);
+    pointer-events: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: black;
+    z-index: -1; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }
