@@ -10334,6 +10334,10 @@ html, body {
   padding: 0 20px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
+  .mt-relaunch header.header .header-search.inactive, .mt-relaunch header.header .header-primary-menu.inactive {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0; }
   .mt-relaunch header.header.header-scrolled {
     top: 0px;
     padding: 0px; }
@@ -10446,11 +10450,13 @@ html, body {
       font-weight: var(--site-primary-font-bold);
       color: white;
       display: none; }
-    .mt-relaunch header.header .header-menu .menu-trigger:hover .menu-hamberg.animate-menu-hmbg {
-      transform: rotate(0deg); }
+    @media screen and (min-width: 1280px) {
+      .mt-relaunch header.header .header-menu .menu-trigger:hover .menu-hamberg.animate-menu-hmbg {
+        transform: rotate(0deg); } }
+    @media screen and (min-width: 1280px) {
       .mt-relaunch header.header .header-menu .menu-trigger:hover .menu-hamberg.animate-menu-hmbg span {
         width: 100% !important;
-        left: 0px !important; }
+        left: 0px !important; } }
     .mt-relaunch header.header .header-menu .menu-trigger.clicked .close-text {
       display: block; }
     .mt-relaunch header.header .header-menu .menu-trigger.clicked .menu-hamberg.animate-menu-hmbg {
@@ -10595,7 +10601,12 @@ html, body {
           padding: 0px;
           font-size: 45px;
           text-transform: uppercase;
-          line-height: normal; }
+          line-height: normal;
+          -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+          .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.inactive {
+            opacity: 0.35;
+            pointer-events: none; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:last-child {
             margin-bottom: 0px; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu > a {
@@ -10603,13 +10614,6 @@ html, body {
             background-repeat: no-repeat;
             background-position: right 23px center;
             background-size: 12.98px; }
-          @media screen and (min-width: 1280px) {
-            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover ul.sub-item {
-              opacity: 1;
-              pointer-events: auto; } }
-          @media screen and (min-width: 1280px) {
-            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu:hover > a {
-              background-image: url(../Images/next-arrow-dark.svg); } }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item {
             list-style: none;
             margin: 0px;
@@ -10622,33 +10626,29 @@ html, body {
             pointer-events: none;
             -webkit-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s; }
-            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label {
-              padding-top: 12px; }
-              .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label ul {
-                list-style: none;
-                margin: 0px;
-                padding: 10px 0 0 30px; }
-                .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label ul li {
-                  margin: 0 0 10px 0;
-                  padding: 0px;
-                  font-size: 26px; }
+            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.active {
+              opacity: 1;
+              pointer-events: auto; }
+            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label ul {
+              list-style: none;
+              margin: 0px;
+              padding: 24px 0 0 0; }
+              .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.parent-label ul li {
+                margin: 0 0 25px 0;
+                padding: 0px;
+                font-size: 30px;
+                line-height: normal; }
             .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item li {
               margin: 0;
               padding: 0 0 25px 0;
-              font-size: 30px;
               line-height: normal;
               text-transform: uppercase; }
               .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item li a {
                 color: white; }
-          @media screen and (min-width: 1280px) {
-            .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:hover > a, .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.active > a {
-              background-color: white;
-              color: var(--site-text-color); } }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:last-child {
             margin-bottom: 0px; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li > a {
             display: block;
-            padding: 0 70px 0 25px;
             -webkit-border-radius: 15px;
             -moz-border-radius: 15px;
             -ms-border-radius: 15px;
@@ -12473,6 +12473,15 @@ html, body {
     line-height: normal;
     font-weight: var(--site-primary-font-bold);
     margin-bottom: 14px; }
+  .mt-relaunch .frame-type-form_formframework .input select.form-control, .mt-relaunch .tx-indexedsearch-searchbox .input select.form-control {
+    padding-right: 40px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url(../Images/dark-down-arrow.svg);
+    background-position: right 10px center;
+    background-size: 20px; }
+  .mt-relaunch .frame-type-form_formframework .input textarea, .mt-relaunch .tx-indexedsearch-searchbox .input textarea {
+    padding: 10px 20px !important; }
   .mt-relaunch .frame-type-form_formframework .input .form-control, .mt-relaunch .tx-indexedsearch-searchbox .input .form-control {
     border: 1px solid black;
     height: 50px;
@@ -12810,6 +12819,9 @@ html, body {
         background-image: url(../Images/search-icon-white-thick.svg);
         background-size: 18.78px;
         cursor: pointer; }
+        .mt-relaunch header.header .responsive-search-trigger.inactive {
+          visibility: hidden;
+          pointer-events: none; }
         .mt-relaunch header.header .responsive-search-trigger.triggered {
           background-image: url(../Images/close-icon-white.svg); }
       .mt-relaunch header.header > .main-wrap {

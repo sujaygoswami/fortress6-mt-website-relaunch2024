@@ -146,6 +146,10 @@
                 background-image: url(../Images/search-icon-white-thick.svg);
                 background-size: 18.78px;
                 cursor: pointer;
+                &.inactive{
+                    visibility: hidden;
+                    pointer-events: none;
+                }
                 &.triggered{
                     background-image: url(../Images/close-icon-white.svg);
                 }

@@ -8,6 +8,13 @@
         z-index: 500;
         padding: 0 $grid-gutter-width;
         @include transition(all 0.3s ease 0s);
+        .header-search, .header-primary-menu{
+            &.inactive{
+                visibility: hidden;
+                pointer-events: none;
+                opacity: 0;
+            }
+        }
         &.header-scrolled{
             top: 0px;
             padding: 0px;
@@ -155,10 +162,16 @@
                 &:hover{
                     .menu-hamberg{
                         &.animate-menu-hmbg{
-                            transform: rotate(0deg);
+
+                            @media screen and (min-width: $xxlmin){
+                                transform: rotate(0deg);
+                            }
+                            
                             span{
-                                width: 100% !important;
-                                left: 0px !important;
+                                @media screen and (min-width: $xxlmin){
+                                    width: 100% !important;
+                                    left: 0px !important;
+                                }
                             }
                         }
                     }
@@ -369,6 +382,12 @@
                         font-size: 45px;
                         text-transform: uppercase;
                         line-height: normal;
+                        @include transition(all 0.3s ease 0s);
+                        // width: 325px;
+                        &.inactive{
+                            opacity: 0.35;
+                            pointer-events: none;
+                        }
                         &:last-child{
                             margin-bottom: 0px;
                         }
@@ -381,17 +400,18 @@
                                 background-size: 12.98px;
                             }
                             &:hover{
-                                @media screen and (min-width: $xxlmin) {
-                                    ul.sub-item{
-                                        opacity: 1;
-                                        pointer-events: auto;
-                                    }
-                                }
+                                // width: auto;
+                                // @media screen and (min-width: $xxlmin) {
+                                //     ul.sub-item{
+                                //         opacity: 1;
+                                //         pointer-events: auto;
+                                //     }
+                                // }
 
                                 & > a{
 
                                     @media screen and (min-width: $xxlmin) {
-                                        background-image: url(../Images/next-arrow-dark.svg);
+                                        
                                     }
                                     
                                 }
@@ -408,17 +428,23 @@
                                 pointer-events: none;
                                 @include transition(all 0.3s ease 0s);
 
+                                &.active{
+                                    opacity: 1;
+                                    pointer-events: auto;
+                                }
+
                                 &.parent-label{
-                                    padding-top: 12px;
+                                    
                                     ul{
                                         list-style: none;
                                         margin: 0px;
-                                        padding: 10px 0 0 30px;
+                                        padding: 24px 0 0 0;
 
                                         li{
-                                            margin: 0 0 10px 0;
+                                            margin: 0 0 25px 0;
                                             padding: 0px;
-                                            font-size: 26px;
+                                            font-size: 30px;
+                                            line-height: normal;
                                         }
                                     }
                                 }
@@ -427,7 +453,6 @@
                                 li{
                                     margin: 0;
                                     padding: 0 0 25px 0;
-                                    font-size: 30px;
                                     line-height: normal;
                                     text-transform: uppercase;
                                    
@@ -442,8 +467,7 @@
                         &:hover, &.active{
                             & > a{
                                 @media screen and (min-width: $xxlmin) {
-                                    background-color: white;
-                                    color: var(--site-text-color);
+                                    
                                 }
                                 
                             }
@@ -457,7 +481,6 @@
 
                         & > a{
                             display: block;
-                            padding: 0 70px 0 25px;
                             @include border-radius(15px);
                             color: white;
                             width: 325px;

@@ -2879,6 +2879,21 @@
         }
 
         .input{
+            
+            select{
+                
+                &.form-control{
+                    padding-right: 40px;
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-image: url(../Images/dark-down-arrow.svg);
+                    background-position: right 10px center;
+                    background-size: 20px;
+                }
+            }
+            textarea{
+                padding: 10px 20px !important;
+            }
             .form-control{
                 border: 1px solid black;
                 height: 50px;
