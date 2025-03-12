@@ -4,6 +4,14 @@
     .mt-relaunch{
         padding: 70px 0px 10px 0px;
 
+
+        main{
+            .container-fluid, .container{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+
         .global-fluid-mx-padding-tab-mobile{
             padding-left: 20px;
             padding-right: 20px;
@@ -1781,6 +1789,15 @@
 // only mobile
 @media screen and (max-width: ($md - 1px)){
     .mt-relaunch{
+
+        main{
+            .container-fluid, .container{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+
         .only-mobile-height-auto{
             height: auto;
         }

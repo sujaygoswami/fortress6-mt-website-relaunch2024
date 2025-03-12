@@ -12723,6 +12723,9 @@ html, body {
 @media screen and (max-width: 1279px) {
   .mt-relaunch {
     padding: 70px 0px 10px 0px; }
+    .mt-relaunch main .container-fluid, .mt-relaunch main .container-sm, .mt-relaunch main .container-md, .mt-relaunch main .container-lg, .mt-relaunch main .container-xl, .mt-relaunch main .container-xxlmin, .mt-relaunch main .container-xxl, .mt-relaunch main .container {
+      padding-left: 50px;
+      padding-right: 50px; }
     .mt-relaunch .global-fluid-mx-padding-tab-mobile {
       padding-left: 20px;
       padding-right: 20px; }
@@ -13701,6 +13704,9 @@ html, body {
     padding-right: 0px !important; } }
 
 @media screen and (max-width: 767px) {
+  .mt-relaunch main .container-fluid, .mt-relaunch main .container-sm, .mt-relaunch main .container-md, .mt-relaunch main .container-lg, .mt-relaunch main .container-xl, .mt-relaunch main .container-xxlmin, .mt-relaunch main .container-xxl, .mt-relaunch main .container {
+    padding-left: 20px;
+    padding-right: 20px; }
   .mt-relaunch .only-mobile-height-auto {
     height: auto; }
   .mt-relaunch .frame-type-form_formframework .row > div {
