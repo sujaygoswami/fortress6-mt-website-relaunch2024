@@ -12439,6 +12439,8 @@ html, body {
     border-bottom: 1px solid var(--site-grey-type-primary); }
   .mt-relaunch .tx-indexedsearch-browsebox.pagination {
     margin-top: 10px; }
+  .mt-relaunch .tx-indexedsearch-browsebox.filter-result-pagination {
+    margin-top: 40px; }
   .mt-relaunch .tx-indexedsearch-info {
     display: none; }
   .mt-relaunch .tx-indexedsearch-description {

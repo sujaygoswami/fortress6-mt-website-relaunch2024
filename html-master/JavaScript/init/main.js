@@ -621,9 +621,12 @@ jQuery('.tx-indexedsearch-searchbox').each(function(){
   jQuery(this).find('.tx-indexedsearch-searchbox-button').addClass('site-btn primary-btn');
 });
 jQuery('.tx-indexedsearch-browsebox').each(function(){
-  jQuery(this).addClass('pagination grid-flex-justify-content-center');
-  jQuery(this).find('> li').addClass('page-item');
-  jQuery(this).find('> li a').addClass('page-link');
+  jQuery(this).addClass('grid-flex-justify-content-center filter-result-pagination');
+  jQuery(this).find('li').addClass('number-pagi');
+  jQuery(this).parents('.content-box').addClass('filter-module');
+  jQuery(this).find('li strong').parent().addClass('current disabled');
+  jQuery(this).find('.tx-indexedsearch-browselist-next:first-child a').html('<i class="fa fa-angle-double-left"></i>');
+  jQuery(this).find('.tx-indexedsearch-browselist-next:last-child a').html('<i class="fa fa-angle-double-right"></i>');
 });
 
 
@@ -794,9 +797,9 @@ jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {
 
 
 
+
 // switcher
 site.TABSWITCHER();
-
 
 
 });
