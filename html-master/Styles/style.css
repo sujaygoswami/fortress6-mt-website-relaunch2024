@@ -12659,6 +12659,22 @@ html, body {
     transition: all 0.3s ease 0s;
     background-color: black;
     z-index: -1; }
+  .mt-relaunch .match-table .contenttable {
+    margin-top: 20px; }
+    .mt-relaunch .match-table .contenttable tbody:before {
+      content: '';
+      display: block;
+      height: 10px; }
+    .mt-relaunch .match-table .contenttable thead > tr:first-child td, .mt-relaunch .match-table .contenttable tbody > tr:first-child td {
+      border-color: inherit !important;
+      border-top: none !important; }
+    .mt-relaunch .match-table .contenttable thead > tr:last-child td, .mt-relaunch .match-table .contenttable tbody > tr:last-child td {
+      border-color: inherit !important;
+      border-bottom: none !important; }
+    .mt-relaunch .match-table .contenttable thead > tr > th:first-child, .mt-relaunch .match-table .contenttable thead > tr > td:first-child, .mt-relaunch .match-table .contenttable tbody > tr > th:first-child, .mt-relaunch .match-table .contenttable tbody > tr > td:first-child {
+      padding-left: 10px !important; }
+    .mt-relaunch .match-table .contenttable thead > tr > th:last-child, .mt-relaunch .match-table .contenttable thead > tr > td:last-child, .mt-relaunch .match-table .contenttable tbody > tr > th:last-child, .mt-relaunch .match-table .contenttable tbody > tr > td:last-child {
+      padding-right: 10px !important; }
 
 .mt-relaunch footer.footer {
   padding: 0px 20px; }

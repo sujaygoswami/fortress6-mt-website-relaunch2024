@@ -3202,6 +3202,49 @@
     }
     // switcher module end
 
+    // content table
+    .match-table{
+        .contenttable{
+                margin-top: 20px;
+                tbody{
+                    &:before{
+                        content:'';
+                        display:block;
+                        height: 10px;
+                    }
+                }
+
+                thead, tbody{
+                    & > tr{
+                        &:first-child{
+                            td{
+                                border-color: inherit !important;
+                                border-top: none !important;
+                            }
+                        }
+                        &:last-child{
+                            td{
+                                border-color: inherit !important;
+                                border-bottom: none !important;
+                            }
+                        }
+                        & > th, & > td{
+                            &:first-child{
+                                padding-left:10px !important;
+                            }
+
+                            &:last-child{
+                                padding-right:10px !important;
+                            }
+                        }
+                    }
+                }
+            
+
+        }
+    }
+    // content table
+
 
 
 }

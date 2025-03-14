@@ -366,7 +366,9 @@ jQuery('.no-default-table').find('.contenttable').removeClass('contenttable');
 
 
 // site-accordion-module
-jQuery('.site-accordion-module .contenttable').wrap('<div class="table-responsive"></div>');
+jQuery('.contenttable').wrap('<div class="table-responsive"><div class="match-table view-1 layout-2 mobile-view-2"><div></div>');
+
+
 
 
 
