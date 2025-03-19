@@ -2825,6 +2825,12 @@
     .tx-indexedsearch-res{
         padding: 20px 0;
         border-bottom: 1px solid var(--site-grey-type-primary);
+
+        a{
+            &:hover{
+                color: var(--site-primary-dark);
+            }
+        }
     }
     .tx-indexedsearch-browsebox.pagination{
         margin-top: 10px;
@@ -3204,6 +3210,11 @@
 
     // content table
     .match-table{
+        .global-match-time{
+            span{
+                padding: 0 8px;
+            }
+        }
         .contenttable{
                 margin-top: 20px;
                 tbody{

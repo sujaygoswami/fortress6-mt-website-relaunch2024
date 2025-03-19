@@ -12437,6 +12437,8 @@ html, body {
   .mt-relaunch .tx-indexedsearch-res {
     padding: 20px 0;
     border-bottom: 1px solid var(--site-grey-type-primary); }
+    .mt-relaunch .tx-indexedsearch-res a:hover {
+      color: var(--site-primary-dark); }
   .mt-relaunch .tx-indexedsearch-browsebox.pagination {
     margin-top: 10px; }
   .mt-relaunch .tx-indexedsearch-browsebox.filter-result-pagination {
@@ -12659,6 +12661,8 @@ html, body {
     transition: all 0.3s ease 0s;
     background-color: black;
     z-index: -1; }
+  .mt-relaunch .match-table .global-match-time span {
+    padding: 0 8px; }
   .mt-relaunch .match-table .contenttable {
     margin-top: 20px; }
     .mt-relaunch .match-table .contenttable tbody:before {
