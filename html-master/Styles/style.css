@@ -9971,7 +9971,7 @@ textarea.form-control-lg {
   --site-grey-type-primary-dark: #D3CEC1;
   --site-grey-type-primary-darker: #D6D2C8;
   --site-text-color: #000000;
-  --start-page-content-organiser-base-height: 920px; }
+  --start-page-content-organiser-base-height: calc(100vh - 170px); }
 
 @font-face {
   font-family: 'Avenir Next Cyr';
@@ -11154,8 +11154,12 @@ html, body {
           height: auto;
           display: block;
           opacity: 0; }
+  @media screen and (min-width: 1280px) {
+    .mt-relaunch .content-organiser-module-type-1 .teaser-module .teaser-product-img img {
+      max-width: 250px; } }
   .mt-relaunch .content-organiser-module-type-1 .base-height {
-    height: var(--start-page-content-organiser-base-height); }
+    height: var(--start-page-content-organiser-base-height);
+    min-height: 730px; }
   @media screen and (min-width: 1280px) {
     .mt-relaunch .content-organiser-module-type-1 .lg-box {
       width: 35%; } }
@@ -11169,9 +11173,9 @@ html, body {
     .mt-relaunch .content-organiser-module-type-1 .sm-box {
       width: 24.08488%; } }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-lg-height {
-    height: 40%; }
+    height: 50%; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height {
-    height: 60%; }
+    height: 50%; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-lg-height-2 {
     height: 20%; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height-2 {
@@ -11224,7 +11228,7 @@ html, body {
   .mt-relaunch .global-post-info .entry:not(.flex-grow):first-child {
     margin-left: auto; }
   .mt-relaunch .global-post-info .entry p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: normal;
     opacity: 0.6; }
     .mt-relaunch .global-post-info .entry p.no-opech {
@@ -11610,6 +11614,12 @@ html, body {
     .mt-relaunch .teaser-module .teaser-title.sm-size {
       font-size: 40px;
       line-height: 47px; }
+    .mt-relaunch .teaser-module .teaser-title.xs-special-organise-size {
+      font-size: 30px;
+      line-height: 50px; }
+      .mt-relaunch .teaser-module .teaser-title.xs-special-organise-size .sub {
+        font-size: 20px;
+        line-height: 26px; }
   .mt-relaunch .teaser-module .bring-to-front {
     z-index: 30; }
   .mt-relaunch .teaser-module .bring-to-middle {
@@ -13247,6 +13257,12 @@ html, body {
       .mt-relaunch .teaser-module .teaser-title.md-less-size {
         font-size: 25px;
         line-height: normal; }
+      .mt-relaunch .teaser-module .teaser-title.xs-special-organise-size {
+        font-size: 25px;
+        line-height: normal; }
+        .mt-relaunch .teaser-module .teaser-title.xs-special-organise-size .sub {
+          font-size: 15px;
+          line-height: 21px; }
       .mt-relaunch .teaser-module .teaser-title.pull-text-left.lg-less-size .sub.lg-size {
         padding-left: 20px; }
       .mt-relaunch .teaser-module .teaser-title.pull-text-left .sub {
