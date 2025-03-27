@@ -539,12 +539,19 @@ jQuery('.global-carousel-slider-navigate-wrap').each(function(){
 
 // menu trigger
 jQuery('.header-menu .menu-trigger').click(function(){
-  jQuery('.header-search, .header-logo-holder').toggle();
-  jQuery(this).toggleClass('clicked');
+  jQuery('.header-search, .header-logo-holder').hide();
+  jQuery(this).addClass('clicked');
   jQuery('.main-nav.slide-action').show();
-  jQuery('.main-nav.slide-action').toggleClass('fadeInDown');
-  jQuery('.main-nav.slide-action').toggleClass('fadeOutUp');
-  jQuery('.header-search .responsive-search-trigger, .header-primary-menu, .header-search').toggleClass('inactive');
+  jQuery('.header-search .responsive-search-trigger, .header-primary-menu, .header-search').addClass('inactive');
+  jQuery('body').addClass('overflow-hidden');
+});
+
+jQuery('.independent-menu-close').click(function(){
+  jQuery('.header-search, .header-logo-holder').show();
+  jQuery(this).removeClass('clicked');
+  jQuery('.main-nav.slide-action').hide();
+  jQuery('.header-search .responsive-search-trigger, .header-primary-menu, .header-search').removeClass('inactive');
+  jQuery('body').removeClass('overflow-hidden');
 });
 
 // fancybox

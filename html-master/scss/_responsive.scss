@@ -35,13 +35,22 @@
             top: 10px;
             padding: 0 10px;
 
+            .independent-menu-close{
+                top: 25px;
+                right: 25px;
+                width: 30px;
+                height: 30px;
+                background-size: 15px;
+                @include border-radius(5px);
+            }
+
             .main-nav{
-                padding: 70px 10px 10px 10px;
+                
 
                 & > .main-wrap{
-                    padding: 40px 25px;
-                    height: calc(100vh - 90px);
-                    background-image: url(../Images/mobile-sub-menu-bg.svg);
+                    padding: 100px 25px 40px 25px;
+                    height: 100vh;
+                    // background-image: url(../Images/mobile-sub-menu-bg.svg);
                     background-repeat: no-repeat;
                     background-position: center top;
                     background-size: cover;
@@ -95,16 +104,16 @@
                                         opacity: 1;
                                         visibility: visible;
                                         position: fixed;
-                                        height: calc(100vh - 90px);
+                                        height: 100vh;
                                         z-index: 1;
-                                        background-image: url(../Images/mobile-sub-menu-bg.svg);
+                                        background-image: url(../Images/expanded-menu-bg.svg);
                                         background-repeat: no-repeat;
                                         background-position: center top;
                                         background-size: cover;
-                                        width: calc(100% - 20px) !important;
-                                        left: 10px;
-                                        top: 70px;
-                                        padding: 25px !important;
+                                        width: 100% !important;
+                                        left: 0px;
+                                        top: 0px;
+                                        padding: 100px 25px 25px 25px !important;
                                         @include border-radius(10px);
                                         pointer-events: auto;
                                         display: none;

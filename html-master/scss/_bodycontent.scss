@@ -2564,7 +2564,10 @@
             }
         }
         .card-thumb{
-            background-color: white;
+            background-image: url(../Images/team-member-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
             & > .main-wrap{
                 height: 256px;
                 display: grid;
