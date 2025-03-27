@@ -38,7 +38,7 @@
     --site-grey-type-primary-dark: #D3CEC1;
     --site-grey-type-primary-darker: #D6D2C8;
     --site-text-color: #000000;
-    --start-page-content-organiser-base-height: 920px;
+    --start-page-content-organiser-base-height: calc(100vh - 170px);
 }
 
 // grid breack points

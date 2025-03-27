@@ -861,6 +861,14 @@
                     font-size: 25px;
                     line-height: normal;
                 }
+				&.xs-special-organise-size{
+                    font-size: 25px;
+                    line-height: normal;
+					.sub{
+						font-size: 15px;
+						line-height: 21px;
+					}
+                }
                 &.pull-text-left{
                     &.lg-less-size{
                         .sub{

@@ -810,8 +810,19 @@
 
     // content organiser module type 1
     .content-organiser-module-type-1{
+	
+		.teaser-module{
+			.teaser-product-img{
+				img{
+					@media screen and (min-width:$xxlmin){
+						max-width: 250px;
+					}
+				}
+			}
+		}
         .base-height{
             height: var(--start-page-content-organiser-base-height);
+			min-height: 730px;
         }
 
         
@@ -836,11 +847,11 @@
         }
 
         .inside-widget-box-lg-height{
-            height: 40%;
+            height: 50%;
         }
 
         .inside-widget-box-xl-height{
-            height: 60%;
+            height: 50%;
         }
 
         .inside-widget-box-lg-height-2{
@@ -943,7 +954,7 @@
                 }
             }
             p{
-                font-size: 13px;
+                font-size: 12px;
                 line-height: normal;
                 opacity: 0.6;
                 &.no-opech{
@@ -1575,6 +1586,16 @@
             &.sm-size{
                 font-size: 40px;
                 line-height: 47px;
+            }
+			
+			&.xs-special-organise-size{
+                font-size: 30px;
+                line-height: 50px;
+				
+				.sub{
+					font-size: 20px;
+					line-height: 26px;
+				}
             }
 
             
