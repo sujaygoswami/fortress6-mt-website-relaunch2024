@@ -180,31 +180,42 @@ site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER = function () {
    // desktop SUBMENUFUNCTION
   
    site.DESKTOPSUBMENUFUNCTION = function () {
-    // jQuery('.main-nav li.has-sub-menu').hover(function(){
-    //   jQuery(this).parent().find('li').not(this).addClass('inactive');
-    // }, 
-    // function () {
-    //   jQuery(this).parent().find('li').removeClass('inactive');
-    // });
+    
 
     jQuery('.main-nav li.parent-menu > a').mouseenter(function(e){
 
       jQuery('.main-nav li.parent-menu > a').not(this).parent().find('.sub-item').removeClass('active');
-      jQuery(this).parent().find('.sub-item').addClass('active');
+      jQuery(this).parent().removeClass('inactive');
 
+      jQuery(this).parent().find('.sub-item').addClass('active');
       jQuery('.main-nav li.parent-menu > a').not(this).parent().addClass('inactive');
 
       e.stopPropagation();
     });
-    jQuery('.main-nav li.parent-menu').mouseleave(function(e){
+    jQuery('.main-nav .nav-primary').mouseleave(function(e){
 
      jQuery(this).find('.sub-item').removeClass('active');
      jQuery('.main-nav li.parent-menu').removeClass('inactive');
 
       e.stopPropagation();
     });
+
+    jQuery('.main-nav .sub-item a').mouseenter(function(e){
+
+
+      jQuery(this).parents('.sub-item').find('a').removeClass('inactive');
+
+      jQuery(this).parents('.sub-item').find('a').not(this).addClass('inactive');
+
+      e.stopPropagation();
+    });
+
+    jQuery('.main-nav .sub-item').mouseleave(function(){
+      jQuery(this).find('a').removeClass('inactive');
+    });
+
   };
-  // responsive MOBILESUBMENUFUNCTION
+  // desktop SUBMENUFUNCTION
 
 
 jQuery(document).ready(function(){

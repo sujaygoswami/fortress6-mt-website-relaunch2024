@@ -10503,7 +10503,11 @@ html, body {
     background-repeat: no-repeat;
     right: 50px;
     top: 50px;
-    z-index: 2; }
+    z-index: 2;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+    .mt-relaunch header.header .independent-menu-close:hover {
+      transform: scale(0.95); }
   .mt-relaunch header.header .main-nav {
     width: 100%;
     position: fixed;
@@ -10611,8 +10615,7 @@ html, body {
           -webkit-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.inactive {
-            opacity: 0.35;
-            pointer-events: none; }
+            opacity: 0.35; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:last-child {
             margin-bottom: 0px; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu > a {
@@ -10631,7 +10634,8 @@ html, body {
             opacity: 0;
             pointer-events: none;
             -webkit-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s; }
+            transition: all 0.3s ease 0s;
+            z-index: 1; }
             .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item.active {
               opacity: 1;
               pointer-events: auto; }
@@ -10651,6 +10655,8 @@ html, body {
               text-transform: uppercase; }
               .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item li a {
                 color: white; }
+                .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li.has-sub-menu ul.sub-item li a.inactive {
+                  opacity: 0.35; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li:last-child {
             margin-bottom: 0px; }
           .mt-relaunch header.header .main-nav .nav-items-wrap > ul > li > a {
