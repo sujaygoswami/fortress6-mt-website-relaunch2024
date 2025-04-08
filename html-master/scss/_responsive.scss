@@ -623,6 +623,7 @@
         .content-organiser-module-type-1{
             .base-height{
                 height: auto;
+                min-height: inherit;
             }
 
             .inside-widget-box-xl-height-2{
@@ -1292,11 +1293,14 @@
                 .player-detail-image{
                     max-width: 120px;
                     position: absolute;
-                    left: -5px;
-                    top: -10px;
+                    left: inherit;
+                    top: inherit;
+                    right: 0px;
+                    bottom: 0px;
+                    padding-right: 20px;
 
                     & + .player-detail-info .info-table:not(.child-table){
-                        padding-left: 110px;
+                        padding-left: 0px;
                     }
                 }
 
@@ -1713,6 +1717,12 @@
 // only tab
 @media screen and (max-width: ($xxlmin - 1px)) and (min-width: $md) {
     .mt-relaunch{
+        .adapt-height-default-grid{
+            flex-wrap: nowrap;
+            .adapt-height{
+                width: 50%;
+            }
+        }
         .only-tab-column-system{
             display: flex;
             flex-wrap: wrap;
@@ -1735,6 +1745,24 @@
         }
         // content-organiser-module-type-1
         .content-organiser-module-type-1{
+            .lg-box{
+                &:first-child{
+                    height: 240px;
+
+                    .teaser-product-img{
+                        img{
+                            max-width: 50%;
+                        }
+                    }
+
+                    .teaser-module{
+                        .teaser-title{
+                            padding: 30px;
+                            
+                        }
+                    }
+                }
+            }
             .padding-bottom-gap{
                 padding-bottom: 0px;
             }

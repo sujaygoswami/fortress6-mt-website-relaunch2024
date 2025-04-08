@@ -11842,7 +11842,7 @@ html, body {
     display: none; }
   .mt-relaunch .static-banner-module.type-2 .banner-img:after {
     height: 277px;
-    background-image: url(../Images/static-banner-type-2-gradient.svg);
+    background-image: url(../Images/Gradient_red.svg);
     z-index: 20; }
   .mt-relaunch .static-banner-module .banner-product {
     position: absolute;
@@ -13162,7 +13162,8 @@ html, body {
         top: 50%;
         margin-top: -4.5px; }
     .mt-relaunch .content-organiser-module-type-1 .base-height {
-      height: auto; }
+      height: auto;
+      min-height: inherit; }
     .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height-2 {
       height: 435px;
       margin-bottom: 10px; }
@@ -13510,10 +13511,13 @@ html, body {
       .mt-relaunch .player-detail-info-module > .main-wrap .player-detail-image {
         max-width: 120px;
         position: absolute;
-        left: -5px;
-        top: -10px; }
+        left: inherit;
+        top: inherit;
+        right: 0px;
+        bottom: 0px;
+        padding-right: 20px; }
         .mt-relaunch .player-detail-info-module > .main-wrap .player-detail-image + .player-detail-info .info-table:not(.child-table) {
-          padding-left: 110px; }
+          padding-left: 0px; }
       .mt-relaunch .player-detail-info-module > .main-wrap .player-detail-info {
         left: inherit;
         max-width: inherit; }
@@ -13738,6 +13742,10 @@ html, body {
       border-radius: 0 0 10px 0; } }
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
+  .mt-relaunch .adapt-height-default-grid {
+    flex-wrap: nowrap; }
+    .mt-relaunch .adapt-height-default-grid .adapt-height {
+      width: 50%; }
   .mt-relaunch .only-tab-column-system {
     display: flex;
     flex-wrap: wrap;
@@ -13750,6 +13758,12 @@ html, body {
       padding-right: 5px; }
       .mt-relaunch .only-tab-column-system > .spl-col.flex-grow {
         flex-grow: 1; }
+  .mt-relaunch .content-organiser-module-type-1 .lg-box:first-child {
+    height: 240px; }
+    .mt-relaunch .content-organiser-module-type-1 .lg-box:first-child .teaser-product-img img {
+      max-width: 50%; }
+    .mt-relaunch .content-organiser-module-type-1 .lg-box:first-child .teaser-module .teaser-title {
+      padding: 30px; }
   .mt-relaunch .content-organiser-module-type-1 .padding-bottom-gap {
     padding-bottom: 0px; }
   .mt-relaunch .content-organiser-module-type-1 .padding-top-gap {
