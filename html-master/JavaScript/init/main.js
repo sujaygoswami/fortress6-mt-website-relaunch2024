@@ -2,8 +2,11 @@ var site = {}
 
 // break point vars
 var $xxlmin = 1280;
+var $md = 768;
 // break point vars
-
+site.MOBILENEWSLISTINGWIDGETCONTENTORGANSIEMODULETYPE1 = function () {
+  jQuery('.content-organiser-module-type-1 .news-listging-widget').matchHeight({byRow: false});
+}
 
 site.TABSWITCHER = function () {
 jQuery('.switcher-module').each(function () {
@@ -54,6 +57,27 @@ jQuery('.switcher-module').each(function () {
 
 };
 
+// GLOBALTABMOBILECONVERTEDSLIDERtype two
+site.GLOBALTABMOBILECONVERTEDSLIDERTYPETWO = function () {
+
+  jQuery('.global-tab-mobile-converted-slider-type-two').each(function(){
+
+    jQuery(this).find('.tab-mobile-main-slider-navigate-wrap').addClass('carousel-navigate-with-header');
+  
+    jQuery(this).find('.tab-mobile-main-slider .the-slider').removeAttr('class').attr('class', '');
+    jQuery(this).find('.tab-mobile-main-slider > div').addClass('the-slider global-carousel equal-height-item two-column-global-carousel global-carousel-type-6 element-gap element-gap-type-4 type-arrow-pagination-view-1');
+    
+  
+    
+    jQuery(this).find('.tab-mobile-main-slider .the-slider .my-col').removeAttr('class').attr('class', '');
+    jQuery(this).find('.tab-mobile-main-slider .the-slider > div').addClass('item');
+  
+  
+      
+    
+  });
+};
+
 // GLOBALTABMOBILECONVERTEDSLIDER
 site.GLOBALTABMOBILECONVERTEDSLIDER = function () {
 
@@ -75,7 +99,10 @@ jQuery('.global-tab-mobile-converted-slider').each(function(){
     
   
 });
-jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-3, .global-carousel-type-4').parents('.section-row').addClass('overflow-hidden');
+
+
+
+jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-3, .global-carousel-type-4, .global-carousel-type-7').parents('.section-row').addClass('overflow-hidden');
 
 
 };
@@ -309,6 +336,11 @@ site.GLOBALTABMOBILECONVERTEDSLIDER();
 site.GLOBALTABMOBILECONVERTEDPRICINGBOXSLIDER();
 };
 
+// only mobile convert slider
+if ($(window).width() < $md) {
+  site.GLOBALTABMOBILECONVERTEDSLIDERTYPETWO();
+};
+
 // responsive MOBILESUBMENUFUNCTION
 if ($(window).width() < $xxlmin) {
   site.MOBILESUBMENUFUNCTION();
@@ -527,6 +559,44 @@ jQuery('.global-carousel-type-5').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+});
+
+
+jQuery('.global-carousel-type-6').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  touchThreshold: 500,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
+jQuery('.global-carousel-type-7').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  touchThreshold: 500,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3
+      }
+    }
+  ]
 });
 
 jQuery('.download-carousel-wrap').parents('section.section-row').removeClass('section-row');
@@ -820,6 +890,12 @@ jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {
 
 // switcher
 site.TABSWITCHER();
+
+
+// only mobile load notation declaration
+if ($(window).width() < $md) {
+  // site.MOBILENEWSLISTINGWIDGETCONTENTORGANSIEMODULETYPE1();
+};
 
 
 });

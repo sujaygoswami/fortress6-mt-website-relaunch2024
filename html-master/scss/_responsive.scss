@@ -1,3 +1,13 @@
+// large tab
+@media screen and (max-width: ($xxlmin - 1px)) and (min-width: $lg) {
+    .mt-relaunch{
+        main{
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+}
+
 // tab mobile
 @media screen and (max-width: ($xxlmin - 1px)) {
 
@@ -1119,8 +1129,15 @@
                         }
                         tbody{
                             tr{
+                                &:first-child{
+                                    td{
+                                        border-top-color: transparent;
+                                    }
+                                }
                                 td{
                                     padding: 10px;
+                                    border-top: 1px solid rgba($color: #000000, $alpha: 0.19);
+                                    height: 55px;
                                     &.left-right-gap-creator{
                                         padding: 0 4px;
                                     }
@@ -1199,7 +1216,7 @@
             }
 
 
-            &.global-carousel-type-1, &.global-carousel-type-3{
+            &.global-carousel-type-1, &.global-carousel-type-3, &.global-carousel-type-7{
                 padding-right: 100px;
                 .slick-list{
                     overflow: inherit;
@@ -1401,9 +1418,7 @@
         .static-banner-module{
             .banner-img{
                 min-height: 230px;
-                &:after{
-                    background-image: url(../Images/static-banner-gradient-tab-mobile.svg);
-                }
+                
             }
 
             .static-banner-bottom-action{
@@ -1639,7 +1654,6 @@
                 position: absolute;
                 width: 100%;
                 left: 0px;
-                border-top: 1px solid #dddddd !important;
             }
 
             &.for-responsive-fix-width-type-1{
@@ -1834,6 +1848,28 @@
 // only mobile
 @media screen and (max-width: ($md - 1px)){
     .mt-relaunch{
+
+
+        .content-organiser-module-type-1{
+            .inside-widget-box-xl-height-2{
+                height: 60vh;
+            }
+            .news-listging-widget{
+                min-height: 105px;
+            }
+        }
+
+
+
+
+        .static-banner-module{
+            .banner-img{
+                
+                &:after{
+                    background-image: url(../Images/static-banner-gradient-tab-mobile.svg);
+                }
+            }
+        }    
 
         main{
             .container-fluid, .container{
