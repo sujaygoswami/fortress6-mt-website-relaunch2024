@@ -926,7 +926,11 @@
 
             @media screen and (max-width: ($md - 1px)){
                 background-image: url(../Images/organised-content-primary-news-gradient-mobile.png);
-                background-size: 210% auto;
+                background-size: 100% auto;
+            }
+            @media screen and (max-width: (500px - 1px)){
+                background-image: url(../Images/organised-content-primary-news-gradient-mobile.png);
+                background-size: 130% auto;
             }
 
             .overlay-context-parent-pad{
@@ -2001,8 +2005,9 @@
                 padding: 0px;
                 span{
                     text-align: left;
-                    font-size: 187px;
-                    line-height: 160px;
+                    font-size: 140px;
+                    line-height: 140px;
+                    padding-left: 50px;
                     &.sub{
                         font-size: 51px;
                         line-height: 67px;

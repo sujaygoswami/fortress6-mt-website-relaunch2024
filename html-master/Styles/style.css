@@ -11893,7 +11893,11 @@ html, body {
     @media screen and (max-width: 767px) {
       .mt-relaunch .image-with-overlay-caption-content-module .content-gradient-card-wrap {
         background-image: url(../Images/organised-content-primary-news-gradient-mobile.png);
-        background-size: 210% auto; } }
+        background-size: 100% auto; } }
+    @media screen and (max-width: 499px) {
+      .mt-relaunch .image-with-overlay-caption-content-module .content-gradient-card-wrap {
+        background-image: url(../Images/organised-content-primary-news-gradient-mobile.png);
+        background-size: 130% auto; } }
     .mt-relaunch .image-with-overlay-caption-content-module .content-gradient-card-wrap .overlay-context-parent-pad {
       padding: 40px 50px; }
       @media screen and (max-width: 1279px) {
@@ -12571,8 +12575,9 @@ html, body {
       padding: 0px; }
       .mt-relaunch .static-banner-module .banner-title.view-2 span {
         text-align: left;
-        font-size: 187px;
-        line-height: 160px; }
+        font-size: 140px;
+        line-height: 140px;
+        padding-left: 50px; }
         .mt-relaunch .static-banner-module .banner-title.view-2 span.sub {
           font-size: 51px;
           line-height: 67px;
@@ -13438,15 +13443,11 @@ html, body {
     column-gap: 14px;
     row-gap: 14px; }
 
-@media screen and (max-width: 1279px) and (min-width: 1024px) {
-  .mt-relaunch main {
-    max-width: 900px;
-    margin: 0 auto; } }
-
 @media screen and (max-width: 1279px) {
   .mt-relaunch {
     padding: 70px 0px 10px 0px; }
-    .mt-relaunch main .container-fluid, .mt-relaunch main .container-sm, .mt-relaunch main .container-md, .mt-relaunch main .container-lg, .mt-relaunch main .container-xl, .mt-relaunch main .container-xxlmin, .mt-relaunch main .container-xxl, .mt-relaunch main .container {
+    .mt-relaunch main .container-fluid, .mt-relaunch main .container-sm, .mt-relaunch main .container-md, .mt-relaunch main .container-lg, .mt-relaunch main .container-xl, .mt-relaunch main .container-xxlmin, .mt-relaunch main .container-xxl,
+    .mt-relaunch main .container {
       padding-left: 50px;
       padding-right: 50px; }
     .mt-relaunch .global-fluid-mx-padding-tab-mobile {
@@ -13630,9 +13631,11 @@ html, body {
         margin-bottom: 30px; }
       .mt-relaunch .element-gap.tab-mobile-mb-lg {
         margin-bottom: 50px; }
-    .mt-relaunch .section-mobile-gap-avg, .mt-relaunch .element-gap-avg {
+    .mt-relaunch .section-mobile-gap-avg,
+    .mt-relaunch .element-gap-avg {
       margin-bottom: 35px; }
-      .mt-relaunch .section-mobile-gap-avg.section-bottom-gap-7, .mt-relaunch .element-gap-avg.section-bottom-gap-7 {
+      .mt-relaunch .section-mobile-gap-avg.section-bottom-gap-7,
+      .mt-relaunch .element-gap-avg.section-bottom-gap-7 {
         margin-bottom: 7px; }
     .mt-relaunch .section-mobile-gap-lg {
       margin-bottom: 65px; }
@@ -13644,29 +13647,38 @@ html, body {
     .mt-relaunch .mobile-x-padding-default {
       padding-left: 10px;
       padding-right: 10px; }
-    .mt-relaunch .my-row.default-row, .mt-relaunch .my-row {
+    .mt-relaunch .my-row.default-row,
+    .mt-relaunch .my-row {
       row-gap: 10px;
       margin-left: -5px;
       margin-right: -5px; }
-      .mt-relaunch .my-row.default-row .adapt-height-default-grid, .mt-relaunch .my-row .adapt-height-default-grid {
+      .mt-relaunch .my-row.default-row .adapt-height-default-grid,
+      .mt-relaunch .my-row .adapt-height-default-grid {
         row-gap: 10px;
         column-gap: 10px; }
-      .mt-relaunch .my-row.default-row.mobile-lg-row-gap, .mt-relaunch .my-row.mobile-lg-row-gap {
+      .mt-relaunch .my-row.default-row.mobile-lg-row-gap,
+      .mt-relaunch .my-row.mobile-lg-row-gap {
         row-gap: 30px; }
-        .mt-relaunch .my-row.default-row.mobile-lg-row-gap .adapt-height-default-grid, .mt-relaunch .my-row.mobile-lg-row-gap .adapt-height-default-grid {
+        .mt-relaunch .my-row.default-row.mobile-lg-row-gap .adapt-height-default-grid,
+        .mt-relaunch .my-row.mobile-lg-row-gap .adapt-height-default-grid {
           row-gap: 30px;
           column-gap: 30px; }
-      .mt-relaunch .my-row.default-row.mobile-lg-less-row-gap, .mt-relaunch .my-row.mobile-lg-less-row-gap {
+      .mt-relaunch .my-row.default-row.mobile-lg-less-row-gap,
+      .mt-relaunch .my-row.mobile-lg-less-row-gap {
         row-gap: 20px; }
-        .mt-relaunch .my-row.default-row.mobile-lg-less-row-gap .adapt-height-default-grid, .mt-relaunch .my-row.mobile-lg-less-row-gap .adapt-height-default-grid {
+        .mt-relaunch .my-row.default-row.mobile-lg-less-row-gap .adapt-height-default-grid,
+        .mt-relaunch .my-row.mobile-lg-less-row-gap .adapt-height-default-grid {
           row-gap: 20px;
           column-gap: 20px; }
-      .mt-relaunch .my-row.default-row.mobile-md-row-gap, .mt-relaunch .my-row.mobile-md-row-gap {
+      .mt-relaunch .my-row.default-row.mobile-md-row-gap,
+      .mt-relaunch .my-row.mobile-md-row-gap {
         row-gap: 14px; }
-        .mt-relaunch .my-row.default-row.mobile-md-row-gap .adapt-height-default-grid, .mt-relaunch .my-row.mobile-md-row-gap .adapt-height-default-grid {
+        .mt-relaunch .my-row.default-row.mobile-md-row-gap .adapt-height-default-grid,
+        .mt-relaunch .my-row.mobile-md-row-gap .adapt-height-default-grid {
           row-gap: 14px;
           column-gap: 14px; }
-      .mt-relaunch .my-row.default-row > .my-col, .mt-relaunch .my-row > .my-col {
+      .mt-relaunch .my-row.default-row > .my-col,
+      .mt-relaunch .my-row > .my-col {
         padding-left: 5px;
         padding-right: 5px; }
     .mt-relaunch .set-back.gobal-mobile-set-back-img-visible > img {
@@ -14084,15 +14096,17 @@ html, body {
         padding: 0 4px; }
       .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 thead tr th.gap-creator {
         height: 5px; }
+    .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody:not(.has-td-min-hieght) td {
+      height: 55px; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr:first-child td {
       border-top-color: transparent; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td {
       padding: 10px;
-      border-top: 1px solid rgba(0, 0, 0, 0.19);
-      height: 55px; }
+      border-top: 1px solid rgba(0, 0, 0, 0.19); }
       .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td.left-right-gap-creator {
         padding: 0 4px; }
-      .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td.serial, .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td .serial {
+      .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td.serial,
+      .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td .serial {
         font-size: 18px; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 .match-schedule .match-timing .time-separation {
       font-size: 13px;
@@ -14174,11 +14188,13 @@ html, body {
       -ms-border-radius: 10px;
       border-radius: 10px;
       padding: 20px 0; }
-      .mt-relaunch .partners-module .sm-row-gap, .mt-relaunch .partners-module .my-row {
+      .mt-relaunch .partners-module .sm-row-gap,
+      .mt-relaunch .partners-module .my-row {
         row-gap: 30px; }
       .mt-relaunch .partners-module .lg-logo img {
         max-width: 175px; }
-      .mt-relaunch .partners-module .sm-logo img, .mt-relaunch .partners-module .md-logo img {
+      .mt-relaunch .partners-module .sm-logo img,
+      .mt-relaunch .partners-module .md-logo img {
         max-width: 100%; }
     .mt-relaunch .player-detail-info-module > .main-wrap {
       position: relative; }
@@ -14311,7 +14327,8 @@ html, body {
           padding-right: 20px; }
     .mt-relaunch .frame-type-form_formframework > form, .mt-relaunch .tx-indexedsearch-searchbox > form {
       padding: 20px; }
-      .mt-relaunch .frame-type-form_formframework > form > .row, .mt-relaunch .tx-indexedsearch-searchbox > form > .row {
+      .mt-relaunch .frame-type-form_formframework > form > .row,
+      .mt-relaunch .tx-indexedsearch-searchbox > form > .row {
         margin-bottom: 20px; }
     .mt-relaunch .frame-type-form_formframework .form-label, .mt-relaunch .tx-indexedsearch-searchbox .form-label {
       font-size: 14px; }
@@ -14354,7 +14371,8 @@ html, body {
     .mt-relaunch .responsive-scrollable-table .responsive-bottom-action-button {
       position: absolute;
       width: 100%;
-      left: 0px; }
+      left: 0px;
+      height: auto !important; }
     .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-1 {
       margin-left: 200px;
       overflow-x: scroll;
@@ -14363,17 +14381,27 @@ html, body {
       margin-left: 50px;
       overflow-x: scroll;
       overflow-y: visible; }
+    .mt-relaunch .responsive-scrollable-table.for-responsive-fix-width-type-3 {
+      margin-left: 100px;
+      overflow-x: scroll;
+      overflow-y: visible; }
     .mt-relaunch .responsive-scrollable-table.has-responsive-bottom-action {
       padding-bottom: 80px; }
-    .mt-relaunch .responsive-scrollable-table th.fix-item, .mt-relaunch .responsive-scrollable-table td.fix-item {
+    .mt-relaunch .responsive-scrollable-table th.fix-item,
+    .mt-relaunch .responsive-scrollable-table td.fix-item {
       left: 0;
       position: absolute;
       top: auto;
       border-right: 1px solid #f8f9fa6e !important; }
-      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-1, .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-1 {
+      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-1,
+      .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-1 {
         width: 200px; }
-      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-2, .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-2 {
+      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-2,
+      .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-2 {
         width: 50px; }
+      .mt-relaunch .responsive-scrollable-table th.fix-item.fix-width-type-3,
+      .mt-relaunch .responsive-scrollable-table td.fix-item.fix-width-type-3 {
+        width: 100px; }
     .mt-relaunch .responsive-scrollable-table .responsive-table-hidden-item {
       display: none; }
     .mt-relaunch .responsive-scrollable-table .responsibe-table-round-part-type-1 {
@@ -14412,7 +14440,19 @@ html, body {
       -ms-border-radius: 0 0 10px 0;
       border-radius: 0 0 10px 0; } }
 
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  .mt-relaunch main {
+    max-width: 900px;
+    margin: 0 auto; }
+  .mt-relaunch .global-carousel.global-carousel-type-4 {
+    padding-right: 0px; }
+    .mt-relaunch .global-carousel.global-carousel-type-4 .slick-list {
+      overflow: hidden; } }
+
 @media screen and (max-width: 1279px) and (min-width: 768px) {
+  .mt-relaunch .employee-card-module {
+    max-width: 350px;
+    margin: 0 auto; }
   .mt-relaunch .adapt-height-default-grid {
     flex-wrap: nowrap; }
     .mt-relaunch .adapt-height-default-grid .adapt-height {
@@ -14455,13 +14495,16 @@ html, body {
     padding-right: 0px !important; } }
 
 @media screen and (max-width: 767px) {
+  .mt-relaunch .teaser-module .teaser-product-img img {
+    max-width: 70vw; }
   .mt-relaunch .content-organiser-module-type-1 .inside-widget-box-xl-height-2 {
     height: 60vh; }
   .mt-relaunch .content-organiser-module-type-1 .news-listging-widget {
     min-height: 105px; }
   .mt-relaunch .static-banner-module .banner-img:after {
     background-image: url(../Images/static-banner-gradient-tab-mobile.svg); }
-  .mt-relaunch main .container-fluid, .mt-relaunch main .container-sm, .mt-relaunch main .container-md, .mt-relaunch main .container-lg, .mt-relaunch main .container-xl, .mt-relaunch main .container-xxlmin, .mt-relaunch main .container-xxl, .mt-relaunch main .container {
+  .mt-relaunch main .container-fluid, .mt-relaunch main .container-sm, .mt-relaunch main .container-md, .mt-relaunch main .container-lg, .mt-relaunch main .container-xl, .mt-relaunch main .container-xxlmin, .mt-relaunch main .container-xxl,
+  .mt-relaunch main .container {
     padding-left: 20px;
     padding-right: 20px; }
   .mt-relaunch .only-mobile-height-auto {
@@ -14471,6 +14514,10 @@ html, body {
     margin-top: 20px; }
     .mt-relaunch .frame-type-form_formframework .row > div:first-child {
       margin-top: 0px; } }
+
+@media screen and (max-width: 767px) and (min-width: 500px) {
+  .mt-relaunch .teaser-module .teaser-product-img img {
+    max-width: 60%; } }
 
 /*! Vendor */
 /*!
