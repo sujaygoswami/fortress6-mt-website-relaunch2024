@@ -816,6 +816,9 @@ jQuery('.main-nav.slide-action').addClass('loaded fadeOutUp');
   
 
 
+  jQuery('.employee-card-module .employee-basic-info').matchHeight();
+
+
 
 
 
