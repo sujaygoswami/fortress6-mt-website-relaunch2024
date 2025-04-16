@@ -1225,7 +1225,7 @@
                         tbody {
                             &:not(.has-td-min-hieght) {
                                 td {
-                                    height: 55px;
+                                    height: 52px;
                                 }
                             }
 
@@ -1738,12 +1738,14 @@
             // background-color: var(--site-grey-type-primary);
             // border-radius: 0 0 10px 10px;
 
+            
+
             &:after {
                 position: absolute;
                 right: 0px;
                 top: 0px;
                 width: 40px;
-                height: 35px;
+                height: 36px;
                 background-image: url(../Images/responsive-table-indication.svg);
                 background-repeat: no-repeat;
                 background-position: left -14px top;
@@ -1825,6 +1827,23 @@
 
             th,
             td {
+
+                &.arrow-overlap{
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &.responsive-table-fix-gap{
+                    left: 0;
+                    position: absolute;
+                    top: auto;
+                    padding: 0px !important;
+                    width: 10px !important;
+                    z-index: 1;
+                    &:last-child{
+                        position: static;
+                    }
+                }
                 &.fix-item {
                     left: 0;
                     position: absolute;
@@ -2075,6 +2094,18 @@
 // only mobile
 @media screen and (max-width: ($md - 1px)) {
     .mt-relaunch {
+
+
+        .global-carousel{
+            &.global-carousel-type-8 {
+                padding-right: 20px;
+
+                .slick-list{
+                    overflow: inherit;
+                }
+            }
+        }
+    
 
         .global-content-card {
             .content-card-with-cover-img {

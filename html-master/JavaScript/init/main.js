@@ -102,7 +102,7 @@ jQuery('.global-tab-mobile-converted-slider').each(function(){
 
 
 
-jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-3, .global-carousel-type-4, .global-carousel-type-7').parents('.section-row').addClass('overflow-hidden');
+jQuery('.global-carousel-type-1, .global-carousel-type-2, .global-carousel-type-3, .global-carousel-type-4, .global-carousel-type-7, .global-carousel-type-8').parents('.section-row').addClass('overflow-hidden');
 
 
 };
@@ -578,6 +578,8 @@ jQuery('.global-carousel-type-6').slick({
 });
 
 
+
+
 jQuery('.global-carousel-type-7').slick({
   infinite: true,
   slidesToShow: 4,
@@ -594,6 +596,22 @@ jQuery('.global-carousel-type-7').slick({
       breakpoint: 1280,
       settings: {
         slidesToShow: 3
+      }
+    }
+  ]
+});
+
+
+jQuery('.global-carousel-type-8').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  touchThreshold: 500,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2
       }
     }
   ]
@@ -899,6 +917,13 @@ site.TABSWITCHER();
 if ($(window).width() < $md) {
   // site.MOBILENEWSLISTINGWIDGETCONTENTORGANSIEMODULETYPE1();
 };
+
+
+// responsive-scrollable-table
+jQuery('.responsive-scrollable-table').each(function(){
+  jQuery(this).find('thead th:last-child').addClass('arrow-overlap');
+  jQuery(this).find('thead th.left-right-gap-creator:last-child').prev('th').addClass('arrow-overlap');
+});
 
 
 });

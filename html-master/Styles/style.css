@@ -14099,7 +14099,7 @@ html, body {
       .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 thead tr th.gap-creator {
         height: 5px; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody:not(.has-td-min-hieght) td {
-      height: 55px; }
+      height: 52px; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr:first-child td {
       border-top-color: transparent; }
     .mt-relaunch .match-table.view-1.mobile-view-2.layout-2 tbody tr td {
@@ -14345,7 +14345,7 @@ html, body {
         right: 0px;
         top: 0px;
         width: 40px;
-        height: 35px;
+        height: 36px;
         background-image: url(../Images/responsive-table-indication.svg);
         background-repeat: no-repeat;
         background-position: left -14px top;
@@ -14389,6 +14389,21 @@ html, body {
       overflow-y: visible; }
     .mt-relaunch .responsive-scrollable-table.has-responsive-bottom-action {
       padding-bottom: 80px; }
+    .mt-relaunch .responsive-scrollable-table th.arrow-overlap,
+    .mt-relaunch .responsive-scrollable-table td.arrow-overlap {
+      position: relative;
+      z-index: 2; }
+    .mt-relaunch .responsive-scrollable-table th.responsive-table-fix-gap,
+    .mt-relaunch .responsive-scrollable-table td.responsive-table-fix-gap {
+      left: 0;
+      position: absolute;
+      top: auto;
+      padding: 0px !important;
+      width: 10px !important;
+      z-index: 1; }
+      .mt-relaunch .responsive-scrollable-table th.responsive-table-fix-gap:last-child,
+      .mt-relaunch .responsive-scrollable-table td.responsive-table-fix-gap:last-child {
+        position: static; }
     .mt-relaunch .responsive-scrollable-table th.fix-item,
     .mt-relaunch .responsive-scrollable-table td.fix-item {
       left: 0;
@@ -14505,6 +14520,10 @@ html, body {
       line-height: 27px; } }
 
 @media screen and (max-width: 767px) {
+  .mt-relaunch .global-carousel.global-carousel-type-8 {
+    padding-right: 20px; }
+    .mt-relaunch .global-carousel.global-carousel-type-8 .slick-list {
+      overflow: inherit; }
   .mt-relaunch .global-content-card .content-card-with-cover-img .cover-img {
     width: 100%; }
     .mt-relaunch .global-content-card .content-card-with-cover-img .cover-img .img-badge {
