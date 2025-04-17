@@ -11981,6 +11981,8 @@ html, body {
     line-height: 20px;
     padding-bottom: 25px;
     max-width: 80%; }
+  .mt-relaunch .match-table.three-column-table td, .mt-relaunch .match-table.three-column-table th {
+    width: 33.33%; }
   .mt-relaunch .match-table table {
     width: 100%;
     border: 0; }
@@ -12574,7 +12576,7 @@ html, body {
     transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);
     font-style: italic;
     padding-right: 60px;
-    padding-bottom: 56px;
+    padding-bottom: 80px;
     z-index: 30; }
     .mt-relaunch .static-banner-module .banner-title span {
       display: block;
@@ -14266,7 +14268,7 @@ html, body {
       font-size: 30px;
       line-height: 34px;
       padding-right: 18px;
-      padding-bottom: 18px; }
+      padding-bottom: 25px; }
       .mt-relaunch .static-banner-module .banner-title.view-2 span {
         font-size: 25px;
         line-height: 25px; }
@@ -14514,7 +14516,8 @@ html, body {
     padding-right: 0px !important; }
   .mt-relaunch .static-banner-module .banner-title {
     font-size: 60px;
-    line-height: 64px; }
+    line-height: 64px;
+    padding-bottom: 45px; }
     .mt-relaunch .static-banner-module .banner-title span.sub {
       font-size: 25px;
       line-height: 27px; } }
