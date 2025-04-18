@@ -926,5 +926,16 @@ jQuery('.responsive-scrollable-table').each(function(){
 });
 
 
+// hb-embed__table
+setTimeout(function () {
+  jQuery('.hb-embed__table').each(function(){
+    jQuery(this).addClass('contenttable');
+    jQuery(this).parent('.hb-embed').addClass('match-table view-1 layout-2 mobile-view-2');
+    jQuery(this).parent('.hb-embed').wrap('<div class="table-responsive"></div>');
+  });
+}, 100);
+
+
+
 });
 
