@@ -944,7 +944,7 @@
             background-size: contain;
             background-position: bottom center;
             background-repeat: no-repeat;
-            background-image: url(../Images/organised-content-primary-news-gradient-desktop.png);
+            background-image: url(../Images/organised-content-primary-news-gradient-desktop_v2.png);
             display: grid;
             align-items: flex-end;
 
@@ -1591,6 +1591,17 @@
                 left: 0px;
                 top: 0px;
                 padding: 57px 24px 57px 24px;
+
+                // for settings Title Style: Left, Title Position: Type 4, Title Size: Extra Small
+                &.pull-text-left{
+                    &.md-less-size-less{
+                        @media screen and (min-width: $xxlmin) {
+                            padding-top: 30px;
+                        }
+                        
+                    }
+                }
+                // for settings Title Style: Left, Title Position: Type 4, Title Size: Extra Small
 
                 &.view-2{
                     padding: 30px 24px 30px 24px;

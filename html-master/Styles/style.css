@@ -11901,7 +11901,7 @@ html, body {
     background-size: contain;
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-image: url(../Images/organised-content-primary-news-gradient-desktop.png);
+    background-image: url(../Images/organised-content-primary-news-gradient-desktop_v2.png);
     display: grid;
     align-items: flex-end; }
     @media screen and (max-width: 767px) {
@@ -12289,6 +12289,9 @@ html, body {
       left: 0px;
       top: 0px;
       padding: 57px 24px 57px 24px; }
+      @media screen and (min-width: 1280px) {
+        .mt-relaunch .teaser-module .teaser-title.pos-type-4.pull-text-left.md-less-size-less {
+          padding-top: 30px; } }
       .mt-relaunch .teaser-module .teaser-title.pos-type-4.view-2 {
         padding: 30px 24px 30px 24px; }
     .mt-relaunch .teaser-module .teaser-title span {
