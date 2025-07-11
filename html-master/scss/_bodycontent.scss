@@ -21,6 +21,20 @@
     }
     main{
         .entry{
+            strong{
+                i{
+                    font-family: var(--site-primary-font-italic);
+                    font-weight: bold;
+                }
+            }
+            i{
+                font-family: var(--site-primary-font-italic);
+
+                strong{
+                    font-family: var(--site-primary-font-italic);
+                    font-weight: bold;
+                }
+            }
             a{
                 color: var(--site-primary-color);
             }
@@ -1626,10 +1640,15 @@
             }
             &.md-less-size{
                 font-size: 40px;
-                line-height: 60px;
+                line-height: 50px;
+                span{
+                    &.sub{
+                        padding-bottom: 10px;
+                    }
+                }
                 @media screen and (min-width: $xxl){
                     font-size: 46px;
-                    line-height: 67px;
+                    line-height: 50px;
                 }
                 
             }

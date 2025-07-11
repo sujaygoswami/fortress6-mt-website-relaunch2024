@@ -190,6 +190,25 @@
     font-weight: 200;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Avenir Next Italic';
+    src: url('../Fonts/AvenirNext-Italic.woff2') format('woff2'),
+        url('../Fonts/AvenirNext-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Next Italic';
+    src: url('../Fonts/AvenirNext-BoldItalic.woff2') format('woff2'),
+        url('../Fonts/AvenirNext-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
 // Avenir Next Cyr
 
 
