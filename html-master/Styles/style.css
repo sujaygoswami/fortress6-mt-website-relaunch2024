@@ -11349,6 +11349,11 @@ html, body {
 
 .mt-relaunch {
   padding: 150px 0 20px 0; }
+  .mt-relaunch .caption span {
+    font-style: italic;
+    font-family: var(--site-primary-font-italic);
+    padding-top: 10px;
+    display: inline-block; }
   .mt-relaunch .text-right {
     text-align: right; }
   .mt-relaunch .text-center {
@@ -11792,6 +11797,8 @@ html, body {
         background-position: center center;
         background-image: url(../Images/tick-icon-dark.svg);
         background-color: var(--site-grey-type-primary-darker); }
+  .mt-relaunch .text-white a:not(.site-btn) {
+    color: white; }
   .mt-relaunch .text-white .entry ul li:before, .mt-relaunch .text-white.entry ul li:before {
     background-color: white; }
   .mt-relaunch .global-content-card.view-1 {
@@ -14415,6 +14422,8 @@ html, body {
       overflow-y: visible; }
     .mt-relaunch .responsive-scrollable-table.has-responsive-bottom-action {
       padding-bottom: 80px; }
+      .mt-relaunch .responsive-scrollable-table.has-responsive-bottom-action.has-responsive-bottom-action-pad-view-2 {
+        padding-bottom: 10px; }
     .mt-relaunch .responsive-scrollable-table th.arrow-overlap,
     .mt-relaunch .responsive-scrollable-table td.arrow-overlap {
       position: relative;

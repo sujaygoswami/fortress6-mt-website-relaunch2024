@@ -2,6 +2,17 @@
     padding: 150px 0 $grid-gutter-width 0;
     // basic
 
+    
+
+    .caption{
+        span{
+            font-style: italic;
+            font-family: var(--site-primary-font-italic);
+            padding-top: 10px;
+            display: inline-block;
+        }
+    }
+
     .text-right{
         text-align: right;
     } 
@@ -726,6 +737,13 @@
         }
     }
     .text-white{
+      
+            
+        a:not(.site-btn){
+            color: white;
+        }
+            
+        
         .entry, &.entry{
             ul{
                 li{
